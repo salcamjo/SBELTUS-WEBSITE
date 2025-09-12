@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBELTUS - Salud y Bienestar</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+ <header class="header">
+  <!-- Logo con imagen -->
+  <div class="logo">
+    <img src="images/logo.png" alt="SBELTUS Logo">
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav class="nav">
+    <a href="#hero" data-i18n="menu_home">Inicio</a>
+    <a href="#about" data-i18n="menu_about">Acerca de mí</a>
+    <a href="#results" data-i18n="menu_results">Resultados</a>
+    <a href="#resources" data-i18n="menu_resources">Recursos</a>
+    <a href="#pricing" data-i18n="menu_pricing">Planes</a>
+    <a href="#contact" data-i18n="menu_contact">Contacto</a>
+  </nav>
+
+  <!-- Botones idioma -->
+  <div class="lang-switch">
+    <button onclick="setLanguage('es')">ES</button> | 
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+</header>
+  <section id="hero" class="hero">
+    <h1 data-i18n="hero_title">Transforma tu vida después de los 50</h1>
+    <p data-i18n="hero_subtitle">Salud y peso ideal de manera natural y sostenible.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2 data-i18n="about_title">Acerca de mí</h2>
+    <img src="images/about.jpg" alt="Acerca de mí">
+    <p data-i18n="about_text">Soy ingeniero agrícola y comparto mi experiencia personal en salud y control de peso.</p>
+  </section>
+
+  <section id="results" class="results">
+    <h2 data-i18n="results_title">Resultados</h2>
+    <img src="images/results.jpg" alt="Resultados antes y después">
+    <p data-i18n="results_text">Ejemplo de los cambios logrados con constancia y disciplina.</p>
+  </section>
+
+  <section id="resources" class="resources">
+    <h2 data-i18n="resources_title">Recursos científicos</h2>
+    <p data-i18n="resources_text">Encuentra publicaciones científicas y enlaces relacionados con la salud.</p>
+    <ul>
+      <li><a href="https://www.who.int/" target="_blank">OMS - Organización Mundial de la Salud</a></li>
+    </ul>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2 data-i18n="pricing_title">Planes y precios</h2>
+    <div class="plan">Básico - $20</div>
+    <div class="plan">Avanzado - $50</div>
+    <div class="plan">Premium - $100</div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 data-i18n="contact_title">Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>WhatsApp: +51 999 999 999</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 SBELTUS</p>
+    <a href="pages/disclaimer.html">Disclaimer</a> |
+    <a href="pages/privacy.html">Privacidad</a> |
+    <a href="pages/terms.html">Términos</a>
+  </footer>
+</body>
+</html>

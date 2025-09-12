@@ -1,0 +1,553 @@
+/* ---- HERO mejorado ---- */
+#hero {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(42,157,143,0.08), rgba(231,111,81,0.04));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#hero .hero-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #264653;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 25px;
+}
+
+#hero .cta-primary {
+  display: inline-block;
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #e76f51, #2a9d8f);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#hero .cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+#hero .hero-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #hero .hero-image {
+    order: -1;
+  }
+}body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f9fdfb;
+  color: #333;
+}
+.header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #2b6777;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+.header a { color: white; margin: 0 0.5em; text-decoration: none; }
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  padding: 10em 2em;
+  text-align: center;
+}
+section { padding: 4em 2em; }
+footer {
+  background: #2b6777;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+/* ---- Hero: mejora visual sin eliminar contenido existente ---- */
+:root{
+  --brand-1: #2a9d8f;    /* color principal (ajústalo) */
+  --brand-2: #264653;    /* color oscuro para texto */
+  --accent: #e76f51;     /* color llamado a la acción */
+  --muted: #6c757d;
+  --bg-grad: linear-gradient(135deg, rgba(42,157,143,0.08), rgba(231,111,81,0.04));
+  --max-width: 1100px;
+  --container-padding: 24px;
+  --radius: 14px;
+}
+
+/* Asegúrate de apuntar a la sección por id o clase real */
+#hero {
+  box-sizing: border-box;
+  padding: 48px var(--container-padding);
+  background: var(--bg-grad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72vh; /* ocupa buena parte de la pantalla */
+}
+
+/* contenedor interno para centrar y limitar ancho sin alterar nodo original */
+#hero .hero-container {
+  width: 100%;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 32px;
+  align-items: center;
+}
+
+/* adapta si tu estructura ya tiene una container; en ese caso la regla es inofensiva */
+#hero .hero-left {
+  padding: 12px 6px;
+}
+
+/* Tipografía y jerarquía */
+#hero h1, #hero .hero-title {
+  font-family: Inter, system-ui, -apple-system, "Helvetica Neue", Arial;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--brand-2);
+  font-size: clamp(1.6rem, 3.4vw, 2.6rem); /* responsive */
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+#hero p, #hero .hero-subtitle {
+  font-family: Inter, system-ui, -apple-system, "Helvetica Neue", Arial;
+  color: var(--muted);
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  margin: 0 0 18px 0;
+}
+
+/* Botones: no eliminan los que ya tengas, solo dan estilo si existen */
+#hero .cta-primary,
+#hero a.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, var(--accent), var(--brand-1));
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(38,70,83,0.08);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+
+#hero .cta-primary:focus,
+#hero a.cta-primary:focus {
+  outline: 3px solid rgba(42,157,143,0.18);
+  outline-offset: 3px;
+}
+
+#hero .cta-primary:hover,
+#hero a.cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(38,70,83,0.12);
+}
+
+/* Botón secundario discreto */
+#hero .cta-secondary {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgba(38,70,83,0.08);
+  color: var(--brand-2);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Área derecha: imagen / tarjeta */
+#hero .hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Envolver imagen para que no sobrescriba la original */
+#hero .hero-image-wrapper {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  border-radius: var(--radius);
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(38,70,83,0.06);
+  overflow: hidden;
+}
+
+/* mejora para imágenes existentes sin tocarlas */
+#hero .hero-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Testimonios / badges pequeños bajo el hero */
+#hero .hero-trust {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Responsive: en pantallas pequeñas apilar */
+@media (max-width: 880px){
+  #hero {
+    padding: 36px 18px;
+    min-height: 62vh;
+  }
+  #hero .hero-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  #hero .hero-right {
+    order: -1; /* imagen encima del texto en móvil si lo prefieres */
+  }
+  #hero .hero-image-wrapper {
+    max-width: none;
+    width: 100%;
+  }
+}
+https://chatgpt.com/g/g-p-68c022061f508191b5b59fa7b9ceeb0e-sbeltus-web-site/c/68c02228-e1c4-8320-ac69-e44dfd82e598#:~:text=/*%20%2D%2D%2D%2D%20HERO%20mejorado%20%2D%2D%2D%2D%20*/,%3A%20%2D1%3B%0A%20%20%7D%0A%7D
+
+/* ---- HERO mejorado ---- */
+#hero {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(42,157,143,0.08), rgba(231,111,81,0.04));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#hero .hero-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #264653;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 25px;
+}
+
+#hero .cta-primary {
+  display: inline-block;
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #e76f51, #2a9d8f);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#hero .cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+#hero .hero-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #hero .hero-image {
+    order: -1;
+  }
+}
+/* ===== SBELTUS Stylesheet con paleta de colores coherente ===== */
+
+/* 🎨 Variables de color */
+:root {
+  --color-primary: #2a9d8f;   /* verde salud */
+  --color-dark: #264653;      /* azul oscuro confianza */
+  --color-accent: #e76f51;    /* coral/naranja energía CTA */
+  --color-light: #f8f9fa;     /* gris muy claro fondos */
+  --color-muted: #6c757d;     /* gris medio texto secundario */
+}
+
+/* ===== Estilos globales ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark);
+  margin-top: 0;
+}
+
+p {
+  color: var(--color-muted);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Botones ===== */
+button, .btn, .cta-primary {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-primary {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  color: white !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.cta-secondary {
+  background: transparent;
+  border: 1px solid var(--color-muted);
+  color: var(--color-dark);
+}
+
+.cta-secondary:hover {
+  background-color: var(--color-muted);
+  color: white;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin-right: 20px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+/* ===== Hero Section ===== */
+#hero {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(42,157,143,0.08), rgba(231,111,81,0.04));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#hero .hero-container {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--color-dark);
+}
+
+#hero p {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  margin-bottom: 25px;
+}
+
+#hero .hero-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Responsive hero */
+@media (max-width: 768px) {
+  #hero .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #hero .hero-image {
+    order: -1;
+  }
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* ===== Otros ===== */
+section {
+  padding: 60px 20px;
+}
+/* ===== PALETA DE COLORES SBELTUS ===== */
+:root {
+  --color-primary: #4CAF50;   /* Verde confianza */
+  --color-secondary: #FF7043; /* Coral energía */
+  --color-accent: #009688;    /* Azul verdoso */
+  --color-bg: #F9FAFB;        /* Fondo claro */
+  --color-text: #212121;      /* Texto principal */
+  --color-muted: #9E9E9E;     /* Texto secundario */
+}
+
+/* Fondo y texto base */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Titulares */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary);
+}
+
+/* Enlaces */
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Botones principales */
+.btn,
+button,
+input[type="submit"] {
+  background-color: var(--color-secondary);
+  color: #fff;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--color-accent);
+}
+
+/* Textos secundarios (ej. descripciones) */
+.text-muted {
+  color: var(--color-muted);
+}
+/* ===== LOGO ===== */
+header {
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  height: 60px; /* Ajusta según el tamaño real de tu logo */
+  width: auto;
+}
+/* ===== LOGO ===== */
+header {
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  height: 60px; /* Ajusta según el tamaño real de tu logo */
+  width: auto;
+}
