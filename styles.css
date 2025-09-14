@@ -536,6 +536,6 @@ header {
 }
 
 .logo img 
-  height: 90px; /* Ajusta según el tamaño real de tu logo */
+  height: 80px; /* Ajusta según el tamaño real de tu logo */
   width: auto;
 }
