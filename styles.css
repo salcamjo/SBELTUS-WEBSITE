@@ -535,7 +535,7 @@ header {
   padding: 1rem 2rem;
 }
 
-.logo img 
+.logo img {
   height: 80px; /* Ajusta según el tamaño real de tu logo */
   width: auto;
 }
