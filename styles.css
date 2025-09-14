@@ -535,19 +535,7 @@ header {
   padding: 1rem 2rem;
 }
 
-.logo img {
-  height: 60px; /* Ajusta según el tamaño real de tu logo */
-  width: auto;
-}
-/* ===== LOGO ===== */
-header {
-  display: flex;
-  justify-content: space-between; /* logo a la izquierda, menú a la derecha */
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-.logo img {
-  height: 60px; /* Ajusta según el tamaño real de tu logo */
+.logo img 
+  height: 100px; /* Ajusta según el tamaño real de tu logo */
   width: auto;
 }
