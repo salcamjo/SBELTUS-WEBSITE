@@ -81,11 +81,14 @@
 }
 .header a { color: white; margin: 0 0.5em; text-decoration: none; }
 .hero {
-  background: url('images/hero.jpg') center/cover no-repeat;
-  color: white;
+  background: #f9fdfb; /* color claro de fondo */
+  color: #333;
   padding: 10em 2em;
   text-align: center;
 }
+
+
+
 section { padding: 4em 2em; }
 footer {
   background: #2b6777;
