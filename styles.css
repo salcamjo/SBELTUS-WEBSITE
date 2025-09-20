@@ -585,4 +585,8 @@ header {
 .hero h1 {
   margin-top: -40px !important;
 }
+.hero h1 {
+  position: relative;
+  top: -40px;
+}
 
