@@ -603,4 +603,17 @@ header {
   color: #555;          /* gris medio, buen contraste */
   margin-top: 12px;     /* espacio entre título y texto */
 }
+.hero {
+  text-align: center;
+}
+.hero h1 {
+  margin-bottom: 15px;  /* da aire entre el título y el párrafo */
+}
+
+.hero-subtext {
+  margin-top: 10px;   /* espacio entre H1 y el texto */
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+}
 
