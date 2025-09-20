@@ -542,3 +542,30 @@ header {
   height: 100px !important;
   width: auto !important;
 }
+/* Frase centrada en el header */
+.header .tagline {
+  text-align: center;
+  font-size: 1.2rem;  /* ajusta el tamaño según tu preferencia */
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333; /* gris oscuro para contraste */
+}
+
+/* Menú debajo de la frase */
+.header .nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espacio entre los links */
+  margin-top: 5px;
+}
+
+.header .nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header .nav a:hover {
+  color: #007BFF; /* azul al pasar el mouse */
+}
