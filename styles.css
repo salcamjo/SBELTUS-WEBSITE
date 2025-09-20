@@ -589,4 +589,8 @@ header {
   position: relative;
   top: -40px;
 }
+.hero h1 {
+  position: relative;
+  top: -60px;
+}
 
