@@ -582,4 +582,7 @@ header {
 #hero h1 {
   margin-top: -40px; /* súbelo 40px */
 }
+.hero h1 {
+  margin-top: -40px !important;
+}
 
