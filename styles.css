@@ -569,3 +569,9 @@ header {
 .header .nav a:hover {
   color: #007BFF; /* azul al pasar el mouse */
 }
+.tagline p {
+  font-size: 1.4rem;   /* aumenta el tamaño del texto */
+  font-style: italic;  /* cursiva */
+  font-weight: 600;    /* un poco más grueso para resaltar */
+  color: #2c3e50;      /* tono gris oscuro elegante */
+}
