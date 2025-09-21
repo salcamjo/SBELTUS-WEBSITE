@@ -686,3 +686,6 @@ header {
 header {
   height: 150px; /* ajusta este valor según lo que quieras */
 }
+html {
+  scroll-padding-top: 120px; /* ajusta según la altura real de tu header */
+}
