@@ -652,7 +652,7 @@ header {
   color: #333; /* puedes ajustar este color si quieres que contraste más */
 }
 .hero {
-  margin-top: 80px; /* puedes ajustar este valor */
+  margin-top: 100px; /* puedes ajustar este valor */
 }
 .hero h1 {
   max-width: 1200px; /* aumenta el espacio disponible */
