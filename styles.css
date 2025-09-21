@@ -665,3 +665,21 @@ header {
   white-space: nowrap;     /* evita que se parta en varias líneas */
   text-align: center;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;          /* altura fija del header */
+  z-index: 1000;         /* asegura que quede arriba */
+  background-color: white; /* evita que el contenido se vea detrás */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* opcional: sombra para destacar */
+}
+
+.hero {
+  padding-top: 100px;   /* un poco más que la altura del header */
+}
