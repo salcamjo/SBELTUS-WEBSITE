@@ -660,3 +660,8 @@ header {
   text-align: center;
   line-height: 1.2;  /* mantiene buena altura entre líneas */
 }
+.hero h1 {
+  display: inline-block;   /* evita que el texto se ajuste al 100% del ancho */
+  white-space: nowrap;     /* evita que se parta en varias líneas */
+  text-align: center;
+}
