@@ -651,3 +651,6 @@ header {
   font-size: 1.2rem;
   color: #333; /* puedes ajustar este color si quieres que contraste más */
 }
+.hero {
+  margin-top: 40px; /* puedes ajustar este valor */
+}
