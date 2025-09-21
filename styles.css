@@ -616,4 +616,18 @@ header {
   font-style: italic;
   color: #333;
 }
+/* Hero: mantener H1 centrado y mostrar el párrafo complementario sin alterar layout */
+#hero h1 {
+  text-align: center;
+}
+
+.hero-subtext {
+  display: block;
+  margin: 12px auto 0;   /* separa un poco del H1, y centra el párrafo */
+  max-width: 720px;      /* evita que el texto se haga muy ancho */
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: #333;
+}
 
