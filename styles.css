@@ -655,7 +655,7 @@ header {
   margin-top: 80px; /* puedes ajustar este valor */
 }
 .hero h1 {
-  max-width: 1000px; /* aumenta el espacio disponible */
+  max-width: 1100px; /* aumenta el espacio disponible */
   margin: 0 auto;    /* lo mantiene centrado */
   text-align: center;
   line-height: 1.2;  /* mantiene buena altura entre líneas */
