@@ -637,7 +637,6 @@ header {
 .hero-content h1,
 .hero-content p {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  max-width: 800px; /* opcional, para que no se vea demasiado largo en pantallas grandes */
 }
-
