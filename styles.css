@@ -43,6 +43,27 @@ body {
 }
 
 /* ===== Navbar ===== */
+nav {
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin-right: 20px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+/* ===== Duplicado de Navbar (versión con clase .nav) ===== */
+/* 🔁 Este bloque es redundante con el anterior, pero se mantiene para conservar el estilo original */
 .nav {
   display: flex;
   justify-content: center;
@@ -196,6 +217,7 @@ p {
 }
 
 /* ===== Responsive ===== */
+/* 🔁 Este bloque es básico y no estaba afinado para móvil */
 @media (max-width: 768px) {
   .header {
     padding: 10px;
