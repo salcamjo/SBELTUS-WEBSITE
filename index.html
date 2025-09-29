@@ -22,6 +22,7 @@
 
   <!-- Menú de navegación -->
   <nav class="nav">
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
     <a href="#hero" data-i18n="menu_home">Inicio</a>
     <a href="#about" data-i18n="menu_about">Acerca de mí</a>
     <a href="#results" data-i18n="menu_results">Resultados</a>
@@ -37,6 +38,40 @@
   </div>
 </header>
 
+<section id="about" class="about-section" style="margin-top:130px; padding:20px; background-color:#f9f9f9;">
+  <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:flex-start; gap:20px;">
+    
+<!-- Imagen personal -->
+<div class="about-image">
+  <img src="images/fernando.jpg" alt="Foto de Fernando - SBELTUS">
+</div>
+
+
+    <!-- Texto bilingüe -->
+    <div style="flex:2 1 500px;">
+      <!-- Español -->
+      <div data-lang="es">
+        <h2>🌱 Acerca de mí</h2>
+        <p>Soy una persona mayor que, como muchas otras, durante años no llevó un estilo de vida saludable en cuanto a alimentación y actividad física. No soy profesional del sector salud: soy ingeniero.</p>
+        <p>Sin embargo, con disciplina y constancia, logré transformar mis hábitos y reducir mi porcentaje de grasa corporal sin perder masa muscular, siguiendo una dieta hipocalórica y un proceso lento pero seguro. Descubrí que no existen atajos ni milagros: lo importante es la paciencia y la constancia.</p>
+        <p>Hoy comparto mi experiencia personal como una forma de inspiración y apoyo para quienes buscan mejorar su bienestar. Mi mensaje es claro: cada persona debe consultar siempre con su médico, nutricionista o especialista de confianza antes de iniciar cualquier proceso de cambio.</p>
+      </div>
+
+      <!-- Inglés -->
+      <div data-lang="en" style="display:none;">
+        <h2>🌱 About me</h2>
+        <p>I am an older adult who, like many others, did not always follow a healthy lifestyle regarding nutrition and physical activity. I am not a health professional: my background is in engineering.</p>
+        <p>However, through discipline and consistency, I managed to transform my habits and reduce my body fat percentage without losing muscle mass, following a hypocaloric diet and a slow but steady process. I learned that there are no shortcuts or miracles: patience and perseverance are key.</p>
+        <p>Today, I share my personal experience as inspiration and support for those seeking to improve their well-being. My message is clear: everyone should always consult their doctor, nutritionist, or healthcare specialist before starting any lifestyle change.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
   <section id="hero" class="hero">
  <div class="hero-content">
     <h1 data-i18n="hero_title">Transforma tu vida después de los 50</h1>
@@ -48,12 +83,7 @@
  </div>
 </section>
 
-  <section id="about" class="about">
-    <h2 data-i18n="about_title">Acerca de mí</h2>
-        <p data-i18n="about_text">Soy ingeniero agrícola y comparto mi experiencia personal en salud y control de peso.</p>
-  </section>
-
-  <section id="results" class="results">
+    <section id="results" class="results">
     <h2 data-i18n="results_title">Resultados</h2>
         <p data-i18n="results_text">Ejemplo de los cambios logrados con constancia y disciplina.</p>
   </section>
