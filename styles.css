@@ -893,4 +893,125 @@ html {
     max-width: 150px; /* más pequeña en celulares */
   }
 }
+/* Estilo del menú hamburguesa en móvil */
+.nav {
+  position: relative;
+  z-index: 1000; /* para que el menú quede siempre encima */
+}
+
+/* Cuando el menú está abierto (modo móvil) */
+.nav.open, .menu-toggle.open + .nav {
+  background-color: #2d6a4f; /* este verde lo puedes cambiar según tu header */
+}
+
+/* Estilo de los links en móvil con fondo */
+.nav a {
+  display: block;
+  padding: 12px 16px;
+  color: white; /* para que contraste sobre fondo oscuro */
+}
+
+/* Ajustes para asegurar que no tape la imagen */
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .about-section {
+    margin-top: 60px; /* empuja el contenido hacia abajo para que el menú no lo tape */
+  }
+}
+/* Ajuste para que la sección About no quede pegada al header en móviles */
+@media (max-width: 768px) {
+  #about {
+    margin-top: 100px; /* puedes bajar a 80px si queda demasiado espacio */
+  }
+}
+/* --- Ajuste general para imágenes --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* centra la imagen */
+}
+
+/* --- Ajuste para móviles --- */
+@media (max-width: 768px) {
+  #about {
+    margin-top: 15vh; /* espacio flexible según la pantalla */
+  }
+}
+/* 🔹 Ajustes generales para todas las imágenes de la web */
+img {
+  max-width: 100%;   /* nunca más grande que el contenedor */
+  height: auto;      /* mantiene proporción */
+  display: block;    /* evita que quede espacio raro debajo */
+  margin: 0 auto;    /* centra la imagen */
+  border-radius: 8px; /* opcional: bordes suavizados */
+}
+
+/* 🔹 Ajustes según el tamaño de pantalla */
+@media (max-width: 400px) {
+  img {
+    width: 95%;   /* casi todo el ancho en pantallas muy chicas */
+  }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+  img {
+    width: 80%;   /* un poco más pequeña en pantallas medianas */
+  }
+}
+
+@media (min-width: 769px) {
+  img {
+    width: 60%;   /* más pequeña y centrada en pantallas grandes */
+  }
+}
+/* 🔹 Regla general: todas las imágenes se adaptan al ancho del contenedor */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 🔹 Ajustes para móviles (pantallas de hasta 768px de ancho) */
+@media (max-width: 768px) {
+  /* Asegurar espacio debajo del header fijo */
+  #about {
+    margin-top: 100px; /* puedes aumentar si aún queda muy pegado */
+    padding: 15px;
+  }
+
+  /* Contenedor: apilar en columna, no en fila */
+  #about > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Imagen personal más pequeña y centrada */
+  #about img {
+    max-width: 200px; /* reduce el tamaño en móviles */
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+
+  /* Texto con ancho completo */
+  #about .about-text {
+    flex: 1 1 100%;
+    text-align: justify;
+  }
+}
+/* ==== TEST CSS ==== */
+#about img {
+  border: 5px solid red !important;
+}
+/* ==== TEST CSS ==== */
+#about img {
+  border: 5px solid red !important;
+}
 
