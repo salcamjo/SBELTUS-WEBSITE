@@ -1006,12 +1006,4 @@ img {
     text-align: justify;
   }
 }
-/* ==== TEST CSS ==== */
-#about img {
-  border: 5px solid red !important;
-}
-/* ==== TEST CSS ==== */
-#about img {
-  border: 5px solid red !important;
-}
 
