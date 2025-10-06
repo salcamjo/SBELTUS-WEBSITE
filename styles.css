@@ -1006,4 +1006,20 @@ img {
     text-align: justify;
   }
 }
+/* ====== Estilo uniforme para los títulos de todas las secciones ====== */
+section h2 {
+  color: #2e8b57; /* Verde armónico SBELTUS */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+section h2::before {
+  content: "🌱";
+  font-size: 1.3em;
+}
 
