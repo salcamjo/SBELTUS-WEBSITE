@@ -1267,3 +1267,10 @@ section + section {
   font-size: 2rem;
   color: #4CAF50; /* tono verde natural */
 }
+.inicio-logo {
+  height: auto;          /* mantiene proporciones naturales */
+  width: auto;           /* evita que se estire */
+  max-width: 130px;      /* controla tamaño máximo horizontal */
+  display: block;
+  margin: 10px auto 0;   /* centrado */
+}
