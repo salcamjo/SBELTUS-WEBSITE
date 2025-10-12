@@ -1236,14 +1236,15 @@ section + section {
   gap: 15px;           /* espacio entre iconos y logo */
   margin-top: 15px;    /* separación respecto al texto superior */
 }
-
 .hero-logos img {
-  height: 50px;        /* tamaño base */
+  height: auto;              /* mantiene proporciones naturales */
+  width: auto;               /* evita estiramiento */
+  max-height: 70px;          /* límite visual, ajustable */
   transition: transform 0.3s ease;
 }
 
 .hero-logos img.logo-centro {
-  height: 70px;        /* logo un poco más grande */
+  max-height: 90px;          /* un poco más grande, pero proporcional */
 }
 
 .hero-logos img:hover {
