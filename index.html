@@ -38,6 +38,16 @@
     <button onclick="setLanguage('en')">EN</button>
   </div>
 </header>
+  <section id="hero" class="hero">
+ <div class="hero-content">
+    <h1 data-i18n="hero_title">Transforma tu vida después de los 50</h1>
+ <p class="hero-subtext">
+  Recupera tu energía, fortalece tu bienestar y descubre que nunca es tarde para sentirte en plenitud. 
+  Con un método simple y prudente podrás cuidar tu peso y tu salud después de los 50. 
+  Porque pequeños cambios logran grandes resultados y hoy puedes comenzar tu camino hacia una vida más ligera y vital.
+</p>
+ </div>
+</section>
 
 <section id="about" class="about-section" style="margin-top:130px; padding:20px; background-color:#f9f9f9;">
   <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:flex-start; gap:20px;">
@@ -73,20 +83,10 @@
 
 
 
-  <section id="hero" class="hero">
- <div class="hero-content">
-    <h1 data-i18n="hero_title">Transforma tu vida después de los 50</h1>
- <p class="hero-subtext">
-  Recupera tu energía, fortalece tu bienestar y descubre que nunca es tarde para sentirte en plenitud. 
-  Con un método simple y prudente podrás cuidar tu peso y tu salud después de los 50. 
-  Porque pequeños cambios logran grandes resultados y hoy puedes comenzar tu camino hacia una vida más ligera y vital.
-</p>
- </div>
-</section>
 
  <!-- SECCIÓN RESULTADOS -->
 
- <section id="results" style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+<section id="results" class="results-section">
   <h2>Resultados</h2>
 
   <!-- Texto introductorio original de Fernando -->
@@ -183,5 +183,33 @@
     <a href="pages/privacy.html">Privacidad</a> |
     <a href="pages/terms.html">Términos</a>
   </footer>
+<!-- Script del menú responsive -->
+<script>
+  // --- Menú responsive ---
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show-menu');
+    });
+  }
+
+  // --- Desactivar fetch cuando se abre localmente ---
+  if (window.location.protocol === 'file:') {
+    console.warn("Modo local: omitiendo carga de scripts externos.");
+  } else {
+    // Aquí solo se ejecutará en Netlify u otro servidor
+    try {
+      fetch('i18n/es.json')
+        .then(r => r.json())
+        .then(d => console.log("Traducciones cargadas:", d))
+        .catch(() => console.warn("No se pudo cargar i18n/es.json"));
+    } catch (e) {
+      console.warn("Error controlado:", e);
+    }
+  }
+</script>
+
 </body>
 </html>

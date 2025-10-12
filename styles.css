@@ -1023,3 +1023,209 @@ section h2::before {
   font-size: 1.3em;
 }
 
+body {
+  color: #0d0d0d !important;
+  font-weight: 500 !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.results-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+/* === Estilos para la sección INICIO (hero) === */
+.hero {
+  background: linear-gradient(to right, #f7f7f7, #ffffff); /* fondo suave */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* === Estilo uniforme para todas las secciones principales === */
+section {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #2f2f2f; /* tono intermedio, ni muy oscuro ni claro */
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Ajuste opcional para títulos dentro de cada sección */
+section h2, 
+section h3 {
+  font-weight: 600;
+  color: #2a2a2a;
+  font-style: italic;
+}
+/* Uniformar tono de texto en todas las secciones */
+.hero-content h1,
+.hero-content p,
+.about-section p,
+.results-section p {
+  color: #555 !important; /* gris armónico más suave */
+  font-style: italic;
+  font-weight: 500;
+}
+/* Destacar el título principal del inicio */
+.hero-content h1 {
+  color: #333 !important; /* un poco más oscuro que el texto general */
+  font-weight: 600;       /* más énfasis visual */
+  font-style: italic;     /* mantiene coherencia con el resto */
+}
+
+/* === Estilo base uniforme para secciones PLANES, RECURSOS y CONTACTO === */
+#pricing,
+#resources,
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #fafafa; /* fondo suave para contraste */
+  text-align: left;
+  color: #555; /* gris armónico uniforme */
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.8;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Títulos dentro de esas secciones */
+#pricing h2,
+#resources h2,
+#contact h2 {
+  color: #2a2a2a;  /* un poco más oscuro para destacar */
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Decorativo: mismo ícono para coherencia visual */
+#pricing h2::before,
+#resources h2::before,
+#contact h2::before {
+  content: "🌱";
+  font-size: 1.2em;
+}
+
+/* Asegurar espaciado visual entre secciones */
+section + section {
+  margin-top: 60px;
+}
+/* === MENÚ RESPONSIVE HAMBURGUESA === */
+
+/* Oculta el botón en pantallas grandes */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Ajustes del contenedor del menú */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* Estilo de enlaces del menú */
+.nav a {
+  color: #2a2a2a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.nav a:hover {
+  color: #2e8b57; /* verde armónico SBELTUS */
+}
+
+/* === Vista móvil === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* muestra el botón ☰ */
+    position: relative;
+    z-index: 1001;
+    margin-left: auto;
+  }
+
+  .nav {
+    display: none; /* oculta el menú inicialmente */
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+  }
+
+  .nav.active {
+    display: flex; /* se muestra solo cuando se pulsa ☰ */
+  }
+
+  .nav a {
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+}
+/* === Menú responsive === */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Botón de menú solo visible en pantallas pequeñas */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav.show-menu {
+    display: flex;
+  }
+}
