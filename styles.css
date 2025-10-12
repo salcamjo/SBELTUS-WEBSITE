@@ -1263,3 +1263,7 @@ section + section {
     height: 50px;
   }
 }
+.icono-arbol {
+  font-size: 2rem;
+  color: #4CAF50; /* tono verde natural */
+}
