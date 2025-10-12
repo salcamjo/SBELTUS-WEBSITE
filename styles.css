@@ -1234,7 +1234,7 @@ section + section {
   justify-content: center;
   align-items: center;
   gap: 15px;           /* espacio entre iconos y logo */
-  margin-top: 15px;    /* separación respecto al texto superior */
+  margin-top: 40px;    /* separación respecto al texto superior */
 }
 .hero-logos img {
   height: auto;              /* mantiene proporciones naturales */
