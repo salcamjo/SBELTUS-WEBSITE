@@ -1244,7 +1244,7 @@ section + section {
 }
 
 .hero-logos img.logo-centro {
-  max-height: 90px;          /* un poco más grande, pero proporcional */
+  max-height: 110px;          /* un poco más grande, pero proporcional */
 }
 
 .hero-logos img:hover {
