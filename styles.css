@@ -1275,3 +1275,42 @@ section + section {
   display: block;
   margin: 10px auto 0;   /* centrado */
 }
+/* === AJUSTE PUNTUAL: BLOQUE HERO-LOGOS SIN AFECTAR EL TÍTULO === */
+.hero-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  top: 40px; /* 🔹 baja visualmente el bloque sin empujar el resto */
+  z-index: 2;
+}
+
+.hero-logos img {
+  max-height: 70px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.hero-logos img.logo-centro {
+  max-height: 120px;
+}
+
+/* Animación suave del logo central */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-logos img.logo-centro {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
