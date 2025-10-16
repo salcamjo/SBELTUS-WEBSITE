@@ -390,7 +390,7 @@ button, .btn, .cta-primary {
 
 /* ===== Navbar ===== */
 nav {
-  background-color: white;
+   background-color: #e0e0e0 !important;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   padding: 12px 20px;
   position: sticky;
@@ -401,9 +401,8 @@ nav {
 nav a {
   margin-right: 20px;
   font-weight: 500;
-  color: var(--color-dark);
+  color: #2E7D32 !important;
 }
-
 nav a:hover {
   color: var(--color-primary);
 }
@@ -1448,4 +1447,11 @@ section p {
     padding: 60px 16px;
     font-size: 1rem;
   }
+}
+/* ================= Títulos secciones Recursos, Planes, Contacto ================= */
+#recursos h2,
+#planes h2,
+#contacto h2 {
+    color: #2e7d32 !important; /* Forzamos que este verde se aplique */
+}
 }
