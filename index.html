@@ -166,44 +166,34 @@
       <li><a href="https://www.who.int/" target="_blank">OMS - Organización Mundial de la Salud</a></li>
     </ul>
   </section>
-
-<!-- ========== SECCIÓN PLANES (REEMPLAZA EL CONTENIDO EXISTENTE) ========== -->
+<!-- -----------------------------------------------------------
+     BLOQUE HTML - SECCIÓN PLAN ÚNICO (PLAN SBELTUS)
+     -----------------------------------------------------------
+     Sustituye al bloque anterior de PayPal y muestra
+     la información completa del plan con su botón.
+----------------------------------------------------------- -->
 <section id="pricing" class="pricing">
-  <h2 style="color: #2E7D32">Nuestro Plan</h2>
+  <h2 style="color: #2E7D32;">Plan SBELTUS</h2>
+  <p class="plan-description">
+    Incluye acompañamiento integral, seguimiento continuo y acceso
+    a recursos personalizados para transformar tu bienestar después de los 50.
+  </p>
 
-  <div class="plan">
-    <h3>Plan SBELTUS</h3>
-    <p>Programa integral de reducción de peso y bienestar después de los 50.</p>
-    <p class="precio">$49.00</p>
-
-    <!-- BOTÓN DE PAGO PAYPAL (DEMO) -->
-    <div id="paypal-button-container"></div>
+  <div class="plan-card">
+    <h3>Plan Integral</h3>
+    <ul class="plan-features">
+      <li>✅ Asesoría permanente 24h vía WhatsApp</li>
+      <li>✅ Guía alimenticia personalizada</li>
+      <li>✅ Acompañamiento en el desarrollo del plan</li>
+      <li>✅ Control y registro de mediciones corporales</li>
+      <li>✅ Acceso a recursos exclusivos SBELTUS</li>
+      <li>✅ Actualizaciones y seguimiento continuo</li>
+    </ul>
+    <div class="plan-price">$50</div>
+    <button class="plan-btn" id="paypal-button">Iniciar ahora</button>
   </div>
-
-  <!-- SDK PAYPAL DEMO -->
-  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
-  <script>
-    paypal.Buttons({
-      style: {
-        layout: 'vertical',
-        color: 'gold',
-        shape: 'rect',
-        label: 'paypal'
-      },
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{ amount: { value: '49.00' } }]
-        });
-      },
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Gracias, ' + details.payer.name.given_name + '. Tu pago de prueba fue procesado.');
-        });
-      }
-    }).render('#paypal-button-container');
-  </script>
 </section>
-<!-- ========== FIN SECCIÓN PLANES ========== -->
+
 
 
   <section id="contact" class="contact">
@@ -252,6 +242,42 @@
       console.warn("Error controlado:", e);
     }
   }
+</script>
+<!-- -----------------------------------------------------------
+     BLOQUE SCRIPT - INTEGRACIÓN DEMO PAYPAL (BOTÓN PLAN SBELTUS)
+     -----------------------------------------------------------
+     Este bloque activa el botón “Iniciar ahora” del plan SBELTUS.
+     Es una integración de demostración: permite simular el pago
+     sin requerir una cuenta de PayPal real todavía.
+     Inserta este bloque justo ANTES de la etiqueta </body> en tu
+     archivo index.html.
+----------------------------------------------------------- -->
+<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+<script>
+  paypal.Buttons({
+    style: {
+      shape: 'pill',
+      color: 'gold',
+      layout: 'vertical',
+      label: 'paypal',
+    },
+    createOrder: function (data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '50.00' // Precio del Plan SBELTUS
+          },
+          description: 'Plan Integral SBELTUS'
+        }]
+      });
+    },
+    onApprove: function (data, actions) {
+      return actions.order.capture().then(function (details) {
+        alert('Gracias, ' + details.payer.name.given_name + 
+              '! Tu compra del Plan SBELTUS ha sido procesada correctamente.');
+      });
+    }
+  }).render('#paypal-button');
 </script>
 
 </body>
