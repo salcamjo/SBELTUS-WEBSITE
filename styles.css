@@ -1454,4 +1454,52 @@ section p {
 #contacto h2 {
     color: #2e7d32 !important; /* Forzamos que este verde se aplique */
 }
+/* -------------------------------------------------
+   BLOQUE CSS: SECCIÓN PLANES (INTEGRACIÓN PAYPAL)
+   -------------------------------------------------
+   📌 Propósito:
+   Controlar el aspecto visual de la sección “Planes”
+   que incluye el botón de pago PayPal.
+   Mantiene intactos los estilos del título existente
+   y aplica formato limpio al contenedor y al botón.
+   📍 Ubicación:
+   Pegar al final del archivo style.css
+   ------------------------------------------------- */
+
+.pricing {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #f9fdfb;
 }
+
+.pricing h2 {
+  margin-bottom: 1.5rem;
+}
+
+.plan {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.plan .precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00916e;
+  margin: 1rem 0;
+}
+
+/* --- BOTÓN PAYPAL --- */
+#paypal-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* -------------------------------------------------
+   FIN BLOQUE CSS: SECCIÓN PLANES (INTEGRACIÓN PAYPAL)
+   ------------------------------------------------- */
+

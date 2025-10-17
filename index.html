@@ -167,14 +167,44 @@
     </ul>
   </section>
 
-  <section id="pricing" class="pricing">
-   <h2 style="color: #2E7D32">
-    Planes
-</h2>
-    <div class="plan">Básico - $20</div>
-    <div class="plan">Avanzado - $50</div>
-    <div class="plan">Premium - $100</div>
-  </section>
+<!-- ========== SECCIÓN PLANES (REEMPLAZA EL CONTENIDO EXISTENTE) ========== -->
+<section id="pricing" class="pricing">
+  <h2 style="color: #2E7D32">Nuestro Plan</h2>
+
+  <div class="plan">
+    <h3>Plan SBELTUS</h3>
+    <p>Programa integral de reducción de peso y bienestar después de los 50.</p>
+    <p class="precio">$49.00</p>
+
+    <!-- BOTÓN DE PAGO PAYPAL (DEMO) -->
+    <div id="paypal-button-container"></div>
+  </div>
+
+  <!-- SDK PAYPAL DEMO -->
+  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+  <script>
+    paypal.Buttons({
+      style: {
+        layout: 'vertical',
+        color: 'gold',
+        shape: 'rect',
+        label: 'paypal'
+      },
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{ amount: { value: '49.00' } }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Gracias, ' + details.payer.name.given_name + '. Tu pago de prueba fue procesado.');
+        });
+      }
+    }).render('#paypal-button-container');
+  </script>
+</section>
+<!-- ========== FIN SECCIÓN PLANES ========== -->
+
 
   <section id="contact" class="contact">
    <h2 style="color: #2E7D32">
