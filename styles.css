@@ -1543,3 +1543,37 @@ section p {
   font-style: italic !important;
   color: #333 !important;
 }
+/* ---------------------------------------------
+   🔧 BLOQUE CSS: Control del menú hamburguesa (Responsive)
+   Este bloque asegura que el menú permanezca oculto en móviles
+   y solo se despliegue al presionar el botón ☰.
+   📍 Inserta este bloque AL FINAL de tu archivo CSS.
+--------------------------------------------- */
+.nav a {
+  display: none;
+}
+
+.menu-toggle {
+  display: block;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #2E7D32;
+  cursor: pointer;
+}
+
+.nav.active a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav a {
+    display: inline-block;
+  }
+}
