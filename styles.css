@@ -1502,4 +1502,44 @@ section p {
 /* -------------------------------------------------
    FIN BLOQUE CSS: SECCIÓN PLANES (INTEGRACIÓN PAYPAL)
    ------------------------------------------------- */
+/* ---------------------------------------------
+   🔹 Estilos del botón "Enviar" - Sección Contacto
+   🔹 Unifica el color del botón con el verde principal del sitio (#2E7D32)
+--------------------------------------------- */
 
+.contact button {
+  background-color: #2E7D32;  /* Verde principal SBELTUS */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #256428;  /* Versión más oscura para hover */
+}
+/* -------------------------------------------------
+🔹 BLOQUE CSS: Cursiva solo en el texto de ejemplo (placeholders)
+   Mantiene el texto que escribe el usuario en normal,
+   y muestra los placeholders en cursiva.
+--------------------------------------------------- */
+
+.contact input,
+.contact textarea {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  color: #333 !important;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: #333 !important;
+}
