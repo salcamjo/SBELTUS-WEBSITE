@@ -1543,3 +1543,17 @@ section p {
   font-style: italic !important;
   color: #333 !important;
 }
+/* -------------------------------------------------
+   BLOQUE CSS: Corrección de visualización del menú móvil
+   📌 Objetivo:
+   - Que el menú hamburguesa (☰) NO aparezca desplegado al cargar en modo vertical.
+   - Que solo se despliegue al presionar las tres líneas.
+   - No altera colores, fuentes ni estructura general.
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+  .nav.show-menu {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+/* ------------------------------------------------- */
