@@ -1573,46 +1573,54 @@ section p {
   }
 }
 /* -------------------------------------------------
-   🔹 CORRECCIÓN: Mostrar correctamente el botón hamburguesa en móviles
-   🔹 Mantiene colores, oculta la franja gris y asegura visibilidad
+   🔹 Versión limpia y estable del botón hamburguesa (☰)
+   🔹 Visible solo en móviles, sin duplicaciones ni parches
+   🔹 Mantiene colores originales SBELTUS
 --------------------------------------------------- */
+
 .menu-toggle {
   display: none;
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #2e7d32; /* verde armónico del sitio */
+  color: #2e7d32; /* verde armónico SBELTUS */
   position: absolute;
   top: 18px;
-  right: 20px;
-  z-index: 1001;
+  right: 22px;
+  z-index: 2000;
 }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
+
+
+
 
 /* Solo visible en pantallas pequeñas */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block !important;
-  }
-}
-/* -------------------------------------------------
-   🔹 Recuperar visibilidad del botón hamburguesa (☰)
-   🔹 Corrige conflicto de estilos sin duplicar código
---------------------------------------------------- */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block !important;
-    position: absolute !important;
-    top: 18px !important;
-    right: 22px !important;
-    font-size: 2rem !important;
-    color: #2e7d32 !important; /* verde armónico SBELTUS */
-    background: none !important;
-    border: none !important;
-    z-index: 2000 !important;
-  }
-
-  .nav {
-    margin-top: 70px !important; /* evita superposición */
   }
 }
