@@ -1572,3 +1572,26 @@ section p {
     pointer-events: auto;
   }
 }
+/* -------------------------------------------------
+   🔹 CORRECCIÓN: Mostrar correctamente el botón hamburguesa en móviles
+   🔹 Mantiene colores, oculta la franja gris y asegura visibilidad
+--------------------------------------------------- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #2e7d32; /* verde armónico del sitio */
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* Solo visible en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+  }
+}
