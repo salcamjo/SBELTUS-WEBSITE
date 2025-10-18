@@ -30,3 +30,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+/* -------------------------------------------------
+   🔹 SCRIPT: Control seguro del menú hamburguesa
+   🔹 Evita franja superior y mantiene colores intactos
+--------------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", function() {
+      nav.classList.toggle("active");
+    });
+
+    // Cierra el menú al hacer clic en un enlace
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+    });
+  }
+});

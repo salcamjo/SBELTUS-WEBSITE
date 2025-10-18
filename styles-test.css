@@ -1543,3 +1543,32 @@ section p {
   font-style: italic !important;
   color: #333 !important;
 }
+/* -------------------------------------------------
+   🔹 CORRECCIÓN: Eliminar franja superior al ocultar menú móvil
+   🔹 Mantiene los colores actuales intactos
+--------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute !important;
+    top: 80px !important; /* justo debajo del header */
+    left: 0;
+    right: 0;
+    background-color: white; /* mismo color del header */
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* cuando está oculto (sin clase .active) */
+  .nav:not(.active) {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* cuando está desplegado */
+  .nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
