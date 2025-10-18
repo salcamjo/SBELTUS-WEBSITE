@@ -1616,11 +1616,33 @@ section p {
 }
 
 
-
-
 /* Solo visible en pantallas pequeñas */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block !important;
+  }
+}
+/* -------------------------------------------------
+   🔹 BLOQUE DEFINITIVO: Mostrar menú al presionar ☰
+   🔹 Asegura compatibilidad con la clase .active del script
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  .nav {
+    display: none !important;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 0 0 8px 8px;
+  }
+
+  /* ✅ cuando se activa, el menú se muestra */
+  .nav.active {
+    display: flex !important;
   }
 }
