@@ -1595,3 +1595,24 @@ section p {
     display: block !important;
   }
 }
+/* -------------------------------------------------
+   🔹 Recuperar visibilidad del botón hamburguesa (☰)
+   🔹 Corrige conflicto de estilos sin duplicar código
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+    position: absolute !important;
+    top: 18px !important;
+    right: 22px !important;
+    font-size: 2rem !important;
+    color: #2e7d32 !important; /* verde armónico SBELTUS */
+    background: none !important;
+    border: none !important;
+    z-index: 2000 !important;
+  }
+
+  .nav {
+    margin-top: 70px !important; /* evita superposición */
+  }
+}
