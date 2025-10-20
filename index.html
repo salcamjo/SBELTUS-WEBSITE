@@ -20,10 +20,10 @@
   <p>Salud de manera natural y sostenible</p>
 </div>
 
-<button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
   <!-- Menú de navegación -->
   <nav class="nav">
+  <button class="menu-toggle" aria-label="Abrir menú">☰</button>
     <a href="#hero" data-i18n="menu_home">Inicio</a>
     <a href="#about" data-i18n="menu_about">Acerca de mí</a>
     <a href="#results" data-i18n="menu_results">Resultados</a>
@@ -289,6 +289,14 @@
      Este script hace que el botón ☰ muestre/oculte las opciones.
      📍 Inserta este bloque ANTES de la etiqueta </body> del index.html
 --------------------------------------------- -->
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
