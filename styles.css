@@ -1584,3 +1584,31 @@ section p {
     display: block !important;         /* asegura visibilidad del botón */
   }
 }
+/* -------------------------------------------------
+   BLOQUE CSS: Ajuste de textos y contenedores en móvil
+   📌 Objetivo:
+   - Evitar que los textos se salgan del ancho de pantalla.
+   - Reducir ligeramente el tamaño de letra y espaciado en móviles.
+   - Mantener intactos colores, fuentes y estilos generales.
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;               /* reduce tamaño general del texto */
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-x: hidden;            /* evita desplazamiento lateral */
+  }
+
+  .hero-content h1 {
+    font-size: 1.6rem;             /* título principal más compacto */
+  }
+
+  .hero-content p {
+    font-size: 1rem;               /* subtítulo o párrafos del hero */
+    padding: 0 10px;               /* margen interno lateral */
+  }
+
+  section {
+    padding: 40px 15px;            /* reduce márgenes laterales */
+  }
+}
