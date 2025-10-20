@@ -1642,13 +1642,3 @@ section p {
   }
 }
 }
-/* -------------------------------------------------
-   BLOQUE CSS: Desplazamiento neutral para todas las secciones
-   📌 Objetivo:
-   - Evitar que los títulos de las secciones queden tapados por el header.
-   - No altera colores, márgenes ni layout.
-   - Funciona igual en laptop y móvil.
-   ------------------------------------------------- */
-html {
-  scroll-padding-top: 150px; /* valor neutro ≈ altura visual del header */
-}
