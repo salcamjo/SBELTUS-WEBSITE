@@ -1612,3 +1612,32 @@ section p {
     padding: 40px 15px;            /* reduce márgenes laterales */
   }
 }
+/* -------------------------------------------------
+   BLOQUE CSS: Corrección final del ancho en móviles
+   📌 Objetivo:
+   - Asegurar que ningún contenido se salga de la pantalla.
+   - Ajustar el ancho total y centrar correctamente los textos.
+   - Evitar márgenes invisibles que causan desplazamiento lateral.
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+  html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container, .content, .hero-content, section, header, footer {
+    box-sizing: border-box;
+    max-width: 100% !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+}
