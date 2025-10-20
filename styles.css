@@ -1543,3 +1543,22 @@ section p {
   font-style: italic !important;
   color: #333 !important;
 }
+/* -------------------------------------------------
+   BLOQUE CSS: Control estricto del menú en móvil
+   📌 Objetivo:
+   - En pantallas ≤768px el menú NO debe estar visible al cargar.
+   - Solo debe mostrarse al activar el botón (clases .show-menu o .active).
+   - No altera colores, fuentes ni layout fuera del menú.
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+  .nav { 
+    display: none !important;            /* oculto por defecto en móvil */
+  }
+  nav.show-menu,
+  .nav.show-menu,
+  .nav.active {
+    display: flex !important;            /* visible solo al activar */
+    flex-direction: column;
+  }
+}
+/* ------------------------------------------------- */
