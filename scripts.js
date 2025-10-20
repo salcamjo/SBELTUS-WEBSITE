@@ -51,24 +51,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
-/* -------------------------------------------------
-   BLOQUE JS: Desplazamiento forzado exacto a la sección Resultados
-   📌 Objetivo:
-   - Garantizar que "Resultados" se muestre correctamente visible.
-   - Compatible con headers fijos y scroll suave.
-   ------------------------------------------------- */
-document.addEventListener("DOMContentLoaded", function() {
-  const offset = 130; // ajusta este valor según la altura del header
-  const links = document.querySelectorAll('a[href="#resultados"]');
-
-  links.forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      const target = document.getElementById("resultados");
-      if (target) {
-        const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
-    });
-  });
-});
