@@ -1643,18 +1643,12 @@ section p {
 }
 }
 /* -------------------------------------------------
-   BLOQUE CSS: Offset SOLO para la sección “Resultados”
-   📌 Qué hace y para qué sirve:
-   - Evita que el título de #results quede tapado por el header fijo
-   - No toca ninguna otra sección ni el layout general
-   - Funciona con tus reglas actuales (incluido scroll-padding-top)
+   BLOQUE CSS: Desplazamiento neutral para todas las secciones
+   📌 Objetivo:
+   - Evitar que los títulos de las secciones queden tapados por el header.
+   - No altera colores, márgenes ni layout.
+   - Funciona igual en laptop y móvil.
    ------------------------------------------------- */
-#results:target::before {
-  content: "";
-  display: block;
-  height: 130px;      /* ajusta a la altura real que necesites */
-  margin-top: -130px; /* el mismo valor, en negativo */
-  visibility: hidden;
-  pointer-events: none;
+html {
+  scroll-padding-top: 150px; /* valor neutro ≈ altura visual del header */
 }
-
