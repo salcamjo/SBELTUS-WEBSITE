@@ -1641,3 +1641,12 @@ section p {
     height: auto;
   }
 }
+/* -------------------------------------------------
+   BLOQUE CSS: Ajuste del desplazamiento al hacer clic en el menú
+   📌 Objetivo:
+   - Evitar que los títulos de sección queden ocultos tras el header fijo.
+   - Ajustar el punto de anclaje para una visualización correcta.
+   ------------------------------------------------- */
+:target {
+  scroll-margin-top: 80px;  /* ajusta según la altura de tu header */
+}
