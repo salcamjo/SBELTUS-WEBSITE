@@ -1584,3 +1584,25 @@ section p {
     display: block !important;         /* asegura visibilidad del botón */
   }
 }
+/* -------------------------------------------------
+   BLOQUE CSS: Fijar comportamiento del menú al rotar pantalla
+   📌 Objetivo:
+   - Evitar que el menú se auto-despliegue al girar el celular.
+   - Mantener visibles solo las tres líneas (hamburguesa).
+   - Aplica entre 769px y 1024px (modo horizontal en móviles/tablets).
+   ------------------------------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav {
+    display: none !important;          /* menú oculto por defecto */
+  }
+
+  .nav.show-menu,
+  .nav.active {
+    display: flex !important;          /* solo visible al activar */
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block !important;         /* asegura visibilidad del botón */
+  }
+}
