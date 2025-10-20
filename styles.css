@@ -1650,3 +1650,11 @@ section p {
 :target {
   scroll-margin-top: 80px;  /* ajusta según la altura de tu header */
 }
+/* -------------------------------------------------
+   BLOQUE CSS: Ajuste de scroll solo para la sección Resultados
+   📌 Objetivo:
+   - Corregir el salto de desplazamiento únicamente en #resultados.
+   ------------------------------------------------- */
+#resultados:target {
+  scroll-margin-top: 100px;  /* ajusta según lo que necesite esta sección */
+}
