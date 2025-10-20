@@ -52,23 +52,23 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 /* -------------------------------------------------
-   BLOQUE JS: Ajuste del desplazamiento para sección Resultados
+   BLOQUE JS: Desplazamiento forzado exacto a la sección Resultados
    📌 Objetivo:
-   - Corregir que el título de "Resultados" no quede oculto tras el header.
-   - Aplica solo cuando se navega hacia el ancla #resultados.
+   - Garantizar que "Resultados" se muestre correctamente visible.
+   - Compatible con headers fijos y scroll suave.
    ------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", function() {
-  const offset = 130; // altura del header o margen deseado
-  const target = document.getElementById("resultados");
+  const offset = 130; // ajusta este valor según la altura del header
+  const links = document.querySelectorAll('a[href="#resultados"]');
 
-  if (target) {
-    window.addEventListener("hashchange", function() {
-      if (location.hash === "#resultados") {
-        window.scrollTo({
-          top: target.offsetTop - offset,
-          behavior: "smooth"
-        });
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const target = document.getElementById("resultados");
+      if (target) {
+        const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     });
-  }
+  });
 });
