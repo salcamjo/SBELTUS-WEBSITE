@@ -1642,7 +1642,4 @@ section p {
   }
 }
 }
-:target {
-  scroll-margin-top: 80px;   /* regla general que funcionaba correctamente */
-}
 
