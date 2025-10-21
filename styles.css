@@ -1543,3 +1543,26 @@ section p {
   font-style: italic !important;
   color: #333 !important;
 }
+/* === SBELTUS | BLOQUE CORRECTIVO MENÚ CERRADO POR DEFECTO | 2025-10-21 === */
+@media (max-width: 768px) {
+  .nav {
+    display: none !important;   /* Oculto por defecto en móvil */
+  }
+
+  .nav.active {
+    display: flex !important;   /* Solo se muestra al pulsar ☰ */
+  }
+
+  .menu-toggle {
+    display: block !important;  /* Asegura que el botón ☰ se vea */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
+    font-size: 2rem;
+    color: #2E7D32;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
