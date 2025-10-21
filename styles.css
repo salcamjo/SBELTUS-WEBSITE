@@ -1471,3 +1471,13 @@ section p {
     color: #43a047;
   }
 }
+/* === SBELTUS | AJUSTE FINAL VISIBILIDAD MENÚ | 2025-10-21 === */
+@media (max-width: 768px) {
+  .nav {
+    display: none !important;   /* Oculto por defecto */
+  }
+
+  .nav.active {
+    display: flex !important;   /* Solo visible al hacer clic en ☰ */
+  }
+}
