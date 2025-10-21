@@ -1190,13 +1190,19 @@ section + section {
   }
 }
 /* === Menú responsive === */
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: #fff;
-  transition: all 0.3s ease;
+
+@media (min-width: 769px) {
+  /* === Menú responsive === */
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
 }
+
+
 
 /* Botón de menú solo visible en pantallas pequeñas */
 .menu-toggle {
