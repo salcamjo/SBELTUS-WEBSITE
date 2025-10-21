@@ -1471,13 +1471,38 @@ section p {
     color: #43a047;
   }
 }
-/* === SBELTUS | AJUSTE FINAL VISIBILIDAD MENÚ | 2025-10-21 === */
+/* === SBELTUS | BLOQUE FINAL VISIBILIDAD Y FUNCIONAMIENTO MENÚ | 2025-10-21 === */
 @media (max-width: 768px) {
-  .nav {
-    display: none !important;   /* Oculto por defecto */
+  /* Asegurar que el botón ☰ siempre sea visible */
+  .menu-toggle {
+    display: block !important;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3000;
+    font-size: 2rem;
+    color: #2E7D32;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
+  /* Menú oculto por defecto */
+  .nav {
+    display: none !important;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  /* Menú visible solo al pulsar ☰ */
   .nav.active {
-    display: flex !important;   /* Solo visible al hacer clic en ☰ */
+    display: flex !important;
   }
 }
