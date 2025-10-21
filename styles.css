@@ -767,7 +767,84 @@ html {
     text-align: center;
   }
 }
+/* --- Estilos menú responsive --- */
 
+/* Ocultar botón hamburguesa en pantallas grandes */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* En pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* ocultar menú por defecto */
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff; /* ajusta según tu diseño */
+    padding: 15px;
+    position: absolute;
+    top: 70px; /* debajo del header */
+    right: 20px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+
+  .nav.active {
+    display: flex; /* mostrar cuando se active */
+  }
+
+  .menu-toggle {
+    display: block; /* mostrar el botón hamburguesa */
+  }
+}
+/* ===== Menú hamburguesa (versión móvil) ===== */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333; /* puedes ajustarlo a tu color de header */
+}
+
+/* Versión móvil: ocultar menú por defecto */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: white; /* o el color de tu header */
+    position: absolute;
+    top: 100px; /* justo debajo del header */
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+/* --- Ajuste navegación móvil --- */
+@media (max-width: 768px) {
+  nav .nav-links {
+    display: none; /* Ocultar menú por defecto en móviles */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px; /* ajusta según el alto de tu header */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
 
   nav .nav-links.show {
     display: flex; /* Solo se muestra al presionar el botón hamburguesa */
@@ -821,6 +898,10 @@ html {
   z-index: 1000; /* para que el menú quede siempre encima */
 }
 
+/* Cuando el menú está abierto (modo móvil) */
+.nav.open, .menu-toggle.open + .nav {
+  background-color: #2d6a4f; /* este verde lo puedes cambiar según tu header */
+}
 
 /* Estilo de los links en móvil con fondo */
 .nav a {
@@ -1099,12 +1180,53 @@ section + section {
     border-top: 1px solid #eee;
   }
 
- 
+  .nav.active {
+    display: flex; /* se muestra solo cuando se pulsa ☰ */
+  }
+
   .nav a {
     padding: 10px 0;
     font-size: 1.1rem;
   }
 }
+/* === Menú responsive === */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Botón de menú solo visible en pantallas pequeñas */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav.show-menu {
+    display: flex;
+  }
 }
 .hero-logos {
   display: flex;
@@ -1420,109 +1542,4 @@ section p {
   font-weight: 400 !important;
   font-style: italic !important;
   color: #333 !important;
-}
-/* -------------------------------------------------
-   ✅ SBELTUS | BLOQUE FINAL MENÚ RESPONSIVE | 2025-10-21
-   --------------------------------------------------- */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #2E7D32;
-  cursor: pointer;
-}
-
-/* --- Versión móvil --- */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 2000;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .nav a {
-    display: block;
-    color: #2E7D32;
-    font-size: 1.1rem;
-    padding: 10px 0;
-  }
-
-  .nav a:hover {
-    color: #43a047;
-  }
-}
-/* === SBELTUS | BLOQUE FINAL VISIBILIDAD Y FUNCIONAMIENTO MENÚ | 2025-10-21 === */
-@media (max-width: 768px) {
-  /* Asegurar que el botón ☰ siempre sea visible */
-  .menu-toggle {
-    display: block !important;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 3000;
-    font-size: 2rem;
-    color: #2E7D32;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* Menú oculto por defecto */
-  .nav {
-    display: none !important;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-
-  /* Menú visible solo al pulsar ☰ */
-  .nav.active {
-    display: flex !important;
-  }
-}
-/* === SBELTUS | AJUSTE VISIBILIDAD BOTÓN ☰ | 2025-10-21 === */
-@media (max-width: 768px) {
-  header, .header {
-    position: relative !important;
-    z-index: 1000 !important;
-  }
-
-  .menu-toggle {
-    display: block !important;
-    position: fixed !important;
-    top: 20px !important;
-    right: 20px !important;
-    z-index: 5000 !important;
-    font-size: 2rem !important;
-    color: #2E7D32 !important;
-    background: none !important;
-    border: none !important;
-    cursor: pointer !important;
-  }
 }
