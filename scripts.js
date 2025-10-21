@@ -19,14 +19,20 @@ window.onload = () => {
   loadLanguage(currentLang);
 };
 // Esperar a que el DOM esté listo
+
+/* -------------------------------------------------
+   ✅ BLOQUE JS CORREGIDO: Activar menú hamburguesa SBELTUS
+   📌 Función:
+   - Activa el despliegue/ocultamiento del menú en móvil.
+   - Asegura que solo una instancia maneje el evento.
+   ------------------------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.querySelector(".menu-toggle"); // botón ☰
-  const nav = document.querySelector(".nav"); // menú de navegación
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
 
   if (menuToggle && nav) {
     menuToggle.addEventListener("click", () => {
-      nav.classList.toggle("active"); // abre/cierra el menú
+      nav.classList.toggle("active");
     });
   }
 });
-

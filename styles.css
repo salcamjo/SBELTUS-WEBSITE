@@ -1663,3 +1663,76 @@ section p {
     height: auto;
   }
 }
+
+/* -------------------------------------------------
+   ✅ BLOQUE CSS CORREGIDO: Menú hamburguesa responsive SBELTUS
+   📌 Función:
+   - Muestra el ícono ☰ en pantallas ≤ 768px.
+   - Abre el menú debajo del header sin solaparlo.
+   - Evita duplicaciones y conflictos previos.
+   ------------------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #2E7D32;
+}
+
+/* Menú general */
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* ----- Vista móvil ----- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1100;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 150px; /* justo debajo del header */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    color: #2E7D32;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+}
