@@ -1736,3 +1736,23 @@ header {
     font-size: 1.1rem;
   }
 }
+/* -------------------------------------------------
+   ✅ BLOQUE CORRECTIVO: Forzar visibilidad del botón ☰ en móvil
+   📌 Función:
+   - Asegura que el botón hamburguesa se muestre siempre en pantallas ≤ 768px.
+   - Tiene prioridad máxima sobre estilos anteriores.
+   ------------------------------------------------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+    position: absolute !important;
+    right: 20px !important;
+    top: 20px !important;
+    z-index: 2000 !important;
+    font-size: 2rem !important;
+    color: #2E7D32 !important;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+}
