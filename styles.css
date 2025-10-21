@@ -1543,37 +1543,3 @@ section p {
   font-style: italic !important;
   color: #333 !important;
 }
-/* === SBELTUS | MENÚ FINAL FUNCIONAL | 2025-10-21 === */
-
-/* 1️⃣ Estilo del botón ☰ (ahora fuera del nav) */
-.menu-toggle {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 2rem;
-  color: #2E7D32;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 2000;
-}
-
-/* 2️⃣ Menú cerrado por defecto */
-.nav {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  width: 100%;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  padding: 20px 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* 3️⃣ Menú visible al hacer clic */
-.nav.active {
-  display: flex;
-}
