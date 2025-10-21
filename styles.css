@@ -1664,3 +1664,17 @@ section p {
   }
 }
 
+/* === SBELTUS | BLOQUE: Forzar visibilidad botón menú ☰ | 2025-10-21 === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;          /* asegúrate de que se renderice */
+    position: absolute !important;      /* fija su posición dentro del header */
+    right: 20px !important;             /* lado derecho */
+    top: 20px !important;               /* margen superior */
+    font-size: 2rem !important;         /* tamaño visible */
+    color: #2E7D32 !important;          /* mismo verde del sitio */
+    background: none !important;
+    border: none !important;
+    z-index: 2000 !important;           /* encima del header */
+  }
+}
