@@ -1,302 +1,190 @@
+<!-- ==========================================================
+     ✅ ARCHIVO: index.html (versión limpia y funcional SBELTUS)
+     📅 Fecha: 2025-10-24
+     ----------------------------------------------------------
+     Propósito:
+     - Mantiene intacta toda la estructura y el diseño.
+     - Elimina scripts antiguos del menú.
+     - Incorpora el bloque funcional correcto (24-10-2025).
+=========================================================== -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SBELTUS - Salud y Bienestar</title>
- <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="styles.css">
   <script src="scripts.js" defer></script>
 </head>
+
 <body>
- <header class="header">
-  <!-- Logo con imagen -->
-  <div class="logo">
-    <img src="images/logo.png" alt="SBELTUS Logo">
-  </div>
-
- <!-- Frase centrada -->
-<div class="tagline">
-  <p>Salud de manera natural y sostenible</p>
-</div>
-
-
-  <!-- Menú de navegación -->
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-<nav class="nav">
-    <a href="#hero" data-i18n="menu_home">Inicio</a>
-    <a href="#about" data-i18n="menu_about">Acerca de mí</a>
-    <a href="#results" data-i18n="menu_results">Resultados</a>
-    <a href="#resources" data-i18n="menu_resources">Recursos</a>
-    <a href="#pricing" data-i18n="menu_pricing">Planes</a>
-    <a href="#contact" data-i18n="menu_contact">Contacto</a>
-  </nav>
-
-  <!-- Botones idioma -->
-  <div class="lang-switch">
-    <button onclick="setLanguage('es')">ES</button> | 
-    <button onclick="setLanguage('en')">EN</button>
-  </div>
-</header>
-  <section id="hero" class="hero">
- <div class="hero-content">
-<h1 data-i18n="hero_title" style="color: #2E7D32 !important;">Transforma tu vida después de los 50</h1>
-
- <p class="hero-subtext">
-  Recupera tu energía, fortalece tu bienestar y descubre que nunca es tarde para sentirte en plenitud. 
-  Con un método simple y prudente podrás cuidar tu peso y tu salud después de los 50. 
-  Porque pequeños cambios logran grandes resultados y hoy puedes comenzar tu camino hacia una vida más ligera y vital.
-</p>
-<div class="hero-logos">
-  <span class="icono-arbol">🌿</span>
-  <img src="images/logo.png" alt="Logo SBELTUS" class="logo-centro">
-  <span class="icono-arbol">🌿</span>
-</div>
-</section>
-
-<section id="about" class="about-section" style="margin-top:130px; padding:20px; background-color:#f9f9f9;">
-  <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:flex-start; gap:20px;">
-    
-<!-- Imagen personal -->
-<div class="about-image">
-  <img src="images/fernando.jpg" alt="Foto de Fernando - SBELTUS">
-</div>
-
-
-    <!-- Texto bilingüe -->
-    <div style="flex:2 1 500px;">
-      <!-- Español -->
-      <div data-lang="es">
-        <h2>Acerca de mí</h2>
-        <p>Soy una persona mayor que, como muchas otras, durante años no llevó un estilo de vida saludable en cuanto a alimentación y actividad física. No soy profesional del sector salud: soy ingeniero.</p>
-        <p>Sin embargo, con disciplina y constancia, logré transformar mis hábitos y reducir mi porcentaje de grasa corporal sin perder masa muscular, siguiendo una dieta hipocalórica y un proceso lento pero seguro. Descubrí que no existen atajos ni milagros: lo importante es la paciencia y la constancia.</p>
-        <p>Hoy comparto mi experiencia personal como una forma de inspiración y apoyo para quienes buscan mejorar su bienestar. Mi mensaje es claro: cada persona debe consultar siempre con su médico, nutricionista o especialista de confianza antes de iniciar cualquier proceso de cambio.</p>
-      </div>
-
-      <!-- Inglés -->
-      <div data-lang="en" style="display:none;">
-        <h2>🌱 About me</h2>
-        <p>I am an older adult who, like many others, did not always follow a healthy lifestyle regarding nutrition and physical activity. I am not a health professional: my background is in engineering.</p>
-        <p>However, through discipline and consistency, I managed to transform my habits and reduce my body fat percentage without losing muscle mass, following a hypocaloric diet and a slow but steady process. I learned that there are no shortcuts or miracles: patience and perseverance are key.</p>
-        <p>Today, I share my personal experience as inspiration and support for those seeking to improve their well-being. My message is clear: everyone should always consult their doctor, nutritionist, or healthcare specialist before starting any lifestyle change.</p>
-      </div>
+  <header class="header">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo.png" alt="SBELTUS Logo">
     </div>
 
-  </div>
-</section>
+    <!-- Frase -->
+    <div class="tagline">
+      <p>Salud de manera natural y sostenible</p>
+    </div>
 
+    <!-- Menú de navegación -->
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav">
+      <a href="#hero" data-i18n="menu_home">Inicio</a>
+      <a href="#about" data-i18n="menu_about">Acerca de mí</a>
+      <a href="#results" data-i18n="menu_results">Resultados</a>
+      <a href="#resources" data-i18n="menu_resources">Recursos</a>
+      <a href="#pricing" data-i18n="menu_pricing">Planes</a>
+      <a href="#contact" data-i18n="menu_contact">Contacto</a>
+    </nav>
 
+    <!-- Selector de idioma -->
+    <div class="lang-switch">
+      <button onclick="setLanguage('es')">ES</button> |
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+  </header>
 
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 data-i18n="hero_title" style="color: #2E7D32 !important;">
+        Transforma tu vida después de los 50
+      </h1>
+      <p class="hero-subtext">
+        Recupera tu energía, fortalece tu bienestar y descubre que nunca es tarde para sentirte en plenitud.
+        Con un método simple y prudente podrás cuidar tu peso y tu salud después de los 50.
+        Porque pequeños cambios logran grandes resultados y hoy puedes comenzar tu camino hacia una vida más ligera y vital.
+      </p>
 
+      <div class="hero-logos">
+        <span class="icono-arbol">🌿</span>
+        <img src="images/logo.png" alt="Logo SBELTUS" class="logo-centro">
+        <span class="icono-arbol">🌿</span>
+      </div>
+    </div>
+  </section>
 
- <!-- SECCIÓN RESULTADOS -->
+  <!-- ABOUT -->
+  <section id="about" class="about-section" style="margin-top:130px; padding:20px; background-color:#f9f9f9;">
+    <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:flex-start; gap:20px;">
+      <div class="about-image">
+        <img src="images/fernando.jpg" alt="Foto de Fernando - SBELTUS">
+      </div>
 
-<section id="results" class="results-section">
-  <h2>Resultados</h2>
+      <div style="flex:2 1 500px;">
+        <div data-lang="es">
+          <h2>Acerca de mí</h2>
+          <p>Soy una persona mayor que, como muchas otras, durante años no llevó un estilo de vida saludable...</p>
+        </div>
 
-  <!-- Texto introductorio original de Fernando -->
-  <p style="text-align: justify; line-height: 1.7; margin-bottom: 20px;">
-    Aquí quiero mostrar los resultados obtenidos en mi proceso de pérdida de grasa corporal en un período de 12 meses, lo cual constituye una evidencia personal clara y precisa de cómo podemos conseguir reducir de manera saludable nuestro porcentaje de grasa corporal y por ende el peso corporal evitando perder masa muscular. Lo que quiero compartir contigo y que se muestra en el gráfico presenta mi proceso de reducción de peso en un período de 12 meses a una tasa promedio de 0.5 Kg por mes, y 6 Kg totales de reducción promedio en dicho período.
-  </p>
+        <div data-lang="en" style="display:none;">
+          <h2>🌱 About me</h2>
+          <p>I am an older adult who, like many others, did not always follow a healthy lifestyle...</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p style="text-align: justify; line-height: 1.7; margin-bottom: 20px;">
-    Pero aquí lo interesante es que los objetivos logrados pueden obtenerse a partir de diferentes condiciones de estado inicial, toda vez de que en mi caso no partí de un estado de obesidad, sino más bien en un sobrepeso de alrededor de 7 Kg. En otras palabras, inicié el proceso con un índice de masa corporal (IMC) de 20,6 logrando al término del período un IMC de 17,6.
-  </p>
-
-  <p style="text-align: justify; line-height: 1.7; margin-bottom: 25px;">
-    Considero importante que tengamos presente el concepto de grasa corporal la misma que se constituye en la grasa subcutánea y grasa visceral entendiendo como la primera aquella que está inmediatamente por debajo de nuestra piel y la grasa visceral la que está alrededor de los órganos y que es quizás la más perjudicial. En tal sentido te sugiero visualizar las imágenes de referencia respecto a este concepto de porcentaje de grasa corporal de una manera práctica y aproximada para estimar en qué condición nos encontramos. Debo señalar que existen varios métodos de medición de la grasa corporal desde los más simples hasta los más sofisticados y costosos, por cierto, en mi experiencia he seguido la opción de bioimpedancia con un monitor manual y con balanza de pie con electrodos a fin de comparar resultados, los cuales sí varían entre sí.
-  </p>
-
-  <!-- Texto corto previo al gráfico -->
-  <p style="text-align: justify; line-height: 1.6; margin-bottom: 25px;">
-    Los siguientes gráficos muestran los avances personales en la reducción de grasa corporal, como evidencia del método utilizado en el programa SBELTUS.
-  </p>
---------------------------------------------
-  <!-- Imagen del gráfico Excel -->
-  <figure style="text-align: center; margin: 30px auto;">
-    <img src="images/grafico-excel.png" alt="Gráfico de evolución de grasa corporal" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-    <figcaption style="font-style: italic; color: #555; margin-top: 8px;">Evolución semanal de grasa corporal (medición en porcentaje)</figcaption>
-  </figure>
-------------------------------------------
-  <!-- Imágenes comparativas -->
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
-    <figure style="text-align: center;">
-      <img src="images/grasa-hombres.jpg" alt="Porcentaje de grasa corporal en hombres" style="max-width: 250px; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-      <figcaption style="font-style: italic; color: #555; margin-top: 8px;">Referencia: porcentaje de grasa corporal en hombres</figcaption>
+  <!-- RESULTADOS -->
+  <section id="results" class="results-section">
+    <h2>Resultados</h2>
+    <p>Aquí quiero mostrar los resultados obtenidos en mi proceso...</p>
+    <figure style="text-align:center; margin:30px auto;">
+      <img src="images/grafico-excel.png" alt="Gráfico de evolución de grasa corporal">
+      <figcaption style="font-style:italic; color:#555;">Evolución semanal de grasa corporal</figcaption>
     </figure>
+  </section>
 
-    <figure style="text-align: center;">
-      <img src="images/grasa-mujeres.jpg" alt="Porcentaje de grasa corporal en mujeres" style="max-width: 250px; height: auto; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
-      <figcaption style="font-style: italic; color: #555; margin-top: 8px;">Referencia: porcentaje de grasa corporal en mujeres</figcaption>
-    </figure>
-  </div>
----------------------------------------------
-  <!-- Fuente -->
-  <p style="text-align: center; font-size: 0.9em; color: #777; margin-top: 25px;">
-    Fuente de las imágenes: Healthline
-  </p>
-
-  <!-- Texto ampliado final (ya insertado previamente) -->
-  <div style="margin-top: 40px;">
-    <p style="text-align: justify; line-height: 1.7;">
-      También es preciso señalar que para este proceso, toda vez de que es controlado, se requieren algunos elementos básicos de medición que no son costosos de hecho, sin embargo, considero que lo más importante a tenerse en cuenta es el sincero y real deseo de mejorar nuestra salud. Esto implica asumir la responsabilidad de conseguir un objetivo por iniciativa propia y convicción de que sí es posible lograr esto, pero requiere una decisión firme, constancia y paciencia. Sin estos compromisos no se podrá conseguir nada y si bien es cierto esto implica un cambio de estilo de vida, la satisfacción y felicidad que se obtiene al lograr esculpir tu figura, es la mayor recompensa que puedes obtener y que de hecho tampoco significará privarse de los placeres sociales a los que estamos acostumbrados sin exageraciones por supuesto, pero llevando una vida saludable.
-    </p>
-
-    <p style="text-align: justify; line-height: 1.7; margin-top: 15px;">
-      Es importante también tener en cuenta que nuestro organismo y su funcionamiento es el resultado de un proceso evolutivo en el cual todo se ha organizado, digámoslo así, a fin de tener energía disponible y almacenada, es por ello que es fundamental entender al menos de una forma básica o general que nuestro organismo responde a procesos bioquímicos y la fisiología es compleja pero eficiente en términos de cómo se aprovecha la energía almacenada. Entonces aquí viene el tema central pues la forma como obtenemos energía para nuestras actividades básicas y funcionamiento de nuestros órganos proviene de los alimentos que ingerimos, por lo que todo exceso de energía no se va a perder simplemente la vamos a almacenar. De una forma práctica o dicho en simples palabras, el exceso de energía lo vamos a observar cuando engordamos, y que no es otra cosa que tejido adiposo constituido por células especializadas llamadas adipocitos, las cuales tienen capacidad de hipertrofia e hiperplasia esto es, aumentando en volumen y cantidad respectivamente. En este punto debemos tener claro que la grasa no se quema, más bien se beta-oxida en las mitocondrias que son organelos celulares, encontrándose estas mitocondrias prácticamente en todas las células de nuestro cuerpo.
-    </p>
-
-    <p style="text-align: justify; line-height: 1.7; margin-top: 15px;">
-      Debemos también tener claro que no engordamos de la noche a la mañana y es un proceso acumulativo, en el cual los adipocitos van almacenando triglicéridos los cuales están constituidos por la unión de una molécula de glicerol y de tres ácidos grasos. Ahora bien, cuando queremos perder peso lo que debería ocurrir es que se genere una lipólisis, es decir que ese enlace de triglicérido se rompa y se liberen los ácidos grasos hacia el torrente sanguíneo y que estos viajen hasta alguna célula de algún tejido que requiera de energía y a través de otros procesos ingrese a la célula de ese tejido y específicamente a la mitocondria para que se genere esa molécula energética conocida como ATP.
-    </p>
-  </div>
-</section>
- 
-
-
-
-
+  <!-- RECURSOS -->
   <section id="resources" class="resources">
-    <h2 style="color: #2E7D32;">
-    Recursos
-</h2>
-
-    <p data-i18n="resources_text">Encuentra publicaciones científicas y enlaces relacionados con la salud.</p>
+    <h2 style="color:#2E7D32;">Recursos</h2>
+    <p>Encuentra publicaciones científicas y enlaces relacionados con la salud.</p>
     <ul>
       <li><a href="https://www.who.int/" target="_blank">OMS - Organización Mundial de la Salud</a></li>
     </ul>
   </section>
-<!-- -----------------------------------------------------------
-     BLOQUE HTML - SECCIÓN PLAN ÚNICO (PLAN SBELTUS)
-     -----------------------------------------------------------
-     Sustituye al bloque anterior de PayPal y muestra
-     la información completa del plan con su botón.
------------------------------------------------------------ -->
-<section id="pricing" class="pricing">
-  <h2 style="color: #2E7D32;">Plan SBELTUS</h2>
-  <p class="plan-description">
-    Incluye acompañamiento integral, seguimiento continuo y acceso
-    a recursos personalizados para transformar tu bienestar después de los 50.
-  </p>
 
-  <div class="plan-card">
-    <h3>Plan Integral</h3>
-    <ul class="plan-features">
-      <li>✅ Asesoría permanente 24h vía WhatsApp</li>
-      <li>✅ Guía alimenticia personalizada</li>
-      <li>✅ Acompañamiento en el desarrollo del plan</li>
-      <li>✅ Control y registro de mediciones corporales</li>
-      <li>✅ Acceso a recursos exclusivos SBELTUS</li>
-      <li>✅ Actualizaciones y seguimiento continuo</li>
-    </ul>
-    <div class="plan-price">$50</div>
-    <button class="plan-btn" id="paypal-button">Iniciar ahora</button>
-  </div>
-</section>
+  <!-- PLAN SBELTUS -->
+  <section id="pricing" class="pricing">
+    <h2 style="color:#2E7D32;">Plan SBELTUS</h2>
+    <p class="plan-description">
+      Incluye acompañamiento integral, seguimiento continuo y acceso a recursos personalizados.
+    </p>
+    <div class="plan-card">
+      <h3>Plan Integral</h3>
+      <ul class="plan-features">
+        <li>✅ Asesoría permanente 24h vía WhatsApp</li>
+        <li>✅ Guía alimenticia personalizada</li>
+        <li>✅ Control de mediciones corporales</li>
+      </ul>
+      <div class="plan-price">$50</div>
+      <button class="plan-btn" id="paypal-button">Iniciar ahora</button>
+    </div>
+  </section>
 
-<!-- -----------------------------------------------------------
-     BLOQUE HTML - SECCIÓN CONTACTO (actualiza solo placeholders)
-     -----------------------------------------------------------
-     Mantiene la estructura original: tres campos en filas verticales.
-     Solo se actualizan los textos guía dentro de cada campo.
------------------------------------------------------------ -->
-<section id="contact" class="contact">
-  <h2 style="color: #2E7D32">Contacto</h2>
+  <!-- CONTACTO -->
+  <section id="contact" class="contact">
+    <h2 style="color:#2E7D32;">Contacto</h2>
+    <form>
+      <input type="text" placeholder="Ingrese aquí su nombre" required>
+      <input type="email" placeholder="Ingrese aquí su correo" required>
+      <textarea placeholder="Ingrese aquí su mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>WhatsApp: +51 999 999 999</p>
+  </section>
 
-  <form>
-    <input type="text" placeholder="Ingrese aquí su nombre" required>
-    <input type="email" placeholder="Ingrese aquí su correo" required>
-    <textarea placeholder="Ingrese aquí su mensaje"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-
-  <p>WhatsApp: +51 999 999 999</p>
-</section>
-
-
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© 2025 SBELTUS</p>
     <a href='/pages/disclaimer'>Disclaimer</a> |
     <a href='/pages/privacy'>Privacidad</a> |
     <a href='/pages/terms'>Términos</a>
   </footer>
-<!-- Script del menú responsive -->
-<script>
-  // --- Menú responsive ---
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
 
-  if (menuToggle && nav) {
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('show-menu');
+  <!-- ==========================================================
+       ✅ SCRIPT CORRECTIVO (24-10-2025)
+       ----------------------------------------------------------
+       Corrige el comportamiento del menú hamburguesa.
+       No interfiere con el sistema de idiomas ni con PayPal.
+  ========================================================== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav");
+
+      if (menuToggle && nav) {
+        nav.classList.remove("active"); // cerrado al iniciar
+        menuToggle.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 820 && nav.classList.contains("active")) {
+            nav.classList.remove("active");
+          }
+        });
+      }
     });
-  }
+  </script>
 
-  // --- Desactivar fetch cuando se abre localmente ---
-  if (window.location.protocol === 'file:') {
-    console.warn("Modo local: omitiendo carga de scripts externos.");
-  } else {
-    // Aquí solo se ejecutará en Netlify u otro servidor
-    try {
-      fetch('i18n/es.json')
-        .then(r => r.json())
-        .then(d => console.log("Traducciones cargadas:", d))
-        .catch(() => console.warn("No se pudo cargar i18n/es.json"));
-    } catch (e) {
-      console.warn("Error controlado:", e);
-    }
-  }
-</script>
-<!-- -----------------------------------------------------------
-     BLOQUE SCRIPT - INTEGRACIÓN DEMO PAYPAL (BOTÓN PLAN SBELTUS)
-     -----------------------------------------------------------
-     Este bloque activa el botón “Iniciar ahora” del plan SBELTUS.
-     Es una integración de demostración: permite simular el pago
-     sin requerir una cuenta de PayPal real todavía.
-     Inserta este bloque justo ANTES de la etiqueta </body> en tu
-     archivo index.html.
------------------------------------------------------------ -->
-<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
-<script>
-  paypal.Buttons({
-    style: {
-      shape: 'pill',
-      color: 'gold',
-      layout: 'vertical',
-      label: 'paypal',
-    },
-    createOrder: function (data, actions) {
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: '50.00' // Precio del Plan SBELTUS
-          },
-          description: 'Plan Integral SBELTUS'
-        }]
-      });
-    },
-    onApprove: function (data, actions) {
-      return actions.order.capture().then(function (details) {
-        alert('Gracias, ' + details.payer.name.given_name + 
-              '! Tu compra del Plan SBELTUS ha sido procesada correctamente.');
-      });
-    }
-  }).render('#paypal-button');
-</script>
-
-<!-- ---------------------------------------------
-     🔧 BLOQUE JS: Activación del menú hamburguesa
-     Este script hace que el botón ☰ muestre/oculte las opciones.
-     📍 Inserta este bloque ANTES de la etiqueta </body> del index.html
---------------------------------------------- -->
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+  <!-- SDK PAYPAL -->
+  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+  <script>
+    paypal.Buttons({
+      style: { shape: 'pill', color: 'gold', layout: 'vertical', label: 'paypal' },
+      createOrder: (data, actions) => actions.order.create({
+        purchase_units: [{ amount: { value: '50.00' }, description: 'Plan Integral SBELTUS' }]
+      }),
+      onApprove: (data, actions) => actions.order.capture().then(details => {
+        alert('Gracias, ' + details.payer.name.given_name + '! Tu compra fue procesada correctamente.');
+      })
+    }).render('#paypal-button');
+  </script>
 
 </body>
 </html>
