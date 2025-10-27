@@ -1635,3 +1635,28 @@ section p {
     font-weight: 500;
   }
 }
+/* ------------------------------------------------------------
+   ✅ BLOQUE CORRECTIVO: Altura automática en sección "Acerca de mí"
+   📅 Fecha: 2025-10-27
+   ------------------------------------------------------------
+   Propósito:
+   - Evita que el texto se corte visualmente.
+   - Asegura que la altura del contenedor se ajuste al contenido.
+   - No modifica responsive ni diseño previo.
+------------------------------------------------------------- */
+
+.about-section {
+  min-height: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.about-section > div {
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+}
+
+.about-section p {
+  display: block;
+  overflow: visible;
+}
