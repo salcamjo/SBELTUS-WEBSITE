@@ -1610,3 +1610,28 @@ section p {
     display: none !important;
   }
 }
+/* ------------------------------------------------------------
+   ✅ BLOQUE CSS: Restauración visual del fondo gris del menú
+   📅 Fecha: 2025-10-27
+   ------------------------------------------------------------
+   Propósito:
+   - Restaura el fondo gris original del bloque de navegación.
+   - Aplica solo en escritorio (a partir de 821px).
+   - No interfiere con el menú hamburguesa ni el header móvil.
+------------------------------------------------------------- */
+
+@media (min-width: 821px) {
+  header .nav {
+    background-color: #e0e0e0 !important; /* gris claro del menú */
+    display: inline-flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 14px 40px;
+    border-radius: 4px;
+  }
+
+  header .nav a {
+    color: #2E7D32 !important; /* verde armónico SBELTUS */
+    font-weight: 500;
+  }
+}
