@@ -1660,3 +1660,25 @@ section p {
   display: block;
   overflow: visible;
 }
+/* 🟩 BLOQUE CSS: Nota informativa de fuente de imágenes */
+/* Fecha: 2025-10-28 | Proyecto SBELTUS */
+/* 📍 Pegar al final del archivo styles.css */
+
+.image-source-note {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* 🟩 BLOQUE CSS CORRECTIVO: Igualar tamaño de plantitas en títulos de sección */
+/* Fecha: 2025-10-28 | Proyecto SBELTUS */
+/* 📍 Pegar al final del archivo styles.css */
+
+.about-section h2::before,
+.results-section h2::before {
+  font-size: 1.8rem !important;   /* mismo tamaño que las demás secciones */
+  vertical-align: middle;
+  margin-right: 8px;
+}
