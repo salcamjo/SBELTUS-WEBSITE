@@ -1682,3 +1682,11 @@ section p {
   vertical-align: middle;
   margin-right: 8px;
 }
+/* 🟩 BLOQUE CSS CORRECTIVO UNIFICADO: Igualar altura visual con el resto */
+/* Fecha: 2025-10-28 | Proyecto SBELTUS */
+
+.about-section,
+.results-section {
+  margin-top: 60px !important;   /* igual margen externo que las secciones estándar */
+  padding-top: 70px !important;  /* igual relleno interno que las secciones estándar */
+}
