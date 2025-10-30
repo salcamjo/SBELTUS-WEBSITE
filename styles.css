@@ -585,19 +585,18 @@ footer.footer a {
 footer.footer a:hover {
   text-decoration: underline;
 }
+
 /* ==========================================================
-   ✅ BLOQUE CSS: Ajuste de desplazamiento del header fijo
+   ✅ BLOQUE CSS: Ajuste final de desplazamiento del header fijo
    ----------------------------------------------------------
    Fecha: 30/10/2025
-   Objetivo: Evitar que el encabezado verde (header) tape 
-   el contenido superior, como la frase “Transforma tu vida 
-   después de los 50”, cuando se hace clic en “Inicio” u 
-   otra sección desde el menú de navegación.
+   Objetivo: Eliminar por completo el solapamiento del header 
+   verde sobre la frase “Transforma tu vida después de los 50”.
+   Se incrementa el margen superior hasta dejar la vista limpia.
    ----------------------------------------------------------
-   Ubicación sugerida: al final del archivo styles.css
-   ----------------------------------------------------------
+   Ubicación: al final de styles.css
 ========================================================== */
 
 :target {
-  scroll-margin-top: 90px; /* Ajustar valor según la altura real del header */
+  scroll-margin-top: 150px; /* valor final afinado */
 }
