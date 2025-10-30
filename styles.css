@@ -76,3 +76,57 @@ header {
 
 /* --- HERO --- */
 .he
+/* ==========================================================
+   🧩 BLOQUE DE RESTAURACIÓN VISUAL - ENCABEZADO Y LOGO
+   📅 2025-10-31
+   ----------------------------------------------------------
+   - Devuelve el tamaño correcto del logo
+   - Restaura el equilibrio del header y tagline
+   - Mantiene el color y proporciones del estilo SBELTUS original
+========================================================== */
+
+header {
+  background-color: #2b6777 !important;
+  padding: 0.8em 1.5em !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  max-height: 60px !important;
+  width: auto;
+}
+
+.tagline p {
+  color: #ff7043 !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  font-style: italic !important;
+  margin: 0;
+  text-align: center;
+}
+
+.nav {
+  background-color: #e0e0e0 !important;
+  padding: 8px 18px !important;
+  border-radius: 6px !important;
+}
+
+.nav a {
+  color: #2E7D32 !important;
+  font-weight: 500 !important;
+}
+
+.lang-switch button {
+  background-color: #ff7a33 !important;
+  color: white !important;
+  border: none !important;
+  padding: 4px 10px !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+}
+.lang-switch button:hover {
+  background-color: #ff8f55 !important;
+}
