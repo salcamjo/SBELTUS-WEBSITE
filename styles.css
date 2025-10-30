@@ -389,3 +389,33 @@ header {
 .hero {
   padding-top: 180px !important; /* antes 170px, +10px más de aire */
 }
+/* ==========================================================
+   💚 AJUSTE FINAL INTEGRADO - FRASE NARANJA + LOGO CENTRAL HERO
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Aumentar tamaño del lema naranja en el header.
+   - Aumentar tamaño del logo central del hero y de sus íconos laterales.
+   - Mantener ambos elementos visualmente equilibrados.
+========================================================== */
+
+/* 🔸 FRASE NARANJA (lema del header) */
+.tagline p {
+  font-size: 1.5rem !important;   /* antes 1.2rem */
+  font-weight: 600;
+  color: #ff7043;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+/* 🔸 LOGO CENTRAL DEL HERO Y SUS ÍCONOS */
+.hero-logos img.logo-centro {
+  max-height: 160px !important;   /* antes 120px */
+  margin-top: 15px !important;    /* baja ligeramente el conjunto */
+}
+
+.hero-logos .icono-arbol {
+  font-size: 2.6rem !important;   /* antes 2rem */
+  margin-top: 10px !important;
+}
