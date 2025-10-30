@@ -587,16 +587,16 @@ footer.footer a:hover {
 }
 
 /* ==========================================================
-   ✅ BLOQUE CSS: Ajuste final de desplazamiento del header fijo
+   ✅ BLOQUE CSS: Ajuste máximo del desplazamiento del header fijo
    ----------------------------------------------------------
    Fecha: 30/10/2025
-   Objetivo: Eliminar por completo el solapamiento del header 
-   verde sobre la frase “Transforma tu vida después de los 50”.
-   Se incrementa el margen superior hasta dejar la vista limpia.
+   Objetivo: Evitar de forma total que el header verde cubra 
+   la frase “Transforma tu vida después de los 50” al pulsar 
+   “Inicio” desde el menú móvil. Se amplía margen superior.
    ----------------------------------------------------------
-   Ubicación: al final de styles.css
+   Ubicación: al final del archivo styles.css
 ========================================================== */
 
 :target {
-  scroll-margin-top: 150px; /* valor final afinado */
+  scroll-margin-top: 180px; /* margen extendido para liberar completamente la frase */
 }
