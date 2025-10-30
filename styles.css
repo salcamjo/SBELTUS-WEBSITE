@@ -597,6 +597,18 @@ footer.footer a:hover {
    Ubicación: al final del archivo styles.css
 ========================================================== */
 
-:target {
-  scroll-margin-top: 180px; /* margen extendido para liberar completamente la frase */
+/* ==========================================================
+   ✅ BLOQUE CSS: Compensación directa del header en sección Inicio
+   ----------------------------------------------------------
+   Fecha: 30/10/2025
+   Objetivo: Evitar que el header verde tape la frase 
+   “Transforma tu vida después de los 50” al pulsar “Inicio”.
+   Se añade un relleno superior exclusivo para #hero.
+   ----------------------------------------------------------
+   Ubicación: al final de styles.css
+========================================================== */
+
+#hero {
+  scroll-margin-top: 200px; /* asegura espacio entre el header y el inicio */
+  padding-top: 20px; /* ligera separación visual */
 }
