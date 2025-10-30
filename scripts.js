@@ -58,3 +58,20 @@ document.addEventListener("DOMContentLoaded", () => {
   updateLanguageVisibility('es');
   loadLanguage('es');
 });
+/* -----------------------------------------
+   BLOQUE JS: Cierre automático del menú móvil
+   Fecha: 30/10/2025
+   Función: Cuando se hace clic en un enlace del menú
+   en modo móvil, el menú se cierra y reaparecen las tres rayas.
+------------------------------------------ */
+
+document.querySelectorAll('.nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.querySelector('.nav');
+    const toggle = document.querySelector('.menu-toggle');
+    if (nav.classList.contains('active')) {
+      nav.classList.remove('active');
+      toggle.classList.remove('open');
+    }
+  });
+});
