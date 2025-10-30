@@ -343,3 +343,49 @@ footer {
   padding-top: 55px !important;
   scroll-margin-top: 95px !important;
 }
+/* ==========================================================
+   💙 BLOQUE CORRECTIVO AJUSTADO - HEADER Y MENÚ HAMBURGUESA
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Mantener color azul original del header.
+   - Aumentar ligeramente la altura para evitar solapamientos.
+   - Ocultar menú hamburguesa en modo escritorio.
+========================================================== */
+
+/* HEADER: mantiene color azul original (#2b6777), solo ajusta altura */
+header {
+  padding: 1.6em 2em !important;  /* un poco más alto que antes */
+}
+
+/* OCULTAR MENÚ HAMBURGUESA EN ESCRITORIO */
+@media (min-width: 821px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+/* ==========================================================
+   💙 BLOQUE DE AJUSTE VISUAL - ALTURA DEL HEADER
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Aumentar la altura visual del header azul SBELTUS
+     para cubrir completamente la zona superior y evitar
+     que la sección "Acerca de mí" se vea parcialmente.
+========================================================== */
+
+header {
+  padding: 2.3em 2em !important;  /* antes 1.6em → +0.7em de altura visual */
+}
+/* ==========================================================
+   💙 AJUSTE FINAL HERO - DISTANCIA PERFECTA BAJO HEADER
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Dar un poco más de aire al texto principal del hero.
+   - Evitar contacto visual con el borde inferior del header.
+========================================================== */
+
+.hero {
+  padding-top: 180px !important; /* antes 170px, +10px más de aire */
+}
