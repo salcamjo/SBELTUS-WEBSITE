@@ -1,9 +1,9 @@
 /* ==========================================================
    ✅ ARCHIVO: scripts.js (versión limpia y funcional)
-   📅 Fecha: 2025-10-30
+   📅 Fecha: 2025-10-29
    ----------------------------------------------------------
-   - Elimina duplicado de setLanguage()
-   - Mantiene control ES/EN y menú hamburguesa
+   - Controla el menú hamburguesa
+   - Maneja idiomas ES/EN (sin duplicados)
 ========================================================== */
 
 let translations = {};
@@ -21,7 +21,7 @@ async function loadLanguage(lang) {
 
 /* ------------------------------------------------------------
    ✅ BLOQUE JS: Control visual de secciones bilingües (ES / EN)
-   ------------------------------------------------------------ */
+------------------------------------------------------------- */
 function updateLanguageVisibility(lang) {
   const blocks = document.querySelectorAll('[data-lang]');
   blocks.forEach(block => {
@@ -35,9 +35,7 @@ function setLanguage(lang) {
   updateLanguageVisibility(lang);
 }
 
-/* ------------------------------------------------------------
-   ✅ BLOQUE JS: Menú hamburguesa funcional
-   ------------------------------------------------------------ */
+// Menú hamburguesa
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
