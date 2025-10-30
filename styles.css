@@ -1,12 +1,17 @@
 /* ==========================================================
-   ✅ Proyecto SBELTUS - styles.css depurado (2025-10-30)
+   ✅ PROYECTO SBELTUS - STYLES.CSS DEPURADO
+   📅 VERSIÓN: 31-10-2025
    ----------------------------------------------------------
-   - Look SBELTUS (header azul, menú gris, textos verdes)
+   - Look SBELTUS intacto
    - Menú hamburguesa funcional
    - Botones ES/EN naranjas
+   - Márgenes uniformes entre header y secciones
+   - Todo el CSS limpio y ordenado con encabezados
 ========================================================== */
 
-/* BASE */
+/* ==========================================================
+   🔹 BASE GENERAL
+========================================================== */
 * { box-sizing: border-box; }
 
 body {
@@ -18,7 +23,9 @@ body {
   font-weight: 500;
 }
 
-/* HEADER */
+/* ==========================================================
+   🔹 HEADER Y NAVEGACIÓN
+========================================================== */
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -45,7 +52,9 @@ header {
   margin: 0;
 }
 
-/* selector idioma */
+/* ==========================================================
+   🔹 BOTONES DE IDIOMA (ES / EN)
+========================================================== */
 .lang-switch {
   font-size: 0.9rem;
   color: white;
@@ -58,10 +67,13 @@ header {
   border-radius: 6px;
   padding: 4px 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .lang-switch button:hover { background: #ff8f55; }
 
-/* NAV */
+/* ==========================================================
+   🔹 MENÚ DE NAVEGACIÓN
+========================================================== */
 .nav {
   display: flex;
   gap: 20px;
@@ -78,7 +90,9 @@ header {
 }
 .nav a:hover { color: #256428; }
 
-/* HERO */
+/* ==========================================================
+   🔹 SECCIÓN HERO (INICIO)
+========================================================== */
 .hero {
   background: linear-gradient(to right, #f7f7f7, #ffffff);
   text-align: center;
@@ -104,7 +118,9 @@ header {
   font-style: italic;
 }
 
-/* HERO LOGOS */
+/* ==========================================================
+   🔹 LOGOS DENTRO DEL HERO
+========================================================== */
 .hero-logos {
   display: flex;
   justify-content: center;
@@ -125,13 +141,12 @@ header {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ABOUT */
+/* ==========================================================
+   🔹 SECCIÓN ACERCA DE MÍ
+========================================================== */
 .about-section {
-  margin-top: 130px;
   padding: 20px;
   background-color: #f9f9f9;
-  height: auto !important;
-  overflow: visible;
 }
 .about-section h2 {
   color: #2E7D32;
@@ -150,7 +165,9 @@ header {
   margin: 20px auto;
 }
 
-/* RESULTS */
+/* ==========================================================
+   🔹 SECCIÓN RESULTADOS
+========================================================== */
 .results-section {
   max-width: 900px;
   margin: 0 auto;
@@ -173,7 +190,9 @@ header {
   font-style: italic;
 }
 
-/* RECURSOS / PLANES / CONTACTO (estructura base) */
+/* ==========================================================
+   🔹 SECCIONES: RECURSOS / PLANES / CONTACTO (BASE)
+========================================================== */
 section {
   max-width: 1000px;
   margin: 0 auto;
@@ -195,7 +214,9 @@ section h2 {
 }
 section h2::before { content: "🌱"; font-size: 1.3rem; }
 
-/* PLANES */
+/* ==========================================================
+   🔹 PLANES (PLAN SBELTUS)
+========================================================== */
 .pricing {
   background-color: #ffffff;
   text-align: center;
@@ -227,7 +248,9 @@ section h2::before { content: "🌱"; font-size: 1.3rem; }
 }
 .plan-btn:hover { background-color: #256428; }
 
-/* CONTACTO */
+/* ==========================================================
+   🔹 CONTACTO
+========================================================== */
 .contact {
   background-color: #f9f9f9;
   text-align: center;
@@ -257,7 +280,9 @@ section h2::before { content: "🌱"; font-size: 1.3rem; }
 }
 .contact button:hover { background-color: #256428; }
 
-/* FOOTER */
+/* ==========================================================
+   🔹 FOOTER
+========================================================== */
 footer {
   background: #2b6777;
   color: white;
@@ -265,7 +290,9 @@ footer {
   padding: 1em;
 }
 
-/* RESPONSIVE MENÚ HAMBURGUESA */
+/* ==========================================================
+   🔹 RESPONSIVE - MENÚ HAMBURGUESA
+========================================================== */
 @media (max-width: 820px) {
   html, body { max-width: 100%; overflow-x: hidden; }
 
@@ -295,4 +322,24 @@ footer {
   .nav.active {
     display: flex !important;
   }
+}
+
+/* ==========================================================
+   💚 AJUSTE GLOBAL NIVEL B - COMPACTO INTENSO
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Reduce aún más el espacio bajo el header
+     para un look más cerrado y moderno.
+========================================================== */
+
+#about,
+#results,
+#resources,
+#pricing,
+#contact {
+  position: relative;
+  margin-top: 95px !important;
+  padding-top: 55px !important;
+  scroll-margin-top: 95px !important;
 }
