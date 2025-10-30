@@ -453,3 +453,19 @@ header {
   height: auto;
   border-radius: 4px;        /* opcional: bordes suaves */
 }
+/* ==========================================================
+   💚 AJUSTE AMPLIADO DE ANCLAJE - DESPLAZAMIENTO MÁS BAJO
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Bajar un poco más el punto donde se detiene el scroll
+     para que solo se muestre la sección seleccionada.
+========================================================== */
+
+#about,
+#results,
+#resources,
+#pricing,
+#contact {
+  scroll-margin-top: 220px !important; /* antes 180px → baja un poco más */
+}
