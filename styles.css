@@ -436,3 +436,20 @@ header {
   max-width: 100%;
   height: auto;
 }
+/* ==========================================================
+   💚 AJUSTE VISUAL RESULTADOS - REDUCCIÓN IMÁGENES GRASA CORPORAL
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Reducir proporcionalmente el tamaño de las imágenes
+     de porcentaje de grasa corporal (hombre y mujer).
+   - Mantener su proporción y centrado visual.
+========================================================== */
+
+.results-section img {
+  display: block;
+  margin: 80px auto 40px;    /* mantiene separación equilibrada */
+  max-width: 70% !important; /* tamaño reducido proporcionalmente */
+  height: auto;
+  border-radius: 4px;        /* opcional: bordes suaves */
+}
