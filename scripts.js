@@ -1,22 +1,27 @@
 /* ==========================================================
-   ✅ ARCHIVO: scripts.js (versión funcional SBELTUS)
-   📅 Fecha: 2025-10-27
+   ✅ ARCHIVO: scripts.js (versión final 30-10-2025)
    ----------------------------------------------------------
-   - Controla menú hamburguesa
-   - Cambia idioma ES/EN
-   - Muestra solo bloques del idioma activo
+   - Menú hamburguesa
+   - Bilingüe ES / EN
+   - Con fallback cuando se abre local (file://)
 ========================================================== */
 
 let translations = {};
 let currentLang = 'es';
 
 async function loadLanguage(lang) {
-  const res = await fetch(`i18n/${lang}.json`);
-  translations = await res.json();
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (translations[key]) el.innerText = translations[key];
-  });
+  try {
+    const res = await fetch(`i18n/${lang}.json`);
+    const data = await res.json();
+    translations = data;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[key]) el.innerText = translations[key];
+    });
+  } catch (err) {
+    // 👇 Si estás abriendo local (file://) y no puede hacer fetch, no rompe
+    console.warn("No se pudo cargar i18n, mostrando texto por defecto.");
+  }
   currentLang = lang;
 }
 
@@ -33,7 +38,6 @@ function setLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Menú hamburguesa
   const menuToggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
 
@@ -42,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.addEventListener("click", () => {
       nav.classList.toggle("active");
     });
+
     window.addEventListener("resize", () => {
       if (window.innerWidth > 820 && nav.classList.contains("active")) {
         nav.classList.remove("active");
@@ -49,5 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // idioma por defecto
   updateLanguageVisibility('es');
+  loadLanguage('es');
 });
