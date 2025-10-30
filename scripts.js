@@ -1,9 +1,10 @@
 /* ==========================================================
-   ✅ ARCHIVO: scripts.js (versión limpia y funcional)
-   📅 Fecha: 2025-10-29
+   ✅ ARCHIVO: scripts.js (versión funcional SBELTUS)
+   📅 Fecha: 2025-10-27
    ----------------------------------------------------------
-   - Controla el menú hamburguesa
-   - Maneja idiomas ES/EN (sin duplicados)
+   - Controla menú hamburguesa
+   - Cambia idioma ES/EN
+   - Muestra solo bloques del idioma activo
 ========================================================== */
 
 let translations = {};
@@ -19,14 +20,10 @@ async function loadLanguage(lang) {
   currentLang = lang;
 }
 
-/* ------------------------------------------------------------
-   ✅ BLOQUE JS: Control visual de secciones bilingües (ES / EN)
-------------------------------------------------------------- */
 function updateLanguageVisibility(lang) {
   const blocks = document.querySelectorAll('[data-lang]');
   blocks.forEach(block => {
-    block.style.display = (block.getAttribute('data-lang') === lang)
-      ? 'block' : 'none';
+    block.style.display = (block.getAttribute('data-lang') === lang) ? 'block' : 'none';
   });
 }
 
@@ -35,8 +32,8 @@ function setLanguage(lang) {
   updateLanguageVisibility(lang);
 }
 
-// Menú hamburguesa
 document.addEventListener("DOMContentLoaded", () => {
+  // Menú hamburguesa
   const menuToggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".nav");
 
