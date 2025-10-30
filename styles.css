@@ -469,3 +469,36 @@ header {
 #contact {
   scroll-margin-top: 220px !important; /* antes 180px → baja un poco más */
 }
+/* ==========================================================
+   💚 BLOQUE DE NIVELACIÓN FINAL DE SECCIONES
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Mantener uniformidad entre secciones.
+   - Reducir distancia respecto al header (sube un poco todo).
+========================================================== */
+
+#about,
+#results,
+#resources,
+#pricing,
+#contact {
+  position: relative;
+  margin-top: 75px !important;        /* antes 95px → se sube ligeramente */
+  padding-top: 50px !important;       /* mantiene respiración visual */
+  padding-bottom: 80px !important;    /* equilibrio entre secciones */
+  scroll-margin-top: 160px !important; /* punto de anclaje más preciso */
+}
+/* ==========================================================
+   🌿 AJUSTE PUNTUAL DE ESPACIO ENTRE RECURSOS Y PLAN SBELTUS
+   📅 2025-10-31
+   ----------------------------------------------------------
+   Propósito:
+   - Evitar que "Recursos" y "Plan SBELTUS" se vean en el mismo plano.
+   - Mantener el resto de secciones sin alteraciones.
+========================================================== */
+
+#resources {
+  padding-bottom: 160px !important;  /* antes ~80px, se amplía solo aquí */
+  margin-bottom: 100px !important;   /* asegura aire visual sin solapamiento */
+}
