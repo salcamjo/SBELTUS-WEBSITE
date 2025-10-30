@@ -255,3 +255,31 @@ footer {
     z-index: 1000;
   }
   header
+/* ==========================================================
+   🎯 BLOQUE CORRECTIVO FINO - AJUSTES VISUALES NETLIFY
+   📅 2025-10-29
+   ----------------------------------------------------------
+   - Corrige grosor de letra del hero
+   - Ajusta margen inferior del header
+   - Suaviza tono de botones ES/EN
+========================================================== */
+
+/* 1️⃣ Hero: texto más ligero (idéntico a Netlify) */
+.hero-subtext {
+  font-weight: 400 !important;
+}
+
+/* 2️⃣ Header: pequeño espacio inferior adicional */
+header {
+  padding-bottom: 1.3em !important;
+}
+
+/* 3️⃣ Botones ES | EN: tono más suave y homogéneo */
+.lang-switch button {
+  background-color: #ff7a33 !important;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+.lang-switch button:hover {
+  background-color: #ff8f55 !important;
+}
