@@ -502,3 +502,86 @@ header {
   padding-bottom: 160px !important;  /* antes ~80px, se amplía solo aquí */
   margin-bottom: 100px !important;   /* asegura aire visual sin solapamiento */
 }
+/* ==========================================================
+   💚 FOOTER FINAL SBELTUS
+   📅 2025-11-01
+   ----------------------------------------------------------
+   Propósito:
+   - Mantener el fondo verde-azulado ya existente.
+   - Mostrar © 2025 SBELTUS en la primera línea.
+   - Mostrar los enlaces legales (Disclaimer | Privacidad | Términos)
+     en una segunda línea centrada y horizontal.
+   - Evitar duplicaciones y conflictos previos.
+========================================================== */
+
+footer.footer {
+  background-color: #2b6777;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 10px 35px 10px; /* altura proporcionada */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 50;
+}
+
+/* Año */
+footer.footer p {
+  margin-bottom: 5px;
+}
+
+/* Enlaces legales */
+footer.footer a {
+  color: #e7f0f0;
+  text-decoration: none;
+  margin: 0 8px;
+  display: inline-block;
+}
+
+footer.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ajuste de separación con la sección Contacto */
+#contact {
+  padding-bottom: 60px !important;
+  margin-bottom: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+/* ==========================================================
+   💚 FOOTER FINAL SBELTUS - DOS LÍNEAS HORIZONTALES
+   📅 2025-11-01
+   ----------------------------------------------------------
+   Propósito:
+   - Mostrar el año y SBELTUS en la primera línea.
+   - Mostrar los enlaces legales en la segunda línea (horizontal).
+   - Mantener el fondo verde-azulado con altura equilibrada.
+========================================================== */
+
+footer.footer {
+  background-color: #2b6777;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 10px 30px 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Línea del año */
+footer.footer p {
+  margin: 0 0 5px 0;
+  font-weight: 500;
+}
+
+/* Segunda línea: enlaces legales en horizontal */
+footer.footer a {
+  color: #e7f0f0;
+  text-decoration: none;
+  margin: 0 8px;
+  display: inline-block;
+}
+
+footer.footer a:hover {
+  text-decoration: underline;
+}
