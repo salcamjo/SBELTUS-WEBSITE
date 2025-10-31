@@ -548,8 +548,6 @@ Propósito:
   .menu-toggle {
     display: block !important;
   }
-}
-
   /* 🔹 Footer: ajuste final de altura y visibilidad total en móvil */
   footer.footer {
     padding-top: 15px !important;      /* mejora equilibrio visual */
@@ -557,3 +555,5 @@ Propósito:
     line-height: 1.4 !important;       /* mantiene proporción del texto */
     overflow: visible !important;      /* evita que se recorten las letras */
   }
+}
+
