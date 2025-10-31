@@ -558,6 +558,40 @@ Propósito:
     line-height: 1.6 !important;
     overflow: visible !important;      /* garantiza que no se corte nada */
   }
+}
 
+/* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
+BLOQUE CSS FINAL – ESTRUCTURA Y VISIBILIDAD TOTAL DEL FOOTER
+📅 2025-11-01
+Propósito:
+✔️ Asegura que el footer sea visible completo en móvil y escritorio.
+✔️ Mejora legibilidad y separación de líneas.
+✔️ Evita recortes de la fila “Disclaimer · Privacidad · Términos”.
+💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
+
+footer.footer {
+  text-align: center;
+  padding: 20px 10px 40px 10px; /* más aire inferior */
+  line-height: 1.5;
+}
+
+.footer-top p {
+  margin-bottom: 8px; /* separación visual */
+}
+
+.footer-bottom {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.95rem;
+}
+
+.footer-bottom a {
+  color: #e7f0f0;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
 
