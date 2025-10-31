@@ -555,3 +555,11 @@ Propósito:
     padding-bottom: 80px !important;   /* antes 40px aprox → agrega espacio visible */
     margin-bottom: 0 !important;
   }
+
+  /* 🔹 Footer: ajuste de altura y visibilidad total en móvil */
+  footer.footer {
+    padding-top: 10px !important;      /* reduce altura superior */
+    padding-bottom: 70px !important;   /* mantiene parte inferior visible */
+    line-height: 1.4 !important;       /* compacta el texto */
+    overflow: visible !important;      /* asegura que no se corte nada */
+  }
