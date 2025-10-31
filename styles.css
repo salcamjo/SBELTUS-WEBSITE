@@ -548,12 +548,15 @@ Propósito:
   .menu-toggle {
     display: block !important;
   }
-   /* 🔹 Footer (solo móvil): altura extendida para mostrar todo el texto */
+  /* 🔹 Footer (solo móvil): corrección total de visibilidad del texto */
   footer.footer {
-    padding-top: 10px !important;       /* margen superior mínimo */
-    padding-bottom: 130px !important;   /* +35px respecto al anterior */
-    line-height: 1.5 !important;        /* mejora legibilidad */
-    overflow: visible !important;       /* evita corte de texto */
+    display: block !important;
+    height: auto !important;           /* elimina cualquier límite de altura */
+    min-height: 180px !important;      /* asegura espacio mínimo suficiente */
+    padding-top: 10px !important;
+    padding-bottom: 130px !important;
+    line-height: 1.6 !important;
+    overflow: visible !important;      /* garantiza que no se corte nada */
   }
 
 }
