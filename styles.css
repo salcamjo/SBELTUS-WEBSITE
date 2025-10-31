@@ -514,6 +514,13 @@ Propósito:
     margin-top: 150px !important;
     padding-top: 70px !important;
     scroll-margin-top: 150px !important;
+/* 🔹 Sección Contacto: corrige espaciado superior en móvil */
+#contact {
+  margin-top: 190px !important;
+  padding-top: 80px !important;
+  scroll-margin-top: 180px !important;
+}
+
   }
 
   /* 🔹 Botones de idioma en una sola línea centrada */
