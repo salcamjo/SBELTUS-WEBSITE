@@ -515,11 +515,12 @@ Propósito:
     padding-top: 70px !important;
     scroll-margin-top: 150px !important;
   }
-  /* 🔹 Sección Contacto: nivelación definitiva en móvil */
+
+  /* 🔹 Sección Contacto: ajuste equilibrado final en móvil */
   #contact {
-    margin-top: 240px !important;   /* antes 190px → sube 50px más */
-    padding-top: 90px !important;   /* un poco más de respiración interior */
-    scroll-margin-top: 200px !important;
+    margin-top: 210px !important;   /* antes 240px → sube 30px menos */
+    padding-top: 80px !important;   /* mantiene aire interior */
+    scroll-margin-top: 180px !important;
   }
 
   /* 🔹 Botones de idioma en una sola línea centrada */
