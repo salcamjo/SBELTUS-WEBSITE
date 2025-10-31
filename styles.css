@@ -612,3 +612,63 @@ footer.footer a:hover {
   scroll-margin-top: 200px; /* asegura espacio entre el header y el inicio */
   padding-top: 20px; /* ligera separación visual */
 }
+
+/* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
+BLOQUE CSS: Corrección responsive móvil (header + idiomas)
+Fecha: 2025-10-31
+Propósito:
+1️⃣ Evita que el header verde tape el texto del hero.
+2️⃣ Alinea los botones de idioma (ES/EN) en horizontal, sin guion.
+Aplicar: al FINAL del archivo styles.css
+💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
+
+@media (max-width: 768px) {
+  /* Ajusta el espacio superior del hero para evitar solapamiento */
+  #hero {
+    margin-top: 140px !important; /* puedes ajustar a 130–150px según veas */
+  }
+
+  /* Corrige la disposición de los botones de idioma */
+  .language-switch {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* separa los botones sin guion */
+  }
+
+  .language-switch button::before {
+    content: none !important; /* elimina el guion o separador */
+  }
+}
+
+/* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
+BLOQUE CSS: Ajuste responsive – botones de idioma (ES/EN)
+Versión: Prueba Backup o Respaldo Segura 1
+Fecha: 2025-10-31
+Propósito:
+✔️ Mantiene el header fijo sin tapar el hero.
+✔️ Coloca los botones de idioma (ES/EN) en una sola línea horizontal.
+✔️ Elimina guiones o separadores verticales.
+Aplicar: al FINAL del archivo styles.css
+💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
+
+@media (max-width: 768px) {
+  /* separación del hero */
+  #hero {
+    margin-top: 140px !important;
+  }
+
+  /* disposición horizontal de botones de idioma */
+  .lang-switch {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* separación visual */
+  }
+
+  .lang-switch button::before {
+    content: none !important; /* quita guion o línea */
+  }
+}
