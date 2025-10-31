@@ -550,3 +550,8 @@ Propósito:
   }
 }
 
+  /* 🔹 Footer: asegura que se vea completamente en móvil */
+  footer {
+    padding-bottom: 80px !important;   /* antes 40px aprox → agrega espacio visible */
+    margin-bottom: 0 !important;
+  }
