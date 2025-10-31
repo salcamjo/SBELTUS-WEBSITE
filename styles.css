@@ -281,25 +281,6 @@ section h2::before { content: "🌱"; font-size: 1.3rem; }
 .contact button:hover { background-color: #256428; }
 
 
-/* 💚 FOOTER FINAL SBELTUS 💚 */
-footer.footer {
-  background-color: #2b6777;
-  color: #ffffff;
-  text-align: center;
-  padding: 25px 10px 30px 10px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-footer.footer p { margin: 0 0 5px 0; font-weight: 500; }
-footer.footer a {
-  color: #e7f0f0;
-  text-decoration: none;
-  margin: 0 8px;
-  display: inline-block;
-}
-footer.footer a:hover { text-decoration: underline; }
-
-
 /* 💚 RESPONSIVE MÓVIL 💚 */
 @media (max-width: 820px) {
   html, body { max-width: 100%; overflow-x: hidden; }
@@ -561,22 +542,27 @@ Propósito:
 }
 
 /* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
-BLOQUE CSS FINAL – ESTRUCTURA Y VISIBILIDAD TOTAL DEL FOOTER
+BLOQUE CSS ÚNICO – FOOTER FINAL SBELTUS VISIBLE COMPLETO
 📅 2025-11-01
 Propósito:
-✔️ Asegura que el footer sea visible completo en móvil y escritorio.
-✔️ Mejora legibilidad y separación de líneas.
-✔️ Evita recortes de la fila “Disclaimer · Privacidad · Términos”.
+✔️ Reemplaza todas las reglas duplicadas de footer.
+✔️ Asegura visibilidad total en móvil y escritorio.
+✔️ Mantiene proporción, legibilidad y equilibrio visual.
 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
 
 footer.footer {
+  background-color: #2b6777;
+  color: #ffffff;
   text-align: center;
-  padding: 20px 10px 40px 10px; /* más aire inferior */
-  line-height: 1.5;
+  padding: 25px 10px 100px 10px;  /* aumenta fondo inferior */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  overflow: visible !important;   /* evita recortes */
 }
 
 .footer-top p {
-  margin-bottom: 8px; /* separación visual */
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .footer-bottom {
@@ -588,10 +574,10 @@ footer.footer {
 .footer-bottom a {
   color: #e7f0f0;
   text-decoration: none;
-  margin: 0 6px;
+  margin: 0 8px;
+  display: inline-block;
 }
 
 .footer-bottom a:hover {
   text-decoration: underline;
 }
-
