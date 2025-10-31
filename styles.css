@@ -516,12 +516,13 @@ Propósito:
     scroll-margin-top: 150px !important;
   }
  
- /* 🔹 Sección Contacto: ajuste milimétrico final en móvil */
+  /* 🔹 Sección Contacto: ajuste final para mostrar el footer */
   #contact {
-    margin-top: 200px !important;   /* antes 210px → sube 10px */
-    padding-top: 75px !important;   /* mantiene buena respiración */
-    scroll-margin-top: 170px !important;
+    margin-top: 185px !important;   /* antes 200px → sube 15px */
+    padding-top: 70px !important;   /* equilibrio interior */
+    scroll-margin-top: 160px !important;
   }
+
 
   /* 🔹 Botones de idioma en una sola línea centrada */
   .lang-switch {
