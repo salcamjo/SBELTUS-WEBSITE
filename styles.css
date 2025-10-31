@@ -515,12 +515,12 @@ Propósito:
     padding-top: 70px !important;
     scroll-margin-top: 150px !important;
   }
-
-  /* 🔹 Sección Contacto: ajuste equilibrado final en móvil */
+ 
+ /* 🔹 Sección Contacto: ajuste milimétrico final en móvil */
   #contact {
-    margin-top: 210px !important;   /* antes 240px → sube 30px menos */
-    padding-top: 80px !important;   /* mantiene aire interior */
-    scroll-margin-top: 180px !important;
+    margin-top: 200px !important;   /* antes 210px → sube 10px */
+    padding-top: 75px !important;   /* mantiene buena respiración */
+    scroll-margin-top: 170px !important;
   }
 
   /* 🔹 Botones de idioma en una sola línea centrada */
