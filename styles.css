@@ -471,3 +471,62 @@ Propósito:
   padding-top: 55px !important;    /* ajusta suavemente el espacio interior */
   scroll-margin-top: 120px !important;
 }
+
+/* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
+BLOQUE CSS CORRECTIVO RESPONSIVE – HEADER VS CONTENIDO
+📅 2025-11-01
+Propósito:
+✔️ Evita que el header azul tape el inicio del texto en móvil.
+✔️ Aumenta el margen superior solo en pantallas pequeñas.
+✔️ No afecta la vista de escritorio.
+💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
+
+@media (max-width: 768px) {
+  #hero,
+  #about,
+  #results,
+  #resources,
+  #pricing {
+    margin-top: 160px !important;  /* separa del header */
+    padding-top: 80px !important;  /* respiración visual */
+    scroll-margin-top: 160px !important;
+  }
+}
+
+/* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
+BLOQUE CSS DEFINITIVO – LIBERACIÓN TOTAL DEL HEADER EN MÓVIL
+📅 2025-11-01
+Propósito:
+✔️ Elimina por completo el solapamiento del header azul sobre el texto.
+✔️ Solo afecta vista móvil (≤768px).
+✔️ Mantiene equilibrio visual y márgenes correctos.
+💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
+
+@media (max-width: 768px) {
+  #hero,
+  #about,
+  #results,
+  #resources,
+  #pricing {
+    margin-top: 190px !important;  /* +30px respecto al anterior */
+    padding-top: 90px !important;  /* aumenta un poco la respiración */
+    scroll-margin-top: 190px !important;
+  }
+}
+
+/* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
+BLOQUE CSS ESPECÍFICO – AJUSTE DE ESPACIO EN HERO (MÓVIL VERTICAL)
+📅 2025-11-01
+Propósito:
+✔️ Aumenta la separación entre el header azul y la frase
+   “Transforma tu vida después de los 50” solo en vista móvil.
+✔️ Mejora equilibrio visual en orientación vertical.
+✔️ Sin cambios en escritorio.
+💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
+
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 220px !important; /* antes 180px → +40px de aire */
+    scroll-margin-top: 200px !important; /* asegura visibilidad completa */
+  }
+}
