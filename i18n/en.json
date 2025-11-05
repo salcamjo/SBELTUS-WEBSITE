@@ -1,0 +1,62 @@
+{
+  "💚 HEADER": "SBELTUS – English language version | Date: 2025-11-03 | Full global translation",
+
+  "💚 HERO": {
+    "hero_title": "Transform your life after 50",
+    "hero_subtext": "Regain your energy, strengthen your well-being, and discover that it’s never too late to feel fulfilled. With a simple and sensible method, you can take care of your weight and health after turning 50.",
+    "hero_cta": "Your transformation can begin today 🌿"
+  },
+
+  "💚 ABOUT": {
+    "about_title": "About Me",
+    "about_p1": "I am an older adult who, like many others, spent years without maintaining healthy habits regarding nutrition and physical activity. I am not a health professional — I am an engineer.",
+    "about_p2": "However, through discipline and consistency, I managed to transform my habits and reduce my body fat percentage without losing muscle mass, following a low-calorie diet and a slow but steady process. I discovered that there are no shortcuts or miracles: patience and consistency are what truly matter.",
+    "about_p3": "Today I share my personal experience as a source of inspiration and support for those seeking to improve their well-being. My message is clear: everyone should always consult their doctor, nutritionist, or trusted specialist before beginning any change process."
+  },
+
+  "💚 RESULTS": {
+    "results_title": "Results",
+    "results_intro": "Here I want to share the results achieved in my 12-month body-fat reduction process. This personal evidence clearly demonstrates how we can reduce body fat in a healthy way while preserving muscle mass.",
+    "results_paragraph2": "In my case, I didn’t start from obesity but from a slight overweight of about 7 kg, with a Body Mass Index (BMI) of 20.6 at the beginning and 17.6 at the end of the process.",
+    "results_image_caption": "Your transformation can also start today 🌿",
+    "results_sub1": "Understanding Body Fat",
+    "results_text1": "Body fat is made up of subcutaneous and visceral fat. The first lies under the skin, while the second surrounds the organs and is more harmful. There are several ways to measure it; in my case, I used manual and scale bioimpedance devices for comparison.",
+    "results_sub2": "Commitment and Consistency",
+    "results_text2": "This process requires a genuine desire to improve, firm decision-making, and perseverance. It’s not about quick fixes, but about patience and discipline — leading a healthy life without giving up social enjoyment.",
+    "results_sub3": "Understanding Our Body",
+    "results_text3": "Our body stores energy as fat. Adipocytes grow or multiply when there is a caloric surplus. When losing weight, lipolysis occurs: fats are released and converted into energy inside the mitochondria."
+  },
+
+  "💚 RESOURCES": {
+    "resources_title": "Resources",
+    "resources_description": "Find scientific publications and links related to health and well-being.",
+    "resources_link1": "WHO – World Health Organization"
+  },
+
+  "💚 PLAN": {
+    "plan_title": "SBELTUS Plan",
+    "plan_description": "Includes comprehensive guidance, continuous monitoring, and access to personalized resources.",
+    "plan_card_title": "Comprehensive Plan",
+    "plan_feature1": "✅ Permanent 24-hour assistance via WhatsApp",
+    "plan_feature2": "✅ Personalized nutritional guide",
+    "plan_feature3": "✅ Body measurement tracking",
+    "plan_price": "$50",
+    "plan_button": "Start Now"
+  },
+
+  "💚 CONTACT": {
+    "contact_title": "Contact",
+    "contact_name_placeholder": "Enter your name here",
+    "contact_email_placeholder": "Enter your email here",
+    "contact_message_placeholder": "Enter your message here",
+    "contact_button": "Send",
+    "contact_whatsapp": "WhatsApp: +51 999 999 999"
+  },
+
+  "💚 FOOTER": {
+    "footer_line1": "© 2025 SBELTUS. All rights reserved.",
+    "footer_disclaimer": "Disclaimer",
+    "footer_privacy": "Privacy",
+    "footer_terms": "Terms"
+  }
+}

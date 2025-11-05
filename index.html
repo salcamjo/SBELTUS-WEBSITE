@@ -1,0 +1,256 @@
+<!-- ==========================================================
+     ✅ ARCHIVO: index.html (completo, con todas las secciones)
+     📅 Fecha: 2025-10-30
+     ----------------------------------------------------------
+     Propósito:
+     - Recupera TODO el contenido largo que me enviaste.
+     - Funciona al abrir local (doble clic), aunque no cargue i18n.
+     - Compatible con styles.css y scripts.js del 30-10-2025.
+=========================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SBELTUS - Salud y Bienestar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="SBELTUS Logo" />
+    </div>
+
+    <div class="tagline">
+      <p>Salud de manera natural y sostenible</p>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav">
+      <a href="#hero" data-i18n="menu_home">Inicio</a>
+      <a href="#about" data-i18n="menu_about">Acerca de mí</a>
+      <a href="#results" data-i18n="menu_results">Resultados</a>
+      <a href="#resources" data-i18n="menu_resources">Recursos</a>
+      <a href="#pricing" data-i18n="menu_pricing">Planes</a>
+      <a href="#contact" data-i18n="menu_contact">Contacto</a>
+    </nav>
+
+    <div class="lang-switch">
+      <button onclick="setLanguage('es')">ES</button> |
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 data-i18n="hero_title" style="color:#2E7D32 !important;">
+        Transforma tu vida después de los 50
+      </h1>
+      <p class="hero-subtext">
+        Recupera tu energía, fortalece tu bienestar y descubre que nunca es tarde para sentirte en plenitud.
+        Con un método simple y prudente podrás cuidar tu peso y tu salud después de los 50.
+      </p>
+
+      <div class="hero-logos">
+        <span class="icono-arbol">🌿</span>
+        <img src="images/logo.png" alt="Logo SBELTUS" class="logo-centro" />
+        <span class="icono-arbol">🌿</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:flex-start; gap:20px;">
+      <div class="about-image">
+        <img src="images/fernando.jpg" alt="Foto de Fernando - SBELTUS" />
+      </div>
+
+      <div style="flex:2 1 500px;">
+        <!-- ES -->
+        <div data-lang="es">
+          <h2>Acerca de mí</h2>
+          <p>
+            Soy una persona mayor que, como muchas otras, durante años no llevó un estilo de vida saludable en cuanto a alimentación y actividad física. No soy profesional del sector salud: soy ingeniero.
+          </p>
+          <p>
+            Sin embargo, con disciplina y constancia, logré transformar mis hábitos y reducir mi porcentaje de grasa corporal sin perder masa muscular, siguiendo una dieta hipocalórica y un proceso lento pero seguro. Descubrí que no existen atajos ni milagros: lo importante es la paciencia y la constancia.
+          </p>
+          <p>
+            Hoy comparto mi experiencia personal como una forma de inspiración y apoyo para quienes buscan mejorar su bienestar. Mi mensaje es claro: cada persona debe consultar siempre con su médico, nutricionista o especialista de confianza antes de iniciar cualquier proceso de cambio.
+          </p>
+        </div>
+
+        <!-- EN -->
+        <div data-lang="en" style="display:none;">
+          <h2>🌱 About me</h2>
+          <p>
+            I am an older adult who, like many others, did not maintain healthy habits for years regarding nutrition and physical activity. I am not a healthcare professional; I am an engineer.
+          </p>
+          <p>
+            However, with discipline and consistency, I managed to transform my habits and reduce my body fat percentage without losing muscle mass, following a hypocaloric diet and a slow but steady process. I discovered there are no shortcuts or miracles — what truly matters is patience and perseverance.
+          </p>
+          <p>
+            Today I share my personal experience as a source of inspiration and support for those seeking to improve their well-being. My message is clear: everyone should always consult their doctor, nutritionist, or trusted specialist before starting any process of change.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
+SECCIÓN: RESULTADOS – Versión estable 31-10-2025
+Propósito:
+✔️ Mostrar el texto completo del proceso personal de pérdida de grasa corporal.
+✔️ Insertar caricatura amable (transformación obeso → esbelto) para hacerlo visual y dinámico.
+✔️ Mejorar legibilidad del texto con subtítulos temáticos.
+Ubicación: Sustituir el contenido actual de la sección “Resultados” en index.html
+💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 -->
+
+<section id="results" class="results-section" style="background-color:#f9f9f9; padding:50px 20px;">
+  <div style="max-width:1000px; margin:0 auto;">
+    
+    <h2>Resultados</h2>
+
+    <p>
+      Aquí quiero mostrar los resultados obtenidos en mi proceso de pérdida de grasa corporal en un período de 12 meses, lo cual constituye una evidencia personal clara y precisa de cómo podemos conseguir reducir de manera saludable nuestro porcentaje de grasa corporal y por ende el peso corporal evitando perder masa muscular. Lo que quiero compartir contigo y que se muestra en el gráfico presenta mi proceso de reducción de peso en un período de 12 meses a una tasa promedio de 0.5 Kg por mes, y 6 Kg totales de reducción promedio en dicho período.
+    </p>
+
+    <p>
+      Pero aquí lo interesante es que los objetivos logrados pueden obtenerse a partir de diferentes condiciones de estado inicial, toda vez de que en mi caso no partí de un estado de obesidad, sino más bien en un sobrepeso de alrededor de 7 Kg. En otras palabras, inicié el proceso con un índice de masa corporal (IMC) de 20,6 logrando al término del período un IMC de 17,6.
+    </p>
+
+    <!-- Imagen ilustrativa de transformación -->
+    <div style="text-align:center; margin:30px 0;">
+     <img src="images/transformacion-obeso-esbelto.png" alt="Transformación de obeso a esbelto - SBELTUS" style="max-width:300px; width:100%; height:auto; border-radius:12px;">
+      <p style="font-style:italic; color:#2E7D32; margin-top:10px;">Tu transformación también puede comenzar hoy 🌿</p>
+    </div>
+
+    <h3>Comprender la grasa corporal</h3>
+    <p>
+      Considero importante que tengamos presente el concepto de grasa corporal la misma que se constituye en la grasa subcutánea y grasa visceral entendiendo como la primera aquella que está inmediatamente por debajo de nuestra piel y la grasa visceral la que está alrededor de los órganos y que es quizás la más perjudicial. En tal sentido te sugiero visualizar las imágenes de referencia respecto a este concepto de porcentaje de grasa corporal de una manera práctica y aproximada para estimar en qué condición nos encontramos. Debo señalar que existen varios métodos de medición de la grasa corporal desde los más simples hasta los más sofisticados y costosos, por cierto, en mi experiencia he seguido la opción de bioimpedancia con un monitor manual y con balanza de pie con electrodos a fin de comparar resultados, los cuales sí varían entre sí.
+    </p>
+
+    <h3>Compromiso y constancia</h3>
+    <p>
+      También es preciso señalar que para este proceso, toda vez de que es controlado, se requieren algunos elementos básicos de medición que no son costosos de hecho, sin embargo, considero que lo más importante a tenerse en cuenta es el sincero y real deseo de mejorar nuestra salud. Esto implica asumir la responsabilidad de conseguir un objetivo por iniciativa propia y convicción de que sí es posible lograr esto, pero requiere una decisión firme, constancia y paciencia. Sin estos compromisos no se podrá conseguir nada y si bien es cierto esto implica un cambio de estilo de vida, la satisfacción y felicidad que se obtiene al lograr esculpir tu figura, es la mayor recompensa que puedes obtener y que de hecho tampoco significará privarse de los placeres sociales a los que estamos acostumbrados sin exageraciones por supuesto, pero llevando una vida saludable.
+    </p>
+
+    <h3>Entendiendo nuestro cuerpo</h3>
+    <p>
+      Es importante también tener en cuenta que nuestro organismo y su funcionamiento es el resultado de un proceso evolutivo en el cual todo se ha organizado, digámoslo así, a fin de tener energía disponible y almacenada, es por ello que es fundamental entender al menos de una forma básica o general que nuestro organismo responde a procesos bioquímicos y la fisiología es compleja pero eficiente en términos de cómo se aprovecha la energía almacenada. Entonces aquí viene el tema central pues la forma como obtenemos energía para nuestras actividades básicas y funcionamiento de nuestros órganos proviene de los alimentos que ingerimos, por lo que todo exceso de energía no se va a perder simplemente la vamos a almacenar.
+    </p>
+
+    <p>
+      De una forma práctica o dicho en simples palabras, el exceso de energía lo vamos a observar cuando engordamos, y que no es otra cosa que tejido adiposo constituido por células especializadas llamadas adipocitos, las cuales tienen capacidad de hipertrofia e hiperplasia esto es, aumentando en volumen y cantidad respectivamente. En este punto debemos tener claro que la grasa no se quema, más bien se beta-oxida en las mitocondrias que son organelos celulares, encontrándose estas mitocondrias prácticamente en todas las células de nuestro cuerpo.
+    </p>
+
+    <p>
+      Debemos también tener claro que no engordamos de la noche a la mañana y es un proceso acumulativo, en el cual los adipocitos van almacenando triglicéridos los cuales están constituidos por la unión de una molécula de glicerol y de tres ácidos grasos. Ahora bien, cuando queremos perder peso lo que debería ocurrir es que se genere una lipólisis, es decir que ese enlace de triglicérido se rompa y se liberen los ácidos grasos hacia el torrente sanguíneo y que estos viajen hasta alguna célula de algún tejido que requiera de energía y a través de otros procesos ingrese a la célula de ese tejido y específicamente a la mitocondria para que se genere esa molécula energética conocida como ATP.
+    </p>
+
+  </div>
+</section>
+
+
+    <!-- IMÁGENES DE REFERENCIA -->
+    <figure style="text-align:center; margin:40px auto;">
+      <img src="images/grasa-hombres.jpg" alt="Porcentaje de grasa corporal en hombres" style="max-width:100%; height:auto;">
+      <figcaption style="font-style:italic; color:#555; margin-top:10px;">
+        Referencia visual: porcentajes de grasa corporal en hombres
+      </figcaption>
+    </figure>
+
+    <figure style="text-align:center; margin:40px auto;">
+      <img src="images/grasa-mujeres.jpg" alt="Porcentaje de grasa corporal en mujeres" style="max-width:100%; height:auto;">
+      <figcaption style="font-style:italic; color:#555; margin-top:10px;">
+        Referencia visual: porcentajes de grasa corporal en mujeres
+      </figcaption>
+    </figure>
+
+    <div class="image-source-note" style="text-align:center; color:#555; font-style:italic; margin-bottom:25px;">
+      Fuente de las imágenes: <strong>Healthline</strong>
+    </div>
+
+    <!-- GRÁFICO -->
+    <figure style="text-align:center; margin:30px auto;">
+      <img src="images/grafico-excel.png" alt="Gráfico de evolución de grasa corporal" style="max-width:100%; height:auto;">
+      <figcaption style="font-style:italic; color:#555;">Evolución semanal de grasa corporal</figcaption>
+    </figure>
+  </section>
+
+  <!-- RECURSOS -->
+  <section id="resources" class="resources">
+    <h2 style="color:#2E7D32;">Recursos</h2>
+    <p>Encuentra publicaciones científicas y enlaces relacionados con la salud.</p>
+    <ul>
+      <li><a href="https://www.who.int/" target="_blank">OMS - Organización Mundial de la Salud</a></li>
+    </ul>
+  </section>
+
+  <!-- PLAN SBELTUS -->
+  <section id="pricing" class="pricing">
+    <h2 style="color:#2E7D32;">Plan SBELTUS</h2>
+    <p class="plan-description">
+      Incluye acompañamiento integral, seguimiento continuo y acceso a recursos personalizados.
+    </p>
+    <div class="plan-card">
+      <h3>Plan Integral</h3>
+      <ul class="plan-features">
+        <li>✅ Asesoría permanente 24h vía WhatsApp</li>
+        <li>✅ Guía alimenticia personalizada</li>
+        <li>✅ Control de mediciones corporales</li>
+      </ul>
+      <div class="plan-price">$50</div>
+      <button class="plan-btn" id="paypal-button">Iniciar ahora</button>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="contact">
+    <h2 style="color:#2E7D32;">Contacto</h2>
+    <form>
+      <input type="text" placeholder="Ingrese aquí su nombre" required />
+      <input type="email" placeholder="Ingrese aquí su correo" required />
+      <textarea placeholder="Ingrese aquí su mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>WhatsApp: +51 999 999 999</p>
+  </section>
+
+<!-- 💚 FOOTER AJUSTADO PARA VISIBILIDAD TOTAL EN MÓVIL -->
+<footer class="footer">
+  <div class="footer-top">
+    <p>© 2025 SBELTUS. Todos los derechos reservados.</p>
+  </div>
+
+  <!-- Segunda fila: enlaces legales -->
+  <nav class="legal-links">
+    <a href="/pages/disclaimer">Disclaimer</a>
+    <span>|</span>
+    <a href="/pages/privacy">Privacidad</a>
+    <span>|</span>
+    <a href="/pages/terms">Términos</a>
+  </nav>
+</footer>
+
+  <!-- SDK PAYPAL (si se abre en hosting sí funciona, en local puede no) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+  <script>
+    if (typeof paypal !== "undefined") {
+      paypal.Buttons({
+        style: { shape: 'pill', color: 'gold', layout: 'vertical', label: 'paypal' },
+        createOrder: (data, actions) => actions.order.create({
+          purchase_units: [{ amount: { value: '50.00' }, description: 'Plan Integral SBELTUS' }]
+        }),
+        onApprove: (data, actions) => actions.order.capture().then(details => {
+          alert('Gracias, ' + details.payer.name.given_name + '! Tu compra fue procesada correctamente.');
+        })
+      }).render('#paypal-button');
+    }
+  </script>
+</body>
+</html>

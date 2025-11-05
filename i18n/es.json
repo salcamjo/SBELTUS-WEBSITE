@@ -1,0 +1,62 @@
+{
+  "💚 ENCABEZADO": "SBELTUS – Versión de idioma español | Fecha: 2025-11-03 | Traducción global completa",
+
+  "💚 HERO": {
+    "hero_title": "Transforma tu vida después de los 50",
+    "hero_subtext": "Recupera tu energía, fortalece tu bienestar y descubre que nunca es tarde para sentirte en plenitud. Con un método simple y prudente podrás cuidar tu peso y tu salud después de los 50.",
+    "hero_cta": "Tu transformación comienza hoy 🌿"
+  },
+
+  "💚 ABOUT": {
+    "about_title": "Acerca de mí",
+    "about_p1": "Soy una persona mayor que, como muchas otras, durante años no llevó un estilo de vida saludable en cuanto a alimentación y actividad física. No soy profesional del sector salud: soy ingeniero.",
+    "about_p2": "Sin embargo, con disciplina y constancia, logré transformar mis hábitos y reducir mi porcentaje de grasa corporal sin perder masa muscular, siguiendo una dieta hipocalórica y un proceso lento pero seguro. Descubrí que no existen atajos ni milagros: lo importante es la paciencia y la constancia.",
+    "about_p3": "Hoy comparto mi experiencia personal como una forma de inspiración y apoyo para quienes buscan mejorar su bienestar. Mi mensaje es claro: cada persona debe consultar siempre con su médico, nutricionista o especialista de confianza antes de iniciar cualquier proceso de cambio."
+  },
+
+  "💚 RESULTS": {
+    "results_title": "Resultados",
+    "results_intro": "Aquí quiero mostrar los resultados obtenidos en mi proceso de pérdida de grasa corporal en un período de 12 meses, lo cual constituye una evidencia personal clara y precisa de cómo podemos conseguir reducir de manera saludable nuestro porcentaje de grasa corporal evitando perder masa muscular.",
+    "results_paragraph2": "En mi caso no partí de un estado de obesidad, sino de un sobrepeso de alrededor de 7 kg, con un índice de masa corporal (IMC) de 20.6 al inicio y 17.6 al final del proceso.",
+    "results_image_caption": "Tu transformación también puede comenzar hoy 🌿",
+    "results_sub1": "Comprender la grasa corporal",
+    "results_text1": "La grasa corporal se divide en subcutánea y visceral. La primera está debajo de la piel, la segunda rodea los órganos y es la más perjudicial. Existen diversos métodos para medirla; en mi caso utilicé bioimpedancia manual y de balanza.",
+    "results_sub2": "Compromiso y constancia",
+    "results_text2": "Este proceso requiere deseo real de mejorar, decisión firme y constancia. No se trata de atajos, sino de paciencia y disciplina, llevando una vida saludable sin perder el disfrute social.",
+    "results_sub3": "Entendiendo nuestro cuerpo",
+    "results_text3": "Nuestro cuerpo almacena energía en forma de grasa. Los adipocitos se expanden o multiplican cuando hay exceso calórico. Al perder peso, ocurre la lipólisis: las grasas se liberan y se transforman en energía dentro de las mitocondrias."
+  },
+
+  "💚 RESOURCES": {
+    "resources_title": "Recursos",
+    "resources_description": "Encuentra publicaciones científicas y enlaces relacionados con la salud.",
+    "resources_link1": "OMS - Organización Mundial de la Salud"
+  },
+
+  "💚 PLAN": {
+    "plan_title": "Plan SBELTUS",
+    "plan_description": "Incluye acompañamiento integral, seguimiento continuo y acceso a recursos personalizados.",
+    "plan_card_title": "Plan Integral",
+    "plan_feature1": "✅ Asesoría permanente 24h vía WhatsApp",
+    "plan_feature2": "✅ Guía alimenticia personalizada",
+    "plan_feature3": "✅ Control de mediciones corporales",
+    "plan_price": "$50",
+    "plan_button": "Iniciar ahora"
+  },
+
+  "💚 CONTACT": {
+    "contact_title": "Contacto",
+    "contact_name_placeholder": "Ingrese aquí su nombre",
+    "contact_email_placeholder": "Ingrese aquí su correo",
+    "contact_message_placeholder": "Ingrese aquí su mensaje",
+    "contact_button": "Enviar",
+    "contact_whatsapp": "WhatsApp: +51 999 999 999"
+  },
+
+  "💚 FOOTER": {
+    "footer_line1": "© 2025 SBELTUS. Todos los derechos reservados.",
+    "footer_disclaimer": "Disclaimer",
+    "footer_privacy": "Privacidad",
+    "footer_terms": "Términos"
+  }
+}
