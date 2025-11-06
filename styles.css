@@ -174,7 +174,7 @@ header {
   align-items: center;
   gap: 8px;
 }
-.results-section h2::before { content: "🌱"; font-size: 1.8rem; }
+
 .results-section p {
   text-align: justify;
   color: #555;
@@ -214,8 +214,6 @@ section h2 {
   gap: 10px;
   margin-bottom: 24px;
 }
-section h2::before { content: "🌱"; font-size: 1.3rem; }
-
 
 /* 💚 PLANES (PLAN SBELTUS) 💚 */
 .pricing {
@@ -615,15 +613,4 @@ footer.footer .legal-links a:hover {
     margin-bottom: 0 !important;
     padding-bottom: 10px !important;
   }
-}
-/* ==========================================================
-   💚 BLOQUE CSS: Evitar duplicación del icono 🌱 tras traducción
-   📅 Fecha: 2025-11-03
-   ----------------------------------------------------------
-   Propósito:
-   - Elimina el icono duplicado en títulos al cambiar de idioma.
-========================================================== */
-
-.translated h2::before {
-  content: none !important;
 }
