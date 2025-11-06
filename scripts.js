@@ -55,6 +55,18 @@ const MAP = [
 { sel: "#results p:nth-of-type(4), .results-section > div > p:nth-of-type(4)", key: "results_paragraph4" },
 { sel: "#results p:nth-of-type(5), .results-section > div > p:nth-of-type(5)", key: "results_paragraph5" },
 { sel: "#results p:nth-of-type(6), .results-section > div > p:nth-of-type(6)", key: "results_paragraph6" },
+/* ==========================================================
+   🌍 BLOQUE JS: EXTENSIÓN FINAL DE TRADUCCIÓN – PÁRRAFO 7 RESULTADOS
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Incluir el último párrafo (7) de la sección Resultados,
+     que inicia con “Debemos también tener claro…”.
+   - Mantiene la misma estructura del resto de selectores.
+========================================================== */
+
+{ sel: "#results p:nth-of-type(7), .results-section > div > p:nth-of-type(7)", key: "results_paragraph7" },
+
   { sel: "#results h3:nth-of-type(1), .results-section h3:nth-of-type(1)", key: "results_sub1" },
   { sel: "#results h3:nth-of-type(2), .results-section h3:nth-of-type(2)", key: "results_sub2" },
   { sel: "#results h3:nth-of-type(3), .results-section h3:nth-of-type(3)", key: "results_sub3" },
