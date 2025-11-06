@@ -40,6 +40,21 @@ const MAP = [
   { sel: "#results h2, .results-section h2", key: "results_title" },
   { sel: "#results p:nth-of-type(1), .results-section > div > p:nth-of-type(1)", key: "results_intro" },
   { sel: "#results p:nth-of-type(2), .results-section > div > p:nth-of-type(2)", key: "results_paragraph2" },
+/* ==========================================================
+   🌍 BLOQUE JS: EXTENSIÓN DE TRADUCCIÓN – PÁRRAFOS ADICIONALES RESULTADOS
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Incluir la traducción de todos los párrafos dentro de la
+     sección “Resultados”, más allá de los dos iniciales.
+   - Mantiene el mismo sistema de mapeo por selectores.
+   - Compatible con la estructura actual del sitio SBELTUS.
+========================================================== */
+
+{ sel: "#results p:nth-of-type(3), .results-section > div > p:nth-of-type(3)", key: "results_paragraph3" },
+{ sel: "#results p:nth-of-type(4), .results-section > div > p:nth-of-type(4)", key: "results_paragraph4" },
+{ sel: "#results p:nth-of-type(5), .results-section > div > p:nth-of-type(5)", key: "results_paragraph5" },
+{ sel: "#results p:nth-of-type(6), .results-section > div > p:nth-of-type(6)", key: "results_paragraph6" },
   { sel: "#results h3:nth-of-type(1), .results-section h3:nth-of-type(1)", key: "results_sub1" },
   { sel: "#results h3:nth-of-type(2), .results-section h3:nth-of-type(2)", key: "results_sub2" },
   { sel: "#results h3:nth-of-type(3), .results-section h3:nth-of-type(3)", key: "results_sub3" },
