@@ -13,16 +13,14 @@
 
 /* 💚 BASE GENERAL 💚 */
 * { box-sizing: border-box; }
-
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI', Arial, sans-serif;
   background-color: #f9fdfb;
   color: #333;
   line-height: 1.6;
   font-weight: 500;
 }
-
 
 /* 💚 HEADER Y NAVEGACIÓN 💚 */
 header {
