@@ -662,3 +662,21 @@ section h3::before {
   vertical-align: middle;
 }
 /* Forzar recarga visual Netlify 2025-11-06 */
+/* ==========================================================
+   🌱 BLOQUE AJUSTE FINAL VISIBILIDAD TITULOS <h2>
+   📅 Fecha: 2025-11-06 (para Netlify)
+   ----------------------------------------------------------
+   Propósito:
+   - Asegurar que el pseudo-elemento ::before (plantita 🌱)
+     se muestre incluso si hay estilos inline en el HTML.
+   - Refuerza prioridad visual en servidores Linux (Netlify).
+========================================================== */
+
+section h2::before {
+  content: "🌱 ";
+  display: inline-block !important;
+  color: #2E7D32 !important;
+  font-size: 1.1em !important;
+  margin-right: 6px !important;
+  vertical-align: middle !important;
+}
