@@ -678,3 +678,25 @@ footer.footer .legal-links a:hover {
   margin-right: 5px;
   vertical-align: middle;
 }
+/* ==========================================================
+   🌱 BLOQUE CSS: ELIMINAR DUPLICADO EN “ABOUT ME” (versión final)
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Evitar que el emoji del HTML se sume al emoji del CSS
+     en la versión en inglés de “About me”.
+========================================================== */
+
+/* Oculta el emoji escrito en el HTML del título inglés */
+[data-lang="en"] .about-section h2 {
+  visibility: hidden;           /* oculta el texto original */
+  position: relative;
+}
+
+/* Vuelve a mostrar solo el texto sin el emoji */
+[data-lang="en"] .about-section h2::after {
+  content: "About me";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+}
