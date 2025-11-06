@@ -616,3 +616,22 @@ footer.footer .legal-links a:hover {
     padding-bottom: 10px !important;
   }
 }
+/* ==========================================================
+   🌱 BLOQUE CSS: PLANTITA PEQUEÑA EN SUBTÍTULOS DE RESULTADOS
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Mostrar automáticamente una plantita 🌱 antes de cada subtítulo <h3>
+     dentro de la sección “Resultados”.
+   - Mantener coherencia visual con los títulos principales (<h2>),
+     pero en tamaño menor.
+   - No interfiere con traducción ni con otros estilos del sitio.
+========================================================== */
+
+.results-section h3::before {
+  content: "🌱";
+  font-size: 1rem;
+  color: #2E7D32;           /* tono verde SBELTUS */
+  margin-right: 5px;
+  vertical-align: middle;
+}
