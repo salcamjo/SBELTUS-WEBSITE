@@ -138,6 +138,37 @@ header {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ==========================================================
+   🌱 BLOQUE CSS: UNIFICAR TAMAÑO DE PLANTITAS EN TODAS LAS SECCIONES
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Igualar el tamaño del emoji 🌱 en todos los títulos <h2>.
+   - Mantener el tamaño reducido en los subtítulos <h3> de Resultados.
+========================================================== */
+
+section h2::before {
+  content: "🌱";
+  font-size: 1.8rem;  /* tamaño uniforme en todas las secciones */
+  color: #2E7D32;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* subtítulos (h3) conservan tamaño menor */
+.results-section h3::before {
+  content: "🌱";
+  font-size: 1rem;
+  color: #2E7D32;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Excluir solo el título en inglés dentro de About */
+[data-lang="en"] .about-section h2::before {
+  content: none !important;
+}
+
 
 /* 💚 SECCIÓN ACERCA DE MÍ 💚 */
 .about-section {
@@ -174,7 +205,7 @@ header {
   align-items: center;
   gap: 8px;
 }
-.results-section h2::before { content: "🌱"; font-size: 1.8rem; }
+
 .results-section p {
   text-align: justify;
   color: #555;
@@ -222,11 +253,6 @@ section h2 {
    - Mantener la plantita en español.
    - Evitar duplicado en la versión inglesa (“About me”).
 ========================================================== */
-
-section h2::before {
-  content: "🌱";
-  font-size: 1.3rem;
-}
 
 /* 🌍 Excluir solo el título en inglés dentro de la sección About */
 [data-lang="en"] .about-section h2::before {
