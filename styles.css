@@ -164,12 +164,6 @@ section h2::before {
   vertical-align: middle;
 }
 
-/* Excluir solo el título en inglés dentro de About */
-[data-lang="en"] .about-section h2::before {
-  content: none !important;
-}
-
-
 /* 💚 SECCIÓN ACERCA DE MÍ 💚 */
 .about-section {
   padding: 20px;
@@ -677,26 +671,4 @@ footer.footer .legal-links a:hover {
   color: #2E7D32;           /* tono verde SBELTUS */
   margin-right: 5px;
   vertical-align: middle;
-}
-/* ==========================================================
-   🌱 BLOQUE CSS: ELIMINAR DUPLICADO EN “ABOUT ME” (versión final)
-   📅 Fecha: 2025-11-06
-   ----------------------------------------------------------
-   Propósito:
-   - Evitar que el emoji del HTML se sume al emoji del CSS
-     en la versión en inglés de “About me”.
-========================================================== */
-
-/* Oculta el emoji escrito en el HTML del título inglés */
-[data-lang="en"] .about-section h2 {
-  visibility: hidden;           /* oculta el texto original */
-  position: relative;
-}
-
-/* Vuelve a mostrar solo el texto sin el emoji */
-[data-lang="en"] .about-section h2::after {
-  content: "About me";
-  visibility: visible;
-  position: absolute;
-  left: 0;
 }
