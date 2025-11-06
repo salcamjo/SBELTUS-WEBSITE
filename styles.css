@@ -616,11 +616,3 @@ footer.footer .legal-links a:hover {
     padding-bottom: 10px !important;
   }
 }
-/* ==========================================================
-   💚 BLOQUE CSS: Evitar duplicación del icono 🌱 tras traducción
-   📅 Fecha: 2025-11-03
-========================================================== */
-
-.translated h2::before {
-  content: none !important;
-}
