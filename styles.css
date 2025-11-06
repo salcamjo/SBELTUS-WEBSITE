@@ -214,7 +214,24 @@ section h2 {
   gap: 10px;
   margin-bottom: 24px;
 }
-section h2::before { content: "🌱"; font-size: 1.3rem; }
+/* ==========================================================
+   🌱 BLOQUE CSS: EXCLUSIÓN DE PLANTITA EN “ABOUT ME” (para evitar duplicado)
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Evitar duplicación del ícono 🌱 en la sección “About me”.
+   - Mantener las plantitas visibles en las demás secciones.
+========================================================== */
+
+section h2::before {
+  content: "🌱";
+  font-size: 1.3rem;
+}
+
+/* Excluir la sección About */
+.about-section h2::before {
+  content: none !important;
+}
 
 
 /* 💚 PLANES (PLAN SBELTUS) 💚 */
