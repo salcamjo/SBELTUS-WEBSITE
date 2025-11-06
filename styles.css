@@ -215,12 +215,12 @@ section h2 {
   margin-bottom: 24px;
 }
 /* ==========================================================
-   🌱 BLOQUE CSS: EXCLUSIÓN DE PLANTITA EN “ABOUT ME” (para evitar duplicado)
+   🌱 BLOQUE CSS: CORRECCIÓN FINAL – EVITAR DUPLICADO EN ABOUT (solo en inglés)
    📅 Fecha: 2025-11-06
    ----------------------------------------------------------
    Propósito:
-   - Evitar duplicación del ícono 🌱 en la sección “About me”.
-   - Mantener las plantitas visibles en las demás secciones.
+   - Mantener la plantita en español.
+   - Evitar duplicado en la versión inglesa (“About me”).
 ========================================================== */
 
 section h2::before {
@@ -228,8 +228,8 @@ section h2::before {
   font-size: 1.3rem;
 }
 
-/* Excluir la sección About */
-.about-section h2::before {
+/* 🌍 Excluir solo el título en inglés dentro de la sección About */
+[data-lang="en"] .about-section h2::before {
   content: none !important;
 }
 
