@@ -239,19 +239,6 @@ section h2 {
   gap: 10px;
   margin-bottom: 24px;
 }
-/* ==========================================================
-   🌱 BLOQUE CSS: CORRECCIÓN FINAL – EVITAR DUPLICADO EN ABOUT (solo en inglés)
-   📅 Fecha: 2025-11-06
-   ----------------------------------------------------------
-   Propósito:
-   - Mantener la plantita en español.
-   - Evitar duplicado en la versión inglesa (“About me”).
-========================================================== */
-
-/* 🌍 Excluir solo el título en inglés dentro de la sección About */
-[data-lang="en"] .about-section h2::before {
-  content: none !important;
-}
 
 
 /* 💚 PLANES (PLAN SBELTUS) 💚 */
