@@ -627,3 +627,37 @@ footer.footer .legal-links a:hover {
 .translated h2::before {
   content: none !important;
 }
+/* ==========================================================
+   🌱 BLOQUE CSS FINAL: ÍCONO DE PLANTITA UNIFORME EN TODOS LOS TÍTULOS
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Insertar automáticamente la plantita 🌱 antes de todos los títulos <h2>.
+   - Unificar estilo visual entre todas las secciones y traducciones.
+   - Elimina necesidad de insertar manualmente el emoji en el HTML.
+========================================================== */
+
+section h2::before {
+  content: "🌱 ";
+  color: #2E7D32;            /* tono verde SBELTUS */
+  font-size: 1.1em;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+/* ==========================================================
+   🌱 BLOQUE CSS COMPLEMENTARIO: PLANTITA EN SUBTÍTULOS <h3>
+   📅 Fecha: 2025-11-06
+   ----------------------------------------------------------
+   Propósito:
+   - Aplicar la misma plantita 🌱 antes de los subtítulos <h3>.
+   - Mantener coherencia visual con los títulos principales <h2>,
+     pero con un tamaño levemente menor para jerarquía visual.
+========================================================== */
+
+section h3::before {
+  content: "🌱 ";
+  color: #2E7D32;            /* mismo tono verde SBELTUS */
+  font-size: 0.9em;          /* más pequeño que el h2 */
+  margin-right: 5px;
+  vertical-align: middle;
+}
