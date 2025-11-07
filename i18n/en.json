@@ -41,18 +41,6 @@
    - Does not replace or modify existing long section texts
    - Fully compatible with scripts.js mapping logic
 💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙 */
-
-"HEADER_NAV": {
-  "header_tagline": "Health in a natural and sustainable way",
-  "menu_home": "Home",
-  "menu_about": "About me",
-  "menu_results": "Results",
-  "menu_resources": "Resources",
-  "menu_pricing": "Plans",
-  "menu_contact": "Contact"
-}
-
-
   "💚 RESOURCES": {
     "resources_title": "Resources",
     "resources_description": "Find scientific publications and links related to health and well-being.",
@@ -84,5 +72,26 @@
     "footer_disclaimer": "Disclaimer",
     "footer_privacy": "Privacy",
     "footer_terms": "Terms"
+  },
+
+  /* 💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙
+     💙 NEW I18N BLOCK – HEADER AND NAVIGATION MENU
+     📅 Date: 2025-11-07
+     ----------------------------------------------------------
+     Purpose:
+     - Translate the orange tagline in the header (header_tagline)
+     - Translate the navigation bar buttons (Home, About, etc.)
+     - Does not replace or modify existing long section texts
+     - Fully compatible with scripts.js mapping logic
+  💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙 */
+
+  "HEADER_NAV": {
+    "header_tagline": "Health in a natural and sustainable way",
+    "menu_home": "Home",
+    "menu_about": "About me",
+    "menu_results": "Results",
+    "menu_resources": "Resources",
+    "menu_pricing": "Plans",
+    "menu_contact": "Contact"
   }
 }
