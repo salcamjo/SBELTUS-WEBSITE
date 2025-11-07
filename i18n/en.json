@@ -31,6 +31,26 @@
     "results_paragraph6": "In simple terms, excess energy becomes body fat—adipose tissue made up of adipocytes, specialized cells that can increase in size and number. Fat is not 'burned'; rather, it is beta-oxidized in the mitochondria found in nearly all cells. Weight gain is a gradual process where adipocytes store triglycerides. When we lose weight, lipolysis occurs: triglycerides break down and release fatty acids into the bloodstream, which are then used by cells to produce energy (ATP) within mitochondria.",
     "results_paragraph7": "We must also be clear that we do not gain weight overnight; it is a gradual process in which adipocytes store triglycerides, composed of one glycerol molecule and three fatty acids. When we want to lose weight, lipolysis should occur: the triglyceride bond breaks, releasing fatty acids into the bloodstream. These travel to cells in tissues that need energy, enter the mitochondria, and generate the energy molecule known as ATP."
   },
+/* 💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙
+   💙 NEW I18N BLOCK – HEADER AND NAVIGATION MENU
+   📅 Date: 2025-11-07
+   ----------------------------------------------------------
+   Purpose:
+   - Translate the orange tagline in the header (header_tagline)
+   - Translate the navigation bar buttons (Home, About, etc.)
+   - Does not replace or modify existing long section texts
+   - Fully compatible with scripts.js mapping logic
+💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙 */
+
+"HEADER_NAV": {
+  "header_tagline": "Health in a natural and sustainable way",
+  "menu_home": "Home",
+  "menu_about": "About me",
+  "menu_results": "Results",
+  "menu_resources": "Resources",
+  "menu_pricing": "Plans",
+  "menu_contact": "Contact"
+}
 
 
   "💚 RESOURCES": {
