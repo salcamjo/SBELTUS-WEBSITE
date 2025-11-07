@@ -58,26 +58,5 @@
     "footer_disclaimer": "Disclaimer",
     "footer_privacy": "Privacidad",
     "footer_terms": "Términos"
-  },
-
-  /* 💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚
-     💚 BLOQUE I18N NUEVO – HEADER Y MENÚ DE NAVEGACIÓN
-     📅 Fecha: 2025-11-07
-     ----------------------------------------------------------
-     Propósito:
-     - Traducir la frase naranja del encabezado (header_tagline)
-     - Traducir los botones del menú de navegación (Inicio, Acerca de mí, etc.)
-     - Sin alterar ni sustituir los textos largos ya existentes
-     - Compatible con scripts.js (recorre todas las claves de nivel raíz)
-  💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚 */
-
-  "HEADER_NAV": {
-    "header_tagline": "Salud de manera natural y sostenible",
-    "menu_home": "Inicio",
-    "menu_about": "Acerca de mí",
-    "menu_results": "Resultados",
-    "menu_resources": "Recursos",
-    "menu_pricing": "Planes",
-    "menu_contact": "Contacto"
   }
 }
