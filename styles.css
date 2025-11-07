@@ -240,29 +240,6 @@ section h2 {
   margin-bottom: 24px;
 }
 
-/* ==========================================================
-   🌱 FIX DEFINITIVO: evitar duplicado en ABOUT (ES/EN)
-   📅 2025-11-06
-   ----------------------------------------------------------
-   Anula cualquier icono previo en ABOUT y vuelve a poner UNO solo.
-========================================================== */
-
-/* 1) Limpia cualquier pseudo-elemento previo en ABOUT */
-.about-section h2::before,
-.about-section h2::after {
-  content: none !important;
-}
-
-/* 2) Vuelve a colocar UNA plantita en ABOUT (ES y EN) */
-[data-lang="es"] .about-section h2::before,
-[data-lang="en"] .about-section h2::before {
-  content: "🌱";
-  font-size: 1.8rem;
-  color: #2E7D32;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
 /* 💚 PLANES (PLAN SBELTUS) 💚 */
 .pricing {
   background-color: #ffffff;
