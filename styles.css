@@ -291,6 +291,17 @@ section h2 {
   border-radius: 6px;
   border: 1px solid #ccc;
   font-style: italic;
+/* 💚 AJUSTES DE UNIFICACIÓN TIPOGRÁFICA 💚 */
+font-family: 'Poppins', sans-serif !important;
+font-size: 1rem !important;
+font-weight: 400 !important;
+line-height: 1.5 !important;
+color: #333 !important;
+letter-spacing: 0.02em !important;
+text-rendering: optimizeLegibility !important;
+-webkit-font-smoothing: antialiased !important;
+-moz-osx-font-smoothing: grayscale !important;
+
 }
 .contact button {
   background-color: #2E7D32;
