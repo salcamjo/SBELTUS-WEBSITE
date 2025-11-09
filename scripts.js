@@ -161,11 +161,18 @@ function applyTranslations() {
   });
 document.body.classList.add('translated');
 }
-
 // --------- Exponer botón ES/EN ---------
+// 💚 Ajuste 2025-11-08 – Corrige visibilidad de idioma por defecto
+// Explicación:
+//  - Espera a que se cargue el archivo JSON (es/en).
+//  - Luego actualiza visibilidad de bloques data-lang.
+//  - Evita que se oculte el español por defecto al iniciar.
 function setLanguage(lang) {
-  loadLanguage(lang);
+  loadLanguage(lang).then(() => {
+    updateLanguageVisibility(lang);
+  });
 }
+
 
 // --------- Mantener tu comportamiento previo (data-lang y menú) ---------
 function updateLanguageVisibility(lang) {
@@ -190,9 +197,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Idioma por defecto
+// ==========================================================
+// 🌿 CORRECCIÓN 2025-11-08 — Idioma por defecto forzado a “es”
+// Garantiza que el bloque español (data-lang="es") quede visible
+// y se cargue el JSON en español antes de aplicar visibilidad.
+// ==========================================================
+loadLanguage("es").then(() => {
   updateLanguageVisibility("es");
-  loadLanguage("es");
+});
 
   // Cierre automático en móvil
   document.querySelectorAll(".nav a").forEach(link => {
