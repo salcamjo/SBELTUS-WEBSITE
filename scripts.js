@@ -172,6 +172,17 @@ function setLanguage(lang) {
     updateLanguageVisibility(lang);
   });
 }
+/* ==========================================================
+   💚 BLOQUE FINAL DE CONTROL DE IDIOMA – 2025-11-08
+   Propósito:
+   🌿 Forzar idioma por defecto = "es" al cargar la página,
+   incluso si localStorage está vacío o el navegador tiene
+   configuración previa en inglés.
+========================================================== */
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("selectedLanguage") || "es";
+  setLanguage(savedLang);
+});
 
 
 // --------- Mantener tu comportamiento previo (data-lang y menú) ---------
