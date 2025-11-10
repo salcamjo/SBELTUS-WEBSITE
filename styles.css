@@ -707,29 +707,3 @@ footer.footer .legal-links a:hover {
     padding: 10px;
   }
 }
-
-/* ==========================================================
-   💚 BLOQUE DE COMENTARIO TEMPORAL – Desactivación de regla global móvil
-   📅 2025-11-10
-   ----------------------------------------------------------
-   Propósito:
-   - Desactivar temporalmente la regla que aplica margen y padding
-     a #about, #results, #resources y #pricing en modo responsive.
-   - Esta regla estaba causando el desplazamiento vertical del
-     título “Results” al traducirse al inglés.
-   - Su eliminación no afecta la vista de escritorio.
-   Acción:
-   - Mantener comentado hasta verificar que el título en móvil
-     mantiene alineación correcta.
-   - Si el problema se corrige, luego se eliminará definitivamente.
-========================================================== */
-
-/*
-@media (max-width: 768px) {
-  #about, #results, #resources, #pricing {
-    margin-top: 150px !important;
-    padding-top: 70px !important;
-    scroll-margin-top: 150px !important;
-  }
-}
-*/
