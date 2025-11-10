@@ -149,16 +149,19 @@ function applyTranslations() {
     if (attr === "placeholder") {
       el.setAttribute("placeholder", value);
     } else {
-      // Evita borrar HTML interno accidental (solo textos simples)
-      // Si el nodo tiene hijos (enlaces con <span>|</span>, etc.), solo cambia textContent del propio elemento si procede
+
+      // 🌿 BLOQUE AJUSTADO 2025-11-10 – Traducción de subtítulos y párrafos con hijos simples
+      // Permite traducir textos dentro de H2, H3, P, SPAN, STRONG, incluso si tienen hijos HTML simples.
       if (el.children.length === 0) {
         el.textContent = value;
       } else {
-        // Para elementos con separadores (ej. enlaces del footer con <span>|</span>), si son A/texto simple: cambia solo el nodo de texto
-        if (el.tagName === "A") el.textContent = value;
+        if (["A", "H2", "H3", "P", "SPAN", "STRONG"].includes(el.tagName)) {
+          el.innerText = value;
+        }
       }
     }
   });
+
 document.body.classList.add('translated');
 }
 // --------- Exponer botón ES/EN ---------
