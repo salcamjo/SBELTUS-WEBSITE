@@ -726,3 +726,13 @@ body[data-lang="en"] .results-section {
     padding-top: 90px;
   }
 }
+
+/* 🌿 BLOQUE CSS – Restablecer posición del título al volver a español (2025-11-10)
+   Propósito:
+   - Evitar que el título de Resultados quede pegado al header al regresar de la traducción.
+   - Mantener espaciado uniforme al cambiar entre ES ↔ EN.
+*/
+body[data-lang="es"] #results,
+body[data-lang="es"] .results-section {
+  padding-top: 60px;   /* 🔁 devuelve el espacio estándar del español */
+}
