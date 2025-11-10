@@ -176,18 +176,25 @@ function setLanguage(lang) {
   });
 }
 // --------- Exponer botón ES/EN ---------
-// 💚 Ajuste final 2025-11-10 – Orden lógico de reaplicación de idioma
+// 💚 Ajuste definitivo 2025-11-10 – Retorno correcto a español
 // Explicación:
-//  - Carga el JSON del idioma seleccionado.
+//  - Carga el JSON del idioma elegido.
 //  - Actualiza visibilidad de bloques data-lang.
-//  - Luego aplica traducciones visibles en pantalla (re-españolización completa).
+//  - Aplica las traducciones visibles.
+//  - Guarda el idioma actual en localStorage para persistencia.
 
 function setLanguage(lang) {
   loadLanguage(lang).then(() => {
     updateLanguageVisibility(lang);
-    applyTranslations(); // ✅ Se ejecuta al final para asegurar textos correctos
+    applyTranslations(); // ✅ Aplica siempre los textos del idioma activo
+    try {
+      localStorage.setItem("selectedLanguage", lang); // ✅ Memoriza el idioma actual
+    } catch (e) {
+      console.warn("No se pudo guardar el idioma en localStorage:", e);
+    }
   });
 }
+
 
 // --------- Mantener tu comportamiento previo (data-lang y menú) ---------
 function updateLanguageVisibility(lang) {
