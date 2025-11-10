@@ -163,9 +163,18 @@ document.body.classList.add('translated');
 }
 
 // --------- Exponer botón ES/EN ---------
+// 💚 Ajuste definitivo 2025-11-10 – Retorno correcto al español
+// Explicación:
+//  - Llama a loadLanguage() para cargar el JSON correspondiente.
+//  - Luego ejecuta applyTranslations() para re-aplicar los textos
+//    visibles en pantalla, garantizando el regreso completo al español.
+
 function setLanguage(lang) {
   loadLanguage(lang);
+  applyTranslations(); // ✅ Reaplica las traducciones del idioma cargado
 }
+
+
 
 // --------- Mantener tu comportamiento previo (data-lang y menú) ---------
 function updateLanguageVisibility(lang) {
