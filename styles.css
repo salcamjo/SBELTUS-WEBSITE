@@ -708,31 +708,4 @@ footer.footer .legal-links a:hover {
   }
 }
 
-/* 🌿 BLOQUE CSS – Ajuste específico para idioma inglés (2025-11-10)
-   Propósito:
-   - Mantener la posición original en español.
-   - Corregir el desplazamiento del título “Results” solo en idioma inglés.
-   - Evita cualquier cambio visual en el resto del sitio.
-*/
-body[data-lang="en"] #results,
-body[data-lang="en"] .results-section {
-  padding-top: 80px;    /* 🟢 espacio adicional solo para inglés */
-}
 
-/* En móvil, agrega un poco más si el header cubre parte del título */
-@media (max-width: 768px) {
-  body[data-lang="en"] #results,
-  body[data-lang="en"] .results-section {
-    padding-top: 90px;
-  }
-}
-
-/* 🌿 BLOQUE CSS – Restablecer posición del título al volver a español (2025-11-10)
-   Propósito:
-   - Evitar que el título de Resultados quede pegado al header al regresar de la traducción.
-   - Mantener espaciado uniforme al cambiar entre ES ↔ EN.
-*/
-body[data-lang="es"] #results,
-body[data-lang="es"] .results-section {
-  padding-top: 60px;   /* 🔁 devuelve el espacio estándar del español */
-}

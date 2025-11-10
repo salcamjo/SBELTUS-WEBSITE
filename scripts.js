@@ -112,6 +112,17 @@ async function loadLanguage(lang) {
     I18N = await res.json();
     applyTranslations();
     updateLanguageVisibility(lang); // respeta tus bloques data-lang (About)
+
+// 🌿 BLOQUE JS – Ajuste dinámico del espaciado en Resultados (2025-11-10)
+if (lang === "en") {
+  const resultsSection = document.querySelector("#results, .results-section");
+  if (resultsSection) resultsSection.style.paddingTop = "90px"; // evita solapamiento en inglés
+} else {
+  const resultsSection = document.querySelector("#results, .results-section");
+  if (resultsSection) resultsSection.style.paddingTop = "60px"; // restablece nivel original en español
+}
+
+
   } catch (e) {
     console.warn("No se pudo cargar i18n/", lang, e);
   }
