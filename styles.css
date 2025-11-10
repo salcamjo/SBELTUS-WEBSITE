@@ -707,22 +707,28 @@ footer.footer .legal-links a:hover {
     padding: 10px;
   }
 }
-/* 🌿 BLOQUE CSS – Ajuste responsive Resultados (2025-11-10)
+
+/* 🌿 BLOQUE CSS – Corrección definitiva desplazamiento de título Results (2025-11-10)
    Propósito:
-   - Evitar que el título "Results" se desplace hacia el header en modo móvil.
-   - Mantener separación uniforme entre título, subtítulos y párrafos.
-   - Afecta solo pantallas menores a 768px (móviles y tablets pequeñas).
+   - Evitar que el título “Results” suba o se solape con el header al traducir al inglés.
+   - Mantener márgenes y proporción visual uniforme en móvil.
+   - No altera la vista de escritorio.
 */
 @media (max-width: 768px) {
+  #results,
+  .results-section {
+    padding-top: 80px;       /* 🟢 aumenta el espacio superior general */
+  }
+
   #results h2,
   .results-section h2 {
-    margin-top: 40px;     /* 🟢 agrega espacio extra superior */
-    text-align: center;   /* mantiene la alineación central en móvil */
+    margin-top: 0;           /* evita márgenes dobles */
+    text-align: center;
   }
 
   #results p,
   .results-section p {
-    margin-top: 12px;     /* espacio uniforme entre párrafos */
-    line-height: 1.6;     /* mejora legibilidad */
+    margin-top: 14px;
+    line-height: 1.6;
   }
 }
