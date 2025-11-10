@@ -175,19 +175,19 @@ function setLanguage(lang) {
     updateLanguageVisibility(lang);
   });
 }
+// --------- Exponer botón ES/EN ---------
+// 💚 Ajuste final 2025-11-10 – Orden lógico de reaplicación de idioma
+// Explicación:
+//  - Carga el JSON del idioma seleccionado.
+//  - Actualiza visibilidad de bloques data-lang.
+//  - Luego aplica traducciones visibles en pantalla (re-españolización completa).
 
-/* ==========================================================
-   💚 BLOQUE FINAL DE CONTROL DE IDIOMA – 2025-11-08
-   Propósito:
-   🌿 Forzar idioma por defecto = "es" al cargar la página,
-   incluso si localStorage está vacío o el navegador tiene
-   configuración previa en inglés.
-========================================================== */
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("selectedLanguage") || "es";
-  setLanguage(savedLang);
-});
-
+function setLanguage(lang) {
+  loadLanguage(lang).then(() => {
+    updateLanguageVisibility(lang);
+    applyTranslations(); // ✅ Se ejecuta al final para asegurar textos correctos
+  });
+}
 
 // --------- Mantener tu comportamiento previo (data-lang y menú) ---------
 function updateLanguageVisibility(lang) {
