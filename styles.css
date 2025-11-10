@@ -707,3 +707,18 @@ footer.footer .legal-links a:hover {
     padding: 10px;
   }
 }
+
+/* ==========================================================
+   💚 BLOQUE CSS – Aislamiento de margen en Resultados (solo móvil, solo inglés)
+   📅 2025-11-10
+   ----------------------------------------------------------
+   Propósito:
+   - Corregir que el título “Results” suba y se pegue al header al traducir.
+   - Evita el colapso de margen causado por el cambio de display en div[data-lang].
+   - No afecta escritorio ni el idioma español.
+========================================================== */
+@media (max-width: 768px) {
+  body[data-lang="en"] #results [data-lang="en"] h2 {
+    margin-block-start: 1.5rem; /* 💚 evita colapso del margen superior */
+  }
+}
