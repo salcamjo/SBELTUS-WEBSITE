@@ -106,41 +106,11 @@ const MAP = [
 // --------- Carga de idioma y aplicación ---------
 async function loadLanguage(lang) {
   currentLang = lang;
-  document.body.setAttribute("data-lang", lang); // 🌿 permite ajustes CSS por idioma
   try {
     const res = await fetch(`i18n/${lang}.json`);
     I18N = await res.json();
     applyTranslations();
     updateLanguageVisibility(lang); // respeta tus bloques data-lang (About)
-
-// 🌿 BLOQUE JS — Alineación uniforme de secciones (2025-11-10 final definitivo)
-// Propósito:
-// - Alinear el inicio de “Resultados” con el resto de secciones (About, Resources, etc.).
-// - Evitar desplazamiento extra en inglés sin alterar el resto de títulos.
-requestAnimationFrame(() => {
-  const header = document.querySelector("header");
-  const headerH = header ? header.offsetHeight : 60;
-
-  // Detecta el contenedor visible de idioma dentro de la sección Resultados
-  const visibleDiv = document.querySelector(`#results [data-lang="${lang}"]`);
-  if (!visibleDiv) return;
-
-  // Obtiene el padding superior promedio de otras secciones (referencia)
-  const refSection = document.querySelector("#about, .about-section");
-  let basePad = 0;
-  if (refSection) {
-    const style = window.getComputedStyle(refSection);
-    basePad = parseInt(style.paddingTop) || 0;
-  }
-
-  // Calcula padding total asegurando alineación exacta
-  const padPx = Math.max(basePad, headerH + 10); // pequeña holgura para header fijo
-  visibleDiv.style.paddingTop = `${padPx}px`;
-});
-
-
-
-
   } catch (e) {
     console.warn("No se pudo cargar i18n/", lang, e);
   }
