@@ -709,16 +709,27 @@ footer.footer .legal-links a:hover {
 }
 
 /* ==========================================================
-   💚 BLOQUE CSS – Aislamiento de margen en Resultados (solo móvil, solo inglés)
+   💚 BLOQUE DE COMENTARIO TEMPORAL – Desactivación de regla global móvil
    📅 2025-11-10
    ----------------------------------------------------------
    Propósito:
-   - Corregir que el título “Results” suba y se pegue al header al traducir.
-   - Evita el colapso de margen causado por el cambio de display en div[data-lang].
-   - No afecta escritorio ni el idioma español.
+   - Desactivar temporalmente la regla que aplica margen y padding
+     a #about, #results, #resources y #pricing en modo responsive.
+   - Esta regla estaba causando el desplazamiento vertical del
+     título “Results” al traducirse al inglés.
+   - Su eliminación no afecta la vista de escritorio.
+   Acción:
+   - Mantener comentado hasta verificar que el título en móvil
+     mantiene alineación correcta.
+   - Si el problema se corrige, luego se eliminará definitivamente.
 ========================================================== */
+
+/*
 @media (max-width: 768px) {
-  body[data-lang="en"] #results [data-lang="en"] h2 {
-    margin-block-start: 1.5rem; /* 💚 evita colapso del margen superior */
+  #about, #results, #resources, #pricing {
+    margin-top: 150px !important;
+    padding-top: 70px !important;
+    scroll-margin-top: 150px !important;
   }
 }
+*/
