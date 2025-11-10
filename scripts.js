@@ -113,14 +113,20 @@ async function loadLanguage(lang) {
     applyTranslations();
     updateLanguageVisibility(lang); // respeta tus bloques data-lang (About)
 
-// 🌿 BLOQUE JS – Ajuste dinámico del espaciado en Resultados (2025-11-10)
-if (lang === "en") {
-  const resultsSection = document.querySelector("#results, .results-section");
-  if (resultsSection) resultsSection.style.paddingTop = "90px"; // evita solapamiento en inglés
-} else {
-  const resultsSection = document.querySelector("#results, .results-section");
-  if (resultsSection) resultsSection.style.paddingTop = "60px"; // restablece nivel original en español
-}
+// 🌿 BLOQUE JS — Ajuste definitivo de espaciado Resultados (2025-11-10)
+// Se ejecuta tras aplicar traducción y visibilidad, evitando solapamiento con header fijo.
+requestAnimationFrame(() => {
+  const header = document.querySelector("header");
+  const headerH = header ? header.offsetHeight : 60; // fallback seguro
+  const extra = 20; // holgura para títulos más largos en EN
+
+  const padPx = (lang === "en") ? (headerH + extra) : headerH;
+
+  document.querySelectorAll("#results, .results-section").forEach(sec => {
+    // Aplica padding superior calculado a todas las variantes visibles de la sección
+    sec.style.paddingTop = padPx + "px";
+  });
+});
 
 
   } catch (e) {
