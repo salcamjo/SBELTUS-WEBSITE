@@ -113,20 +113,19 @@ async function loadLanguage(lang) {
     applyTranslations();
     updateLanguageVisibility(lang); // respeta tus bloques data-lang (About)
 
-// 🌿 BLOQUE JS — Ajuste definitivo de espaciado Resultados (2025-11-10)
-// Se ejecuta tras aplicar traducción y visibilidad, evitando solapamiento con header fijo.
+// 🌿 BLOQUE JS — Ajuste definitivo Resultados (2025-11-10, versión contenedor interno)
+// Aplica padding directamente al contenedor de idioma visible (div[data-lang="..."]) dentro de #results
 requestAnimationFrame(() => {
   const header = document.querySelector("header");
-  const headerH = header ? header.offsetHeight : 60; // fallback seguro
-  const extra = 20; // holgura para títulos más largos en EN
+  const headerH = header ? header.offsetHeight : 60;
+  const extra = (lang === "en") ? 30 : 10; // holgura distinta por idioma
+  const visibleDiv = document.querySelector(`#results [data-lang="${lang}"]`);
 
-  const padPx = (lang === "en") ? (headerH + extra) : headerH;
-
-  document.querySelectorAll("#results, .results-section").forEach(sec => {
-    // Aplica padding superior calculado a todas las variantes visibles de la sección
-    sec.style.paddingTop = padPx + "px";
-  });
+  if (visibleDiv) {
+    visibleDiv.style.paddingTop = `${headerH + extra}px`;
+  }
 });
+
 
 
   } catch (e) {
