@@ -669,3 +669,41 @@ footer.footer .legal-links a:hover {
   margin-right: 5px;
   vertical-align: middle;
 }
+/* 🌿 BLOQUE CSS – Estilo para lista de recursos (2025-11-10)
+   Propósito:
+   - Incorporar puntos de enlace futuros para links externos
+     (ej. YouTube, artículos, blogs o documentos).
+   - Mostrar los enlaces de Recursos en lista limpia y legible.
+   - Mantener buena separación y clicabilidad en móvil y escritorio.
+*/
+   - Mostrar los enlaces de Recursos en lista limpia y legible.
+   - Mantener buena separación y clicabilidad en móvil y escritorio.
+*/
+.resources-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.resources-list li {
+  margin: 8px 0;
+}
+
+.resources-list a {
+  color: #2E7D32;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resources-list a:hover {
+  text-decoration: underline;
+}
+
+/* Versión responsive: mantiene buena legibilidad en móvil */
+@media (max-width: 768px) {
+  .resources-list a {
+    display: block;
+    font-size: 1.05rem;
+    padding: 10px;
+  }
+}
