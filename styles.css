@@ -708,27 +708,21 @@ footer.footer .legal-links a:hover {
   }
 }
 
-/* 🌿 BLOQUE CSS – Corrección definitiva desplazamiento de título Results (2025-11-10)
+/* 🌿 BLOQUE CSS – Ajuste específico para idioma inglés (2025-11-10)
    Propósito:
-   - Evitar que el título “Results” suba o se solape con el header al traducir al inglés.
-   - Mantener márgenes y proporción visual uniforme en móvil.
-   - No altera la vista de escritorio.
+   - Mantener la posición original en español.
+   - Corregir el desplazamiento del título “Results” solo en idioma inglés.
+   - Evita cualquier cambio visual en el resto del sitio.
 */
+body[data-lang="en"] #results,
+body[data-lang="en"] .results-section {
+  padding-top: 80px;    /* 🟢 espacio adicional solo para inglés */
+}
+
+/* En móvil, agrega un poco más si el header cubre parte del título */
 @media (max-width: 768px) {
-  #results,
-  .results-section {
-    padding-top: 80px;       /* 🟢 aumenta el espacio superior general */
-  }
-
-  #results h2,
-  .results-section h2 {
-    margin-top: 0;           /* evita márgenes dobles */
-    text-align: center;
-  }
-
-  #results p,
-  .results-section p {
-    margin-top: 14px;
-    line-height: 1.6;
+  body[data-lang="en"] #results,
+  body[data-lang="en"] .results-section {
+    padding-top: 90px;
   }
 }

@@ -106,6 +106,7 @@ const MAP = [
 // --------- Carga de idioma y aplicación ---------
 async function loadLanguage(lang) {
   currentLang = lang;
+  document.body.setAttribute("data-lang", lang); // 🌿 permite ajustes CSS por idioma
   try {
     const res = await fetch(`i18n/${lang}.json`);
     I18N = await res.json();
