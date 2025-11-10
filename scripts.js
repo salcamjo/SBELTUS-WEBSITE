@@ -162,16 +162,20 @@ function applyTranslations() {
 document.body.classList.add('translated');
 }
 // --------- Exponer botón ES/EN ---------
-// 💚 Ajuste 2025-11-08 – Corrige visibilidad de idioma por defecto
+// 💚 Ajuste definitivo 2025-11-10 – Corrección total del retorno al español
 // Explicación:
 //  - Espera a que se cargue el archivo JSON (es/en).
-//  - Luego actualiza visibilidad de bloques data-lang.
-//  - Evita que se oculte el español por defecto al iniciar.
+//  - Aplica las traducciones del idioma cargado (forzando español si corresponde).
+//  - Actualiza visibilidad de los bloques data-lang.
+//  - Evita que se mantenga el texto en inglés al volver al español.
+
 function setLanguage(lang) {
   loadLanguage(lang).then(() => {
+    applyTranslations(); // ✅ Fuerza reaplicación de textos del idioma actual
     updateLanguageVisibility(lang);
   });
 }
+
 /* ==========================================================
    💚 BLOQUE FINAL DE CONTROL DE IDIOMA – 2025-11-08
    Propósito:
