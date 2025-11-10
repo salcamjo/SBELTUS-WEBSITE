@@ -151,42 +151,21 @@ function applyTranslations() {
     } else {
       // Evita borrar HTML interno accidental (solo textos simples)
       // Si el nodo tiene hijos (enlaces con <span>|</span>, etc.), solo cambia textContent del propio elemento si procede
-      
-// 🌿 BLOQUE CORREGIDO 2025-11-10 – Traducción profunda de subtítulos y párrafos anidados
-// Propósito:
-// - Permitir traducción completa incluso cuando hay etiquetas internas (span, strong, etc.)
-// - Asegura actualización de subtítulos y párrafos en “Resultados” al volver al español.
-
-if (el.children.length === 0) {
-  el.textContent = value;
-} else {
-  // Recorre todos los nodos de texto dentro del elemento, incluso si están dentro de <span> o <strong>
-  el.querySelectorAll("*").forEach(child => {
-    if (child.children.length === 0 && child.textContent.trim().length > 0) {
-      child.textContent = value;
+      if (el.children.length === 0) {
+        el.textContent = value;
+      } else {
+        // Para elementos con separadores (ej. enlaces del footer con <span>|</span>), si son A/texto simple: cambia solo el nodo de texto
+        if (el.tagName === "A") el.textContent = value;
+      }
     }
   });
-}
-
-
 document.body.classList.add('translated');
 }
 
 // --------- Exponer botón ES/EN ---------
-// 💚 Ajuste definitivo 2025-11-10 – Retorno correcto al español con reaplicación de traducciones
-// Explicación:
-// - Espera a que se cargue el archivo JSON del idioma.
-// - Aplica las traducciones visibles nuevamente.
-// - Actualiza visibilidad de los bloques data-lang.
-// - Garantiza que “Resultados” y otras secciones regresen al español al cambiar desde EN.
-
 function setLanguage(lang) {
-  loadLanguage(lang).then(() => {
-    applyTranslations();        // ✅ Reaplica traducciones del idioma actual
-    updateLanguageVisibility(lang);
-  });
+  loadLanguage(lang);
 }
-
 
 // --------- Mantener tu comportamiento previo (data-lang y menú) ---------
 function updateLanguageVisibility(lang) {
