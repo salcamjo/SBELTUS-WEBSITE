@@ -706,6 +706,11 @@ footer.footer .legal-links a:hover {
     font-size: 1.05rem;
     padding: 10px;
   }
+  /* 🌿 BLOQUE CSS: Ajuste fino del margen superior del título Planes – 2025-11-11 */
+  .pricing-header h2 {
+    margin-top: 60px; /* mantiene la misma separación visual que en español */
+  }
+
 }
 /* 🌿 BLOQUE CSS: Estabilización del título en Planes – 2025-11-11 */
 .pricing-header {
