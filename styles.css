@@ -707,5 +707,12 @@ footer.footer .legal-links a:hover {
     padding: 10px;
   }
 
+/* 🌿 BLOQUE CSS: Estabilización del título en Resultados – 2025-11-11 */
+.results-header {
+  position: relative;
+  z-index: 2;
+}
+
+
 
 
