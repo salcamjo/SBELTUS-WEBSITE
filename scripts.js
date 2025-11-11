@@ -160,6 +160,19 @@ function applyTranslations() {
     }
   });
 document.body.classList.add('translated');
+
+
+/* 🌿 BLOQUE JS: Sincronización de repintado tras traducción – 2025-11-11 */
+/* 📍 Inserta al final de la función applyTranslations(), justo antes de la llave final "}" */
+
+  // 🌿 Corrección: estabiliza la posición tras traducir en móvil
+  if (window.innerWidth <= 820) {
+    // Espera un ciclo de render antes de recalcular posición
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: window.scrollY, behavior: "instant" });
+    });
+  }
+
 }
 
 // --------- Exponer botón ES/EN ---------
