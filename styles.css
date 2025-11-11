@@ -705,6 +705,19 @@ footer.footer .legal-links a:hover {
     display: block;
     font-size: 1.05rem;
     padding: 10px;
+
+/* 🌿 BLOQUE CSS: Anclaje fijo del título en Resultados (solo móvil) – 2025-11-11 */
+/* 📍 Inserta dentro del @media (max-width: 768px), al final del bloque, antes de la llave "}" */
+
+#resultados h2 {
+  position: sticky;     /* se mantiene visible y no se mueve con repintado */
+  top: 70px;             /* separación respecto al header fijo */
+  z-index: 2;            /* asegura que no quede oculto bajo el header */
+  background-color: #fff;/* evita que el texto se superponga al fondo */
+  padding-top: 5px;      /* mantiene su respiración visual */
+}
+
+
   }
 
 
