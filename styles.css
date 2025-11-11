@@ -707,12 +707,5 @@ footer.footer .legal-links a:hover {
     padding: 10px;
   }
 
-/* 🌿 BLOQUE CSS: Estabilización temporal de altura en Resultados (móvil) – 2025-11-11 */
-/* 📍 Inserta dentro del @media (max-width: 768px), justo antes de la llave final "}" */
-
-#resultados {
-  min-height: 800px;  /* mantiene altura estable durante el cambio de idioma */
-  }
-}
 
 
