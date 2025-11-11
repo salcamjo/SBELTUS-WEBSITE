@@ -706,4 +706,16 @@ footer.footer .legal-links a:hover {
     font-size: 1.05rem;
     padding: 10px;
   }
+
+/* 🌿 BLOQUE CSS: Fijar posición estable del título en Resultados – 2025-11-11 */
+/* 📍 Inserta este bloque dentro del media query móvil,
+   justo antes de la última llave de cierre "}" del bloque @media (max-width: 768px) */
+
+#resultados h2 {
+  margin-top: 60px;  /* mantiene separación estable del header al traducir */
+}
+
+
+
+
 }
