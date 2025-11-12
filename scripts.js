@@ -161,6 +161,58 @@ function applyTranslations() {
   });
 document.body.classList.add('translated');
 
+function applyTranslations() {
+  // <title>
+  const titleVal = t("site_title");
+  if (titleVal) document.title = titleVal;
+
+  // Recorremos el mapa de selectores
+  MAP.forEach(({ sel, key, attr, type }) => {
+    const value = t(key);
+    if (!value) return;
+
+    if (type === "title") {
+      document.title = value;
+      return;
+    }
+
+    const el = document.querySelector(sel);
+    if (!el) return;
+
+    if (attr === "placeholder") {
+      el.setAttribute("placeholder", value);
+    } else {
+      // Evita borrar HTML interno accidental (solo textos simples)
+      // Si el nodo tiene hijos (enlaces con <span>|</span>, etc.), solo cambia textContent del propio elemento si procede
+      if (el.children.length === 0) {
+        el.textContent = value;
+      } else {
+        // Para elementos con separadores (ej. enlaces del footer con <span>|</span>), si son A/texto simple: cambia solo el nodo de texto
+        if (el.tagName === "A") el.textContent = value;
+      }
+    }
+  });
+
+  document.body.classList.add('translated');
+
+  /* ==========================================================
+     BLOQUE JS: Recalibrar posición tras traducción – 2025-11-12
+     🔹 Corrige el solapamiento del hero con el header en móvil
+     🔹 No altera el diseño en escritorio
+     🔹 Ejecuta un ajuste automático tras aplicar traducciones
+     👉 Debe colocarse **al final de la función applyTranslations()**
+  ========================================================== */
+  setTimeout(() => {
+    const header = document.querySelector("header");
+    const hero = document.querySelector("#hero");
+    if (header && hero) {
+      const headerHeight = header.offsetHeight;
+      hero.style.marginTop = headerHeight + "px";
+    }
+  }, 300);
+}
+
+
 }
 
 // --------- Exponer botón ES/EN ---------
