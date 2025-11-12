@@ -712,3 +712,16 @@ footer.footer .legal-links a:hover {
   position: relative;
   z-index: 2;
 }
+/* ==========================================================
+   BLOQUE CSS: Ajuste de márgenes en páginas legales móviles
+   📅 2025-11-12
+   🔹 Centra el texto de Disclaimer, Privacidad y Términos
+   🔹 Evita que quede pegado a los bordes en pantallas pequeñas
+========================================================== */
+@media (max-width: 600px) {
+  #disclaimer, #privacidad, #terminos {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+}
