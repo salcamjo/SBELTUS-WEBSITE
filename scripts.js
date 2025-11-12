@@ -199,9 +199,6 @@ if (fatImg) {
   }, 300);
 }
 
-
-}
-
 // --------- Exponer botón ES/EN ---------
 function setLanguage(lang) {
   loadLanguage(lang);
