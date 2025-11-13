@@ -200,30 +200,9 @@ if (fatImg) {
 }
 
 // --------- Exponer botón ES/EN ---------
-/* ==========================================================
-   🌿 BLOQUE JS CORRECTIVO – Actualización del atributo <html lang>
-   📅 Fecha: 2025-11-13
-   ----------------------------------------------------------
-   Qué hace:
-   ✔ Actualiza correctamente el atributo lang del <html>
-     cada vez que se cambia de idioma.
-   ✔ Evita la carga incorrecta de imágenes dependientes
-     del idioma (como la imagen de grasa subcutánea/visceral).
-   ✔ Previene el colapso de altura en móvil que hacía que
-     las secciones “Resultados” y “Planes” se peguen al header.
-   ✔ No modifica nada de escritorio.
-   ✔ No altera estructuras, márgenes ni estilos existentes.
-
-   Dónde se inserta:
-   👉 Sustituir el contenido actual de la función setLanguage(lang)
-      por este bloque completo.
-========================================================== */
-
 function setLanguage(lang) {
-  document.documentElement.lang = lang;   // ← Corrección clave
-  loadLanguage(lang);                    // Carga el JSON y aplica textos
+  loadLanguage(lang);
 }
-
 
 // --------- Mantener tu comportamiento previo (data-lang y menú) ---------
 function updateLanguageVisibility(lang) {
