@@ -755,3 +755,23 @@ footer.footer .legal-links a:hover {
     margin-top: 0 !important;
   }
 }
+
+/* ==========================================================
+   🌿 BLOQUE CSS – Ajuste fino de la sección Resultados
+   📅 Fecha: 2025-11-13
+   ----------------------------------------------------------
+   Qué hace:
+   ✔ Aumenta ligeramente el padding superior de Resultados
+     para igualar su posición entre español e inglés.
+   ✔ No afecta Planes (ya está perfecto).
+   ✔ No toca escritorio.
+   ✔ No toca márgenes generales.
+   Dónde va:
+   👉 Justo DEBAJO del bloque agregado hace un momento.
+========================================================== */
+
+@media (max-width: 820px) {
+  #results {
+    padding-top: 135px !important;  /* antes era 120px → +15px */
+  }
+}
