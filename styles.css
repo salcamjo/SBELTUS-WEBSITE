@@ -775,3 +775,34 @@ footer.footer .legal-links a:hover {
     padding-top: 135px !important;  /* antes era 120px → +15px */
   }
 }
+
+/* ==========================================================
+   🌿 BLOQUE CSS CORRECTIVO FINAL – Alineamiento exacto ES/EN
+   📅 Fecha: 2025-11-13
+   ----------------------------------------------------------
+   Qué hace:
+   ✔ Ajusta el padding-top del section #results para que
+     español recupere su posición normal.
+   ✔ Elimina el margen superior del <h2> dentro de Resultados
+     en ambas traducciones (evita colapso al cambiar ES/EN).
+   ✔ Solo afecta móviles (≤820px).
+   ✔ No altera escritorio.
+   Dónde va:
+   👉 Debajo del último bloque mobile agregado.
+========================================================== */
+
+@media (max-width: 820px) {
+
+  /* Ajuste fino del espacio superior — valor reducido */
+  #results {
+    padding-top: 75px !important;   /* reemplaza los valores previos */
+    margin-top: 0 !important;
+  }
+
+  /* Neutralización del colapso: h2 sin margen */
+  #results h2 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
