@@ -789,4 +789,17 @@ footer.footer .legal-links a:hover {
   }
 }
 
+/* ───────────────────────────────────────────────
+   AJUSTE RESPONSIVE – TÍTULO RESULTADOS (EN)
+   📅 2025-11-13
+   Propósito:
+   Alinear el h2 inglés con el nivel del h2 español
+   SOLO en móviles, sin afectar escritorio.
+────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  div[data-lang="en"] h2[data-translate="results_title"] {
+    margin-top: 25px !important;   /* Ajusta la distancia hacia abajo */
+  }
+}
+
 
