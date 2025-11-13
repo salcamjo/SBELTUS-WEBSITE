@@ -725,20 +725,3 @@ footer.footer .legal-links a:hover {
     text-align: justify;
   }
 }
-
-/* ───────────────────────────────────────────────
-   BLOQUE CSS – Ajuste móvil del título en Planes
-   📅 2025-11-13
-   Propósito:
-   ✔ Evitar que el título "Plan SBELTUS" suba y sea tapado
-     por el header en móvil.
-   ✔ No afecta Resultados.
-   ✔ No altera escritorio.
-────────────────────────────────────────────────────────────── */
-@media (max-width: 820px) {
-  .pricing-header {
-    margin-top: 80px !important;
-  }
-}
-
-
