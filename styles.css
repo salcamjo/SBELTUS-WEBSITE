@@ -725,3 +725,17 @@ footer.footer .legal-links a:hover {
     text-align: justify;
   }
 }
+
+/* ───────────────────────────────────────────────
+   AJUSTE MÓVIL – Estabilización del título en Planes
+   📅 2025-11-13 (Corrección puntual)
+   Propósito:
+   ✔ Evitar que "Plan SBELTUS" suba al cambiar idioma
+   ✔ No afecta Resultados
+   ✔ No altera escritorio
+────────────────────────────────────────────────────────────── */
+@media (max-width: 820px) {
+  #pricing {
+    padding-top: 95px !important; /* valor fino y no excesivo */
+  }
+}
