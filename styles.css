@@ -749,11 +749,3 @@ footer.footer .legal-links a:hover {
 #pricing .plan-card {
   margin-top: 0 !important;
 }
-/* BLOQUE: Reducir margen entre título y descripción en Planes – 2025-11-14 */
-#pricing .pricing-header h2 {
-  margin-bottom: 5px !important;
-}
-
-#pricing .plan-description {
-  margin-top: 5px !important;
-}
