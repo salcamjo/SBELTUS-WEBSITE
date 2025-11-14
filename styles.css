@@ -731,11 +731,29 @@ footer.footer .legal-links a:hover {
   }
 }
 
-/* BLOQUE: Compactar espacio interno antes de la tarjeta del plan – 2025-11-14 */
+/* BLOQUE FINAL – Compactación precisa de Planes (2025-11-14) */
+#pricing {
+  padding-top: 20px !important;   /* evita que se pegue al header */
+  padding-bottom: 20px !important;
+}
+
+#pricing .pricing-header {
+  margin-bottom: 10px !important;
+}
+
 #pricing .plan-description {
+  margin-top: 0 !important;
   margin-bottom: 10px !important;
 }
 
 #pricing .plan-card {
+  margin-top: 0 !important;
+}
+/* BLOQUE: Reducir margen entre título y descripción en Planes – 2025-11-14 */
+#pricing .pricing-header h2 {
+  margin-bottom: 5px !important;
+}
+
+#pricing .plan-description {
   margin-top: 5px !important;
 }
