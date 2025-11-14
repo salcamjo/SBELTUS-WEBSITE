@@ -730,3 +730,10 @@ footer.footer .legal-links a:hover {
     box-sizing: border-box;
   }
 }
+
+/* BLOQUE: Offset móvil para anular salto del header fijo – 2025-11-14 */
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 80px;
+  }
+}
