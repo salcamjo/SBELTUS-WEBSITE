@@ -48,6 +48,7 @@
     "plan_feature1": "✅ Asesoría permanente 24h vía WhatsApp",
     "plan_feature2": "✅ Guía alimenticia personalizada",
     "plan_feature3": "✅ Control de mediciones corporales",
+    "plan_feature4": "✔ Suscripción: $50 por mes",
     "plan_price": "$50",
     "plan_button": "Iniciar ahora"
   },
@@ -65,6 +66,6 @@
     "footer_line1": "© 2025 SBELTUS. Todos los derechos reservados.",
     "footer_disclaimer": "Disclaimer",
     "footer_privacy": "Privacidad",
-    "footer_terms": "Términos"
+    "footer_terms": "Términos"     
   }
 }
