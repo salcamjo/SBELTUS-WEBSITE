@@ -731,3 +731,9 @@ footer.footer .legal-links a:hover {
   }
 }
 
+/* 💚 BLOQUE CSS – Limpieza de puntos en lista de características del plan */
+.plan-features {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
