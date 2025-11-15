@@ -85,6 +85,7 @@ const MAP = [
   { sel: "#pricing .plan-features li:nth-child(1)", key: "plan_feature1" },
   { sel: "#pricing .plan-features li:nth-child(2)", key: "plan_feature2" },
   { sel: "#pricing .plan-features li:nth-child(3)", key: "plan_feature3" },
+  { sel: "#pricing .plan-features li:nth-child(4)", key: "plan_feature4" },
   { sel: "#pricing .plan-price", key: "plan_price" },
   { sel: "#pricing .plan-btn#paypal-button", key: "plan_button" },
 
