@@ -737,3 +737,22 @@ footer.footer .legal-links a:hover {
     padding-left: 0 !important;
 }
 
+/* ==========================================================
+   💚 DIAGNÓSTICO: Forzar visibilidad del cuarto ítem del plan
+   📅 2025-11-15
+   ----------------------------------------------------------
+   Propósito:
+   ✔ Garantizar que el texto del <li data-i18n="plan_feature4">
+     sea visible sin importar estilos previos.
+   ✔ Anular cualquier color, opacidad u ocultación accidental.
+   ✔ Determinar si el problema proviene del CSS o del JS.
+   ➜ Este bloque es temporal para diagnóstico. Se borrará luego.
+========================================================== */
+
+.plan-features li[data-i18n="plan_feature4"] {
+  color: #000 !important;
+  opacity: 1 !important;
+  display: list-item !important;
+  visibility: visible !important;
+  line-height: 1.5 !important;
+}
