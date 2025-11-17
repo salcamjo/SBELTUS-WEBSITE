@@ -737,3 +737,21 @@ footer.footer .legal-links a:hover {
     padding-left: 0 !important;
 }
 
+/* =========================================================
+   ESTILO BOTÓN WHATSAPP FLOTANTE – SBELTUS
+   Ubicación: al final de styles.css   2025-11-17
+   ========================================================= */
+.whatsapp-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
