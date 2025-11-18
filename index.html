@@ -216,21 +216,43 @@ Propósito:
   </div>
 </section>
 
+<!-- ============================================
+     FORMULARIO DE CONTACTO – Integrado con Netlify
+     Envía los mensajes a contacto@sbeltus.com   2025-11-18
+        ============================================ -->
+<section id="contact" class="contact">
+  <h2 style="color:#2E7D32;">Contacto</h2>
+
+  <form name="contact" method="POST" netlify>
+    <input type="hidden" name="form-name" value="contact">
+
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Ingrese aquí su nombre" 
+      required
+    />
+
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Ingrese aquí su correo" 
+      required
+    />
+
+    <textarea 
+      name="message" 
+      placeholder="Ingrese aquí su mensaje" 
+      required
+    ></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p>WhatsApp: +51 974 198 062</p>
+</section>
 
 
-
-
-  <!-- CONTACTO -->
-  <section id="contact" class="contact">
-    <h2 style="color:#2E7D32;">Contacto</h2>
-    <form>
-      <input type="text" placeholder="Ingrese aquí su nombre" required />
-      <input type="email" placeholder="Ingrese aquí su correo" required />
-      <textarea placeholder="Ingrese aquí su mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p>WhatsApp: +51 999 999 999</p>
-  </section>
 
 <!-- 💚 FOOTER AJUSTADO PARA VISIBILIDAD TOTAL EN MÓVIL -->
 <footer class="footer">
