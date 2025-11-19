@@ -216,39 +216,40 @@ Propósito:
   </div>
 </section>
 
-<!-- ============================================
-     FORMULARIO DE CONTACTO – Integrado con Netlify
-     Envía los mensajes a contacto@sbeltus.com   2025-11-18
-        ============================================ -->
+<!-- ===============================
+     FORMULARIO DE CONTACTO – Formspree
+     SBELTUS – 2025-11-19
+================================= -->
 <section id="contact" class="contact">
   <h2 style="color:#2E7D32;">Contacto</h2>
 
-<form name="contact" netlify netlify-honeypot="bot-field" method="POST" action="/success.html">
+  <form action="https://formspree.io/f/xzzorozo" method="POST">
 
-  <input type="hidden" name="form-name" value="contact">
+    <!-- Redirección al dominio final de SBELTUS -->
+    <input type="hidden" name="_redirect" value="https://sbeltus.com/success.html">
 
-  <input 
-    type="text" 
-    name="name" 
-    placeholder="Ingrese aquí su nombre (*prueba*)" 
-    required
-  />
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Ingrese aquí su nombre (*prueba*)" 
+      required
+    />
 
-  <input 
-    type="email" 
-    name="email" 
-    placeholder="Ingrese aquí su correo" 
-    required
-  />
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Ingrese aquí su correo" 
+      required
+    />
 
-  <textarea 
-    name="message" 
-    placeholder="Ingrese aquí su mensaje" 
-    required
-  ></textarea>
+    <textarea 
+      name="message" 
+      placeholder="Ingrese aquí su mensaje" 
+      required
+    ></textarea>
 
-  <button type="submit">Enviar</button>
-</form>
+    <button type="submit">Enviar</button>
+  </form>
 
   <p>WhatsApp: +51 974 198 062</p>
 </section>
