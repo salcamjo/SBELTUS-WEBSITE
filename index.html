@@ -223,7 +223,7 @@ Propósito:
 <section id="contact" class="contact">
   <h2 style="color:#2E7D32;">Contacto</h2>
 
-<form name="contact" method="POST" netlify data-netlify="true" action="success.html">
+<form name="contact" method="POST" data-netlify="true" action="/success.html">
   <input type="hidden" name="form-name" value="contact">
 
   <input 
@@ -296,17 +296,17 @@ Propósito:
 </a>
 
 <!-- ============================================
-     BLOQUE OCULTO PARA NETLIFY FORMS
-     Necesario para que Netlify detecte el formulario
-     y active automáticamente la sección "Forms".
-     Insertar JUSTO antes del </body>
-     SBELTUS – 2025-11-19
+     BLOQUE OCULTO NETLIFY – SIN ACTION
+     No debe tener 'action', para evitar conflicto
+     Insertar antes de </body>
+     Fecha: 2025-11-19
    ============================================ -->
 <form name="contact" netlify hidden>
   <input type="text" name="name" />
   <input type="email" name="email" />
   <textarea name="message"></textarea>
 </form>
+
 
 </body>
 </html>
