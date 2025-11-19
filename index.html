@@ -295,5 +295,18 @@ Propósito:
     <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
 
+<!-- ============================================
+     BLOQUE OCULTO PARA NETLIFY FORMS
+     Necesario para que Netlify detecte el formulario
+     y active automáticamente la sección "Forms".
+     Insertar JUSTO antes del </body>
+     SBELTUS – 2025-11-19
+   ============================================ -->
+<form name="contact" netlify hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <textarea name="message"></textarea>
+</form>
+
 </body>
 </html>
