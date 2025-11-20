@@ -297,6 +297,37 @@ Propósito:
     <img src="images/whatsapp.png" alt="WhatsApp">
 </a>
 
+<!-- ============================================
+     CONTROL DE REDIRECCIÓN FORMULARIO SBELTUS
+     Evita pantalla genérica de Formspree
+     Redirige a success.html (SBELTUS)
+     Fecha: 2025-11-19
+=============================================== -->
+<script>
+document.querySelector('#contact form').addEventListener('submit', function (e) {
+  e.preventDefault(); // Evita la página genérica de Formspree
+
+  const form = this;
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { "Accept": "application/json" }
+  })
+  .then(response => {
+    if (response.ok) {
+      // Redirige a tu página de éxito PERSONALIZADA
+      window.location.href = "/success.html";
+    } else {
+      alert("Ocurrió un error al enviar el formulario.");
+    }
+  })
+  .catch(() => alert("No se pudo enviar el formulario. Intente nuevamente."));
+});
+</script>
+
+
+
 
 </body>
 </html>
