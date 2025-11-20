@@ -245,15 +245,17 @@ section h2 {
   background-color: #ffffff;
   text-align: center;
 }
+/* 🔧 Ajuste del padding del Plan Integral – 2025-11-19 */
 .pricing .plan-card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 10px 16px;
+  padding: 10px 16px 16px 16px; /* arriba reducido */
   margin-bottom: 30px;
   display: inline-block;
   text-align: left;
 }
+
 .plan-price {
   font-size: 1.5rem;
   font-weight: 600;
