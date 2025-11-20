@@ -756,3 +756,13 @@ footer.footer .legal-links a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     cursor: pointer;
 }
+/* ============================================================
+   SBELTUS – Ajuste definitivo del Plan Integral
+   Elimina COMPLETAMENTE el espacio superior dentro del plan-card
+   pegando el título <h3> al borde superior del recuadro. 2025-11-20
+   ============================================================ */
+
+.pricing .plan-card h3 {
+  margin-top: 0 !important;   /* ← pega el título al borde superior */
+  margin-bottom: 6px;         /* mantiene solo un aire mínimo hacia abajo */
+}
