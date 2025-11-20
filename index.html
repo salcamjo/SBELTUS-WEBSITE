@@ -251,7 +251,19 @@ Propósito:
     <button type="submit">Enviar</button>
   </form>
 
-  <p>WhatsApp: +51 974 198 062</p>
+  <!-- Texto traducible del WhatsApp -->
+<p id="contact-whatsapp-text" data-i18n="contact_whatsapp"></p>
+
+<!-- Botón WhatsApp solo en Contacto -->
+<a href="https://wa.me/51974198062" 
+   class="contact-whatsapp" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <img src="images/whatsapp.png" 
+       alt="WhatsApp" 
+       style="width:40px; vertical-align:middle; margin-left:10px;">
+</a>
+
 </section>
 
 
@@ -287,22 +299,6 @@ Propósito:
       }).render('#paypal-button');
     }
   </script>
-
-<!-- ============================================================
-     BLOQUE WHATSAPP SBELTUS – ACTUALIZACIÓN DEL NÚMERO
-     Fecha: 2025-11-20
-     Este bloque actualiza el enlace del botón flotante de WhatsApp
-     para que abra directamente el chat al número oficial SBELTUS:
-     +51 974 198 062
-     ============================================================ -->
-
-<a href="https://wa.me/51974198062" 
-   class="whatsapp-button" 
-   target="_blank" 
-   rel="noopener noreferrer">
-    <img src="images/whatsapp.png" alt="WhatsApp" />
-</a>
-
 
 <!-- ============================================
      CONTROL DE REDIRECCIÓN FORMULARIO SBELTUS
