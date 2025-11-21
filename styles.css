@@ -764,3 +764,31 @@ footer.footer .legal-links a:hover {
   margin-top: 0 !important;   /* ← pega el título al borde superior */
   margin-bottom: 6px;         /* mantiene solo un aire mínimo hacia abajo */
 }
+
+/* ============================================================
+   BLOQUE CSS – Alinear botón de WhatsApp junto al teléfono
+   SBELTUS – 2025-11-21
+   ============================================================ */
+
+.contact-phone-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;  /* espacio entre el número y el botón */
+}
+
+/* Ajuste del botón en escritorio */
+.contact-phone-container .whatsapp-button {
+  margin: 0 !important;    /* elimina margen vertical */
+}
+
+/* Versión responsive para móviles */
+@media (max-width: 600px) {
+  .contact-phone-container {
+    flex-direction: row;   /* sigue al costado en móvil */
+    justify-content: center;
+  }
+
+  .contact-phone-container .whatsapp-button {
+    transform: scale(0.9);   /* un pelín más pequeño si fuera necesario */
+  }
+}
