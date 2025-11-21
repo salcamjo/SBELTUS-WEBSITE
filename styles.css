@@ -823,3 +823,15 @@ footer.footer .legal-links a:hover {
     justify-content: center; /* sigue centrado en móvil */
   }
 }
+/* ============================================================
+   BLOQUE CSS – Forzar visibilidad del ícono WhatsApp en Contacto
+   SBELTUS – 2025-11-21
+   ============================================================ */
+
+.whatsapp-button img {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 40px !important;
+  height: auto !important;
+}
