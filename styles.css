@@ -792,3 +792,34 @@ footer.footer .legal-links a:hover {
     transform: scale(0.9);   /* un pelín más pequeño si fuera necesario */
   }
 }
+/* ============================================================
+   BLOQUE CSS – Centrar teléfono + ícono WhatsApp (versión final)
+   SBELTUS – 2025-11-21
+   ============================================================ */
+
+.contact-phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* ⭐ centra el conjunto completo */
+  gap: 12px;                 /* espacio entre número e ícono */
+  margin-top: 20px;          /* pequeño espacio superior */
+}
+
+.contact-phone-container p {
+  margin: 0 !important;
+  text-align: center;        /* ⭐ centra el texto del número */
+  width: auto;
+}
+
+.contact-phone-container .whatsapp-button img {
+  width: 40px;
+  height: auto;
+  display: block;            /* ⭐ asegura que se muestre */
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .contact-phone-container {
+    justify-content: center; /* sigue centrado en móvil */
+  }
+}
