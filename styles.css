@@ -836,18 +836,23 @@ footer.footer .legal-links a:hover {
   height: auto !important;
 }
 /* ============================================
-   BLOQUE: Teléfono + WhatsApp centrados y en línea
-   Fernando – 2025-11-22
+   BLOQUE COMPLETO: Teléfono + WhatsApp centrados
+   Versión final – Fernando / 2025-11-22
    ============================================ */
 
 .contact-phone-container {
-    display: flex;               /* Coloca teléfono e icono en la misma línea */
-    justify-content: center;     /* CENTRA todo horizontalmente */
-    align-items: center;         /* Alinea verticalmente */
-    gap: 10px;                   /* Separación mínima entre teléfono e icono */
-    margin: 0 auto;              /* Asegura centrado del contenedor */
+    display: flex;               /* Mantiene teléfono + WhatsApp en una sola línea */
+    justify-content: center;     /* CENTRA el contenido horizontalmente */
+    align-items: center;         /* Alineación vertical perfecta */
+    gap: 10px;                   /* Espacio entre texto e icono */
+    margin: 20px auto 0 auto;    /* Separación natural respecto al formulario */
 }
 
 .contact-phone-container p {
-    margin: 0;                   /* Evita saltos o empujes */
+    margin: 0;                    /* Evita saltos o desplazamientos */
+}
+
+.contact-phone-container img {
+    width: 40px;                  /* Tamaño claro y uniforme del icono */
+    vertical-align: middle;       /* Alineación exacta con el texto */
 }
