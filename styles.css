@@ -736,24 +736,6 @@ footer.footer .legal-links a:hover {
     padding-left: 0 !important;
 }
 
-/* =========================================================
-   ESTILO BOTÓN WHATSAPP FLOTANTE – SBELTUS
-   Ubicación: al final de styles.css   2025-11-17
-   ========================================================= */
-.whatsapp-button {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 999;
-}
-
-.whatsapp-button img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    cursor: pointer;
-}
 /* ============================================================
    SBELTUS – Ajuste definitivo del Plan Integral
    Elimina COMPLETAMENTE el espacio superior dentro del plan-card
@@ -765,76 +747,7 @@ footer.footer .legal-links a:hover {
   margin-bottom: 6px;         /* mantiene solo un aire mínimo hacia abajo */
 }
 
-/* ============================================================
-   BLOQUE CSS – Alinear botón de WhatsApp junto al teléfono
-   SBELTUS – 2025-11-21
-   ============================================================ */
 
-.contact-phone-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;  /* espacio entre el número y el botón */
-}
-
-/* Ajuste del botón en escritorio */
-.contact-phone-container .whatsapp-button {
-  margin: 0 !important;    /* elimina margen vertical */
-}
-
-/* Versión responsive para móviles */
-@media (max-width: 600px) {
-  .contact-phone-container {
-    flex-direction: row;   /* sigue al costado en móvil */
-    justify-content: center;
-  }
-
-  .contact-phone-container .whatsapp-button {
-    transform: scale(0.9);   /* un pelín más pequeño si fuera necesario */
-  }
-}
-/* ============================================================
-   BLOQUE CSS – Centrar teléfono + ícono WhatsApp (versión final)
-   SBELTUS – 2025-11-21
-   ============================================================ */
-
-.contact-phone-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;   /* ⭐ centra el conjunto completo */
-  gap: 12px;                 /* espacio entre número e ícono */
-  margin-top: 20px;          /* pequeño espacio superior */
-}
-
-.contact-phone-container p {
-  margin: 0 !important;
-  text-align: center;        /* ⭐ centra el texto del número */
-  width: auto;
-}
-
-.contact-phone-container .whatsapp-button img {
-  width: 40px;
-  height: auto;
-  display: block;            /* ⭐ asegura que se muestre */
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-  .contact-phone-container {
-    justify-content: center; /* sigue centrado en móvil */
-  }
-}
-/* ============================================================
-   BLOQUE CSS – Forzar visibilidad del ícono WhatsApp en Contacto
-   SBELTUS – 2025-11-21
-   ============================================================ */
-
-.whatsapp-button img {
-  display: inline-block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  width: 40px !important;
-  height: auto !important;
-}
 /* ============================================
    BLOQUE COMPLETO: Teléfono + WhatsApp centrados
    Versión final – Fernando / 2025-11-22
