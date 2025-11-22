@@ -835,3 +835,19 @@ footer.footer .legal-links a:hover {
   width: 40px !important;
   height: auto !important;
 }
+/* ============================================
+   BLOQUE: Teléfono + WhatsApp centrados y en línea
+   Fernando – 2025-11-22
+   ============================================ */
+
+.contact-phone-container {
+    display: flex;               /* Coloca teléfono e icono en la misma línea */
+    justify-content: center;     /* CENTRA todo horizontalmente */
+    align-items: center;         /* Alinea verticalmente */
+    gap: 10px;                   /* Separación mínima entre teléfono e icono */
+    margin: 0 auto;              /* Asegura centrado del contenedor */
+}
+
+.contact-phone-container p {
+    margin: 0;                   /* Evita saltos o empujes */
+}
